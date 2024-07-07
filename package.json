@@ -11,7 +11,6 @@
     "deploy": "gh-pages -d dist",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    // "deploy": "gulp deployFTP --build",
     "svgSprive": "gulp svgSpriteTask"
   },
   "author": "FLS",
