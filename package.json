@@ -9,6 +9,16 @@
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
     "deploy": "gulp deployFTP --build",
+  },
+  "homepage": "https://github.com/Oleksii03/Studio-interiors.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleksii03/Studio-interiors.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/fls/gulp-2024/issues"
+  },
     "svgSprive": "gulp svgSpriteTask"
   },
   "author": "FLS",
