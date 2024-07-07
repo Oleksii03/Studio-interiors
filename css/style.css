@@ -361,6 +361,13 @@ main {
   overflow-x: hidden;
 }
 
+:root {
+  --primary-font: "HeliosExtC", serif;
+  --secondary-font: "Plus Jakarta Display", serif;
+  --white-base-color: #fff;
+  --black-background-color: #090812;
+}
+
 @media (max-width: 767px) {
   .to-freeze {
     overflow: hidden;
