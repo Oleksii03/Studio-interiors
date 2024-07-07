@@ -2,12 +2,11 @@
   "name": "gulp-2024",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://Oleksii03.github.io/Studio-interiors",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --build src/*.html /Studio-interiors/",
+    "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
     "deploy": "gulp deployFTP --build",
     "svgSprive": "gulp svgSpriteTask"
