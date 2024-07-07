@@ -4,11 +4,14 @@
   "description": "",
   "main": "gulpfile.js",
   "type": "module",
+  "homepage": "https://github.com/Oleksii03/Studio-interiors.git",
   "scripts": {
     "start": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "deploy": "gulp deployFTP --build",
+    // "deploy": "gulp deployFTP --build",
     "svgSprive": "gulp svgSpriteTask"
   },
   "author": "FLS",
@@ -19,6 +22,7 @@
   "devDependencies": {
     "browser-sync": "latest",
     "del": "latest",
+    "gh-pages": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
