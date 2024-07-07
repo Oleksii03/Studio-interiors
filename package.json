@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --build src/*.html /Studio-interiorsN/",
+    "build": "gulp build --build src/*.html /Studio-interiors/",
     "zip": "gulp deployZIP --build",
     "deploy": "gulp deployFTP --build",
     "svgSprive": "gulp svgSpriteTask"
