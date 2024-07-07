@@ -44,7 +44,7 @@ export { build };
 export { deployZIP };
 export { deployFTP };
 
-// gulp.task('default', dev);
+gulp.task('default', dev);
 
 // gulp.task('browser-sync', function () {
 //   browserSync({
@@ -55,9 +55,9 @@ export { deployFTP };
 //   });
 // });
 
-const gulp = require('gulp');
-const ghPages = require('gulp-gh-pages');
+// const gulp = require('gulp');
+// const ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', () => {
-   gulp.src('./dist/**/*').pipe(ghPages());
-});
+// gulp.task('deploy', () => {
+//   gulp.src('./dist/**/*').pipe(ghPages());
+// });
