@@ -11,35 +11,10 @@
 }
 
 @font-face {
-  font-family: Freight Big Light Italic;
+  font-family: FreightBigProLight-Italic Light Italic;
   font-display: swap;
-  src: url("../fonts/Freight Big Light Italic.woff2") format("woff2"), url("../fonts/Freight Big Light Italic.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: helveticaneue;
-  font-display: swap;
-  src: url("../fonts/helveticaneue.woff2") format("woff2"), url("../fonts/helveticaneue.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: HelveticaNeue Medium;
-  font-display: swap;
-  src: url("../fonts/HelveticaNeue Medium.woff2") format("woff2"), url("../fonts/HelveticaNeue Medium.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: icons;
-  font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+  src: url("../fonts/FreightBigProLight-Italic.woff2") format("woff2"), url("../fonts/FreightBigProLight-Italic.woff") format("woff");
+  font-style: italic;
 }
 
 *,
@@ -362,10 +337,9 @@ main {
 }
 
 :root {
-  --primary-font: "HeliosExtC", serif;
-  --secondary-font: "Plus Jakarta Display", serif;
+  --primary-font: "Montserrat", sans-serif;
   --white-base-color: #fff;
-  --black-background-color: #090812;
+  --black-base-color: #090812;
 }
 
 @media (max-width: 767px) {
