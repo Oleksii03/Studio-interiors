@@ -45,19 +45,3 @@ export { deployZIP };
 export { deployFTP };
 
 gulp.task('default', dev);
-
-// gulp.task('browser-sync', function () {
-//   browserSync({
-//     server: {
-//       baseDir: 'app',
-//     },
-//     notify: false,
-//   });
-// });
-
-// const gulpGit = require('gulp');
-// const ghPages = require('gulp-gh-pages');
-
-// gulpGit.task('deploy', () => {
-//   gulpGit.src('./dist/**/*').pipe(ghPages());
-// });
