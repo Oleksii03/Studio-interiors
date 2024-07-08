@@ -1,0 +1,15 @@
+@mixin flex-align-row($disType: flex, $align: center) {
+  display: $disType;
+  align-items: $align;
+}
+
+@mixin flex-align-column($disType: flex, $direction: column, $align: center) {
+  display: $disType;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+@mixin grid-auto-fit($min: 250px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+}

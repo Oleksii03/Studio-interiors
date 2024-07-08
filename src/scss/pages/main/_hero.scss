@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+
+  &__wrapper {
+    display: grid;
+    height: auto;
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 213px;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__static {
+    &-box {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+        background-image: url('@img/main/hero/hero-img-right.png');
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: cover;
+      }
+    }
+  }
+}
