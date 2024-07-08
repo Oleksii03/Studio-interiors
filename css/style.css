@@ -342,6 +342,29 @@ main {
   --black-base-color: #090812;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 365px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 760px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1342px;
+  }
+}
+
 @media (max-width: 767px) {
   .to-freeze {
     overflow: hidden;
