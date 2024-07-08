@@ -1,0 +1,20 @@
+.slider {
+  &__img {
+    height: 100dvh;
+    max-height: 744px;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+
+  &__track {
+  }
+
+  &__line {
+    display: flex;
+    transition: all 350ms linear;
+  }
+
+  &__slide {
+    flex-shrink: 0;
+  }
+}

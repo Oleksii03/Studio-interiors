@@ -1,25 +1,49 @@
-<style>
-  /* .splide {
-    height: 100dvh;
-  } */
-  .splide__img {
-    height: 100dvh;
-    max-height: 744px;
-    object-fit: cover;
-    object-position: 50% 0;
-  }
-</style>
-
-<div class="splide">
-  <div class="splide__track">
-    <ul class="splide__list">
-      <li class="splide__slide">
+<div class="slider">
+  <div class="slider__track js-slider-track">
+    <ul class="slider__line js-slider-line">
+      <li class="slider__slide">
         <img
-          class="splide__img"
+          class="slider__img js-slider-img"
           src="@img/main/hero/slides/hero-img-slide-1.png"
           alt="hero-img-slide-1"
         />
       </li>
+      <li class="slider__slide">
+        <img
+          class="slider__img js-slider-img"
+          src="@img/main/hero/slides/hero-img-slide-2.png"
+          alt="hero-img-slide-1"
+        />
+      </li>
+      <li class="slider__slide">
+        <img
+          class="slider__img js-slider-img"
+          src="@img/main/hero/slides/hero-img-slide-3.png"
+          alt="hero-img-slide-1"
+        />
+      </li>
+      <li class="slider__slide">
+        <img
+          class="slider__img js-slider-img"
+          src="@img/main/hero/slides/hero-img-slide-4.png"
+          alt="hero-img-slide-1"
+        />
+      </li>
     </ul>
+  </div>
+
+  <div class="slider__btn-box">
+    <button
+      type="button"
+      class="slider__btn slider__btn_prev js-slider-btn-prev"
+    >
+      prev
+    </button>
+    <button
+      type="button"
+      class="slider__btn slider__btn_next js-slider-btn-next"
+    >
+      next
+    </button>
   </div>
 </div>
