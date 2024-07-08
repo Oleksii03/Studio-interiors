@@ -13,7 +13,7 @@
 
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240708181745"
+    href="css/style.min.css?_v=20240708211158"
   />
   <title>Studio of interiors</title>
 </head>
@@ -63,13 +63,17 @@
       type="button"
       class="slider__btn slider__btn_prev js-slider-btn-prev"
     >
-      prev
+      <svg class="slider__btn-svg">
+        <use href="img/sprite.svg#icon-arrow-prev"></use>
+      </svg>
     </button>
     <button
       type="button"
       class="slider__btn slider__btn_next js-slider-btn-next"
     >
-      next
+      <svg class="slider__btn-svg">
+        <use href="img/sprite.svg#icon-arrow-next"></use>
+      </svg>
     </button>
   </div>
 </div>
@@ -77,16 +81,7 @@
 
     <div class="hero__static-img"></div>
     <div class="hero__container container">
-      <h1>Hello, World!</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod placerat neque, at
-        facilisis velit viverra vitae. Donec at ligula non massa luctus mollis.
-      </p>
-      <a
-        href="#"
-        class="hero__button"
-        >Learn More</a
-      >
+      <h1 class="hero__title">Thoughtful making of space</h1>
     </div>
   </div>
 </section>
