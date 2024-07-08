@@ -21,6 +21,7 @@ export function createSlider() {
     if (count >= images.length) count = 0;
     rollSlider();
   });
+
   document.querySelector('.js-slider-btn-prev').addEventListener('click', () => {
     count -= 1;
     if (count < 0) count = images.length - 1;
