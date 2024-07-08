@@ -3,7 +3,6 @@
 
   &__wrapper {
     display: grid;
-    height: auto;
     @media (min-width: 768px) {
       grid-template-columns: 1fr 213px;
     }
@@ -16,16 +15,19 @@
     transform: translateX(-50%);
   }
 
-  &__static {
-    &-box {
-      display: none;
-      @media (min-width: 768px) {
-        display: block;
-        background-image: url('@img/main/hero/hero-img-right.png');
-        background-repeat: no-repeat;
-        background-position: 0 100%;
-        background-size: cover;
-      }
+  &__slider {
+    height: 100dvh;
+  }
+
+  &__static-img {
+    display: none;
+    @media (min-width: 768px) {
+      max-height: 744px;
+      display: block;
+      background-image: url('@img/main/hero/hero-img-right.png');
+      background-repeat: no-repeat;
+      background-position: 0 100%;
+      background-size: cover;
     }
   }
 }
