@@ -21,7 +21,7 @@
   }
 
   &__slider {
-    height: 100dvh;
+    // height: 100dvh;
     overflow: hidden;
   }
 
@@ -47,6 +47,7 @@
     @media (min-width: 768px) {
       max-width: 600px;
       font-size: 56px;
+      padding-bottom: 200px;
     }
     @media (min-width: 1440px) {
       padding-left: 180px;
