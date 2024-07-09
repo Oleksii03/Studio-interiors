@@ -386,6 +386,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 2;
 }
 
 .slider__btn-box::before {
@@ -430,7 +431,6 @@ body {
 }
 
 .hero__slider {
-  height: 100dvh;
   overflow: hidden;
 }
 
@@ -482,6 +482,7 @@ body {
   .hero__title {
     max-width: 600px;
     font-size: 56px;
+    padding-bottom: 200px;
   }
 }
 
