@@ -21,7 +21,6 @@
   }
 
   &__slider {
-    // height: 100dvh;
     overflow: hidden;
   }
 
@@ -30,7 +29,7 @@
     @media (min-width: 768px) {
       max-height: 744px;
       display: block;
-      background-image: url('@img/main/hero/hero-img-right.png');
+      background-image: url('@assets/img/main/hero/hero-img-right.png');
       background-repeat: no-repeat;
       background-position: 0 100%;
       background-size: cover;
