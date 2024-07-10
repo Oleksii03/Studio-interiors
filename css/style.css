@@ -472,7 +472,7 @@ body {
   }
 
   .no-webp .hero__static-img{
-    background-image: url("../img/main/hero/hero-img-right.png"); }
+    background-image: url("../assets/img/main/hero/hero-img-right.png"); }
 
   .hero__static-img {
     max-height: 744px;
@@ -531,5 +531,5 @@ body {
 
 @media (min-width: 768px){
 
-  .webp .hero__static-img{ background-image: url(../img/main/hero/hero-img-right.webp); }
+  .webp .hero__static-img{ background-image: url(../assets/img/main/hero/hero-img-right.webp); }
 }
