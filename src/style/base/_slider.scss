@@ -42,12 +42,11 @@
     @media (min-width: 1024px) {
       bottom: 40%;
       right: 21%;
-      width: 266px;
+      width: 295px;
     }
     @media (min-width: 1440px) {
-      bottom: 35%;
-      right: 21%;
-      width: 266px;
+      bottom: 36%;
+      right: 308px;
     }
 
     &::before {
@@ -59,15 +58,35 @@
       width: 186px;
       height: 1px;
       background-color: #fff;
+      overflow-x: hidden;
     }
   }
 
   &__btn {
     background-color: transparent;
+    @include flex-align-row;
+    column-gap: 11px;
 
     &-svg {
-      width: 20px;
-      height: 20px;
+      width: 4px;
+      height: 8px;
+    }
+
+    & > span {
+      display: inline-block;
+      color: var(--white-base-color);
+      font-size: 11px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      letter-spacing: 0.66px;
+    }
+
+    &_prev-num {
+      margin-right: 12px;
+    }
+    &_next-num {
+      margin-left: 12px;
     }
   }
 }

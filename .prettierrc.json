@@ -9,5 +9,7 @@
   "arrowParens": "avoid",
   "proseWrap": "always",
   "vueIndentScriptAndStyle": true,
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "bracketSameLine": true,
+  "htmlWhitespaceSensitivity": "ignore"
 }
