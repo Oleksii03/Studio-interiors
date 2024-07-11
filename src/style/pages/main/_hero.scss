@@ -28,7 +28,7 @@
     display: none;
     @media (min-width: 768px) {
       max-height: 744px;
-      display: block;
+      display: flex;
       background-image: url('@assets/img/main/hero/hero-img-right.png');
       background-repeat: no-repeat;
       background-position: 0 100%;
@@ -50,5 +50,37 @@
       font-size: 56px;
       max-width: 700px;
     }
+  }
+}
+
+// ---static-content----
+
+.hero__static-wrapper {
+  margin-top: auto;
+}
+
+.static-content {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  color: var(--white-base-color);
+  padding-right: 44px;
+  padding-top: 48px;
+
+  &__sup-title {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    margin-left: 8px;
+  }
+
+  &__title {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--4, #fff);
+    // color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 97.52%; /* 46.81px */
+    letter-spacing: 1.92px;
   }
 }
