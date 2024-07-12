@@ -371,12 +371,12 @@ body {
 .slider__btn-box {
   padding: 10px;
   position: absolute;
-  bottom: 10%;
-  right: 50%;
+  bottom: 70%;
+  right: 70%;
   -webkit-transform: translateX(50%);
       -ms-transform: translateX(50%);
           transform: translateX(50%);
-  width: 266px;
+  width: 195px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,7 +397,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 186px;
+  width: 88px;
   height: 1px;
   background-color: #fff;
   overflow-x: hidden;
@@ -480,6 +480,38 @@ body {
 .hero__title {
   color: var(--white-base-color);
   font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.hero__sub-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  color: var(--white-base-color);
+  font-size: 10px;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.hero__sub-title::before {
+  content: "";
+  width: 8px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.hero__sub-title::after {
+  content: "";
+  width: 56px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .hero__static-wrapper {

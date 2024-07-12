@@ -13,14 +13,13 @@
 
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240712154205"
+    href="css/style.min.css?_v=20240712164726"
   />
   <title>Studio of interiors</title>
 </head>
 
   <body>
-    <header></header>
-
+    
     <main>
       <section class="hero">
   <div class="hero__wrapper">
@@ -28,31 +27,67 @@
   <div class="slider__track js-slider-track">
     <ul class="slider__line js-slider-line">
       <li class="slider__slide">
-        <img
-          class="slider__img js-slider-img"
-          src="assets/img/main/hero/slides/hero-img-slide-1.png"
-          alt="hero-img-slide-1" />
+        <picture>
+          <source
+            srcset="assets/img/main/hero/slides/l/hero-img-slide-1.png"
+            media="(min-width: 1024px)" />
+          <source
+            srcset="assets/img/main/hero/slides/m/slider-1.png"
+            media="(min-width: 768px)" />
+          <img
+            loading="lazy"
+            class="slider__img js-slider-img"
+            src="assets/img/main/hero/slides/s/slide-1.png"
+            alt="hero-img-slide-1" />
+        </picture>
       </li>
 
       <li class="slider__slide">
-        <img
-          class="slider__img js-slider-img"
-          src="assets/img/main/hero/slides/hero-img-slide-2.png"
-          alt="hero-img-slide-1" />
+        <picture>
+          <source
+            srcset="assets/img/main/hero/slides/l/hero-img-slide-2.png"
+            media="(min-width: 1024px)" />
+          <source
+            srcset="assets/img/main/hero/slides/m/slider-2.png"
+            media="(min-width: 768px)" />
+          <img
+            loading="lazy"
+            class="slider__img js-slider-img"
+            src="assets/img/main/hero/slides/s/slide-2.png"
+            alt="hero-img-slide-1" />
+        </picture>
       </li>
 
       <li class="slider__slide">
-        <img
-          class="slider__img js-slider-img"
-          src="assets/img/main/hero/slides/hero-img-slide-3.png"
-          alt="hero-img-slide-1" />
+        <picture>
+          <source
+            srcset="assets/img/main/hero/slides/l/hero-img-slide-3.png"
+            media="(min-width: 1024px)" />
+          <source
+            srcset="assets/img/main/hero/slides/m/slider-3.png"
+            media="(min-width: 768px)" />
+          <img
+            loading="lazy"
+            class="slider__img js-slider-img"
+            src="assets/img/main/hero/slides/s/slide-3.png"
+            alt="hero-img-slide-1" />
+        </picture>
       </li>
 
       <li class="slider__slide">
-        <img
-          class="slider__img js-slider-img"
-          src="assets/img/main/hero/slides/hero-img-slide-4.png"
-          alt="hero-img-slide-1" />
+        <picture>
+          <source
+            srcset="assets/img/main/hero/slides/l/hero-img-slide-4.png"
+            media="(min-width: 1024px)" />
+          <source
+            srcset="assets/img/main/hero/slides/m/slider-4.png"
+            media="(min-width: 768px)" />
+          <img
+            loading="lazy"
+            class="slider__img js-slider-img"
+            src="assets/img/main/hero/slides/s/slide-4.png"
+            alt="hero-img-slide-1" />
+        </picture>
       </li>
     </ul>
 
@@ -95,6 +130,60 @@
 
     <div class="hero__container container">
       <h1 class="hero__title">Thoughtful making of space</h1>
+      <p class="hero__sub-title">Discover more</p>
+
+      <div class="@@class data-box">
+  <ul class="@@class language-box">
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      Fb
+    </a>
+  </li>
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      In
+    </a>
+  </li>
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      Be
+    </a>
+  </li>
+</ul>
+
+  <div class="data-box__location">
+    <div class="data-box__flag icon-geotag"></div>
+    <select class="data-box__city-list">
+      <option class="data-box__city-name">Berlin</option>
+      <option class="data-box__city-name">London</option>
+      <option class="data-box__city-name">Paris</option>
+      <option class="data-box__city-name">Brussels</option>
+    </select>
+  </div>
+  <div class="data-box__contacts">
+    <div class="data-box__phone">
+      <a
+        class="data-box__phone-link"
+        href="tel:+380983527547">
+        +380983527547
+      </a>
+    </div>
+    <div class="data-box__email">
+      <a
+        class="data-box__email-link"
+        href="mailto:info@gmail.com">
+        info@gmail.com
+      </a>
+    </div>
+  </div>
+</div>
+
     </div>
   </div>
 </section>
