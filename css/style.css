@@ -439,6 +439,82 @@ body {
   margin-left: 12px;
 }
 
+.language-box {
+  display: none;
+}
+
+.data-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data-box__location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 51px;
+  border: 1px solid #c4c4c4;
+  padding: 5px 10px 5px 12px;
+  width: 117px;
+  height: 24px;
+  border-radius: 20px;
+}
+
+.data-box__location-svg {
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+}
+
+.data-box__city-list {
+  color: var(--white-base-color);
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.66px;
+}
+
+.data-box__city-name {
+  color: #000;
+}
+
+.data-box__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data-box__phone,
+.data-box__email {
+  margin-left: auto;
+}
+
+.data-box__phone-link,
+.data-box__email-link {
+  color: var(--white-base-color);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.66px;
+}
+
 .hero {
   position: relative;
 }
@@ -498,6 +574,7 @@ body {
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  margin-bottom: 80px;
 }
 
 .hero__sub-title::before {
@@ -526,8 +603,8 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: var(--white-base-color);
-  padding-right: 20px;
-  padding-top: 24px;
+  padding-right: 30px;
+  padding-top: 60px;
 }
 
 .static-content__sup-title {
@@ -546,6 +623,11 @@ body {
   .container {
     max-width: 357px;
   }
+
+  .static-content {
+    padding-right: 20px;
+    padding-top: 24px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -561,6 +643,15 @@ body {
     bottom: 15%;
     right: 27%;
     width: 266px;
+  }
+
+  .language-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .hero__wrapper {
