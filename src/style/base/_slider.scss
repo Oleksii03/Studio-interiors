@@ -12,6 +12,7 @@
     @media (min-width: 1024px) {
       height: 710px;
     }
+
     @media (min-width: 1440px) {
       height: 744px;
     }
@@ -29,10 +30,10 @@
   &__btn-box {
     padding: 10px;
     position: absolute;
-    bottom: 10%;
-    right: 50%;
+    bottom: 70%;
+    right: 70%;
     transform: translateX(50%);
-    width: 266px;
+    width: 195px;
     @include flex-align-row;
     justify-content: space-between;
     z-index: 2;
@@ -58,7 +59,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 186px;
+      width: 88px;
       height: 1px;
       background-color: #fff;
       overflow-x: hidden;
