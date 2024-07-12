@@ -1,7 +1,9 @@
 <div class="data-box">
   @@include('box-language.html',{})
   <div class="data-box__location">
-    <div class="data-box__flag icon-geotag"></div>
+    <svg class="data-box__location-svg">
+      <use xlink:href="@assets/img/sprite.svg#icon-maps"></use>
+    </svg>
     <select class="data-box__city-list">
       <option class="data-box__city-name">Berlin</option>
       <option class="data-box__city-name">London</option>

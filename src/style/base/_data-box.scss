@@ -1,0 +1,57 @@
+.data-box {
+  @include flex-align-row;
+
+  &__location {
+    @include flex-align-row;
+    margin-right: 51px;
+    border: 1px solid #c4c4c4;
+    padding: 5px 10px 5px 12px;
+    width: 117px;
+    height: 24px;
+    border-radius: 20px;
+
+    &-svg {
+      width: 10px;
+      height: 10px;
+      margin-right: 7px;
+    }
+  }
+
+  &__city-list {
+    color: var(--white-base-color);
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+
+  &__city-name {
+    color: #000;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+
+  &__contacts {
+    @include flex-align-column;
+  }
+
+  &__phone,
+  &__email {
+    margin-left: auto;
+  }
+
+  &__phone-link,
+  &__email-link {
+    color: var(--white-base-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+}
