@@ -122,8 +122,13 @@
   transform: rotate(180deg);
   writing-mode: vertical-rl;
   color: var(--white-base-color);
-  padding-right: 20px;
-  padding-top: 24px;
+  padding-right: 30px;
+  padding-top: 60px;
+
+  @media (min-width: 375px) {
+    padding-right: 20px;
+    padding-top: 24px;
+  }
 
   @media (min-width: 768px) {
     padding-right: 30px;
