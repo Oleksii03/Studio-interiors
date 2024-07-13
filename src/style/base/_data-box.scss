@@ -3,7 +3,7 @@
 
   &__location {
     @include flex-align-row;
-    margin-right: 51px;
+    margin-right: 31px;
     border: 1px solid #c4c4c4;
     padding: 5px 10px 5px 12px;
     width: 117px;
@@ -16,6 +16,10 @@
 
     @media (min-width: 1024px) {
       margin-right: 39px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 73px;
     }
 
     &-svg {
@@ -34,6 +38,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+    cursor: pointer;
   }
 
   &__city-name {
