@@ -10,6 +10,14 @@
     height: 24px;
     border-radius: 20px;
 
+    @media (min-width: 768px) {
+      margin-right: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-right: 39px;
+    }
+
     &-svg {
       width: 10px;
       height: 10px;
@@ -34,6 +42,11 @@
 
   &__contacts {
     @include flex-align-column;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      column-gap: 32px;
+    }
   }
 
   &__phone,

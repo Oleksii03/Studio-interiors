@@ -3,5 +3,19 @@
 
   @media (min-width: 768px) {
     @include flex-align-row;
+    column-gap: 15px;
+    margin-right: 64px;
+
+    &__link {
+      color: var(--white-base-color);
+      font-size: 11px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.66px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    margin-right: 81px;
   }
 }

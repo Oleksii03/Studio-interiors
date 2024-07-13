@@ -39,14 +39,14 @@
     z-index: 2;
 
     @media (min-width: 768px) {
-      bottom: 15%;
-      right: 27%;
-      width: 266px;
+      bottom: 38%;
+      right: 33%;
+      width: 259px;
     }
     @media (min-width: 1024px) {
-      bottom: 40%;
-      right: 21%;
-      width: 295px;
+      bottom: 36%;
+      right: 28%;
+      width: 257px;
     }
     @media (min-width: 1440px) {
       bottom: 36%;
@@ -63,6 +63,10 @@
       height: 1px;
       background-color: #fff;
       overflow-x: hidden;
+
+      @media (min-width: 768px) {
+        width: 150px;
+      }
     }
   }
 
