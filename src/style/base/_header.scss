@@ -1,0 +1,68 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 24px 0;
+
+  &__logo {
+    margin-right: 141px;
+    color: var(--white-base-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+  }
+
+  &__container {
+    @include flex-align-row;
+  }
+
+  &__nav-list {
+    @include flex-align-row;
+    column-gap: 48px;
+  }
+
+  &__nav-link {
+    color: var(--white-base-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+}
+
+.send-box {
+  margin-left: auto;
+  @include flex-align-row;
+  column-gap: 83px;
+
+  &__leng {
+    color: var(--white-base-color);
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+  }
+
+  &__btn {
+    border: 1px solid rgba(253, 253, 253, 0.32);
+    background-color: transparent;
+    color: var(--white-base-color);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    padding: 17px 48px;
+    transition: background-color 250ms linear;
+
+    @media (min-width: 1440px) {
+      &:hover {
+        background-color: rgba(253, 253, 253, 0.17);
+      }
+    }
+  }
+}
