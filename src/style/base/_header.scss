@@ -4,7 +4,15 @@
   left: 0;
   width: 100%;
   z-index: 2;
-  padding: 24px 0;
+  padding: 21px 0;
+
+  @media (min-width: 768px) {
+    padding: 25px 0;
+  }
+
+  @media (min-width: 768px) {
+    padding: 23px 0;
+  }
 
   &__logo {
     margin-right: 141px;
@@ -14,6 +22,14 @@
     line-height: normal;
     letter-spacing: 4.2px;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      margin-right: 94px;
+    }
+
+    @media (min-width: 1440px) {
+      margin-right: 139px;
+    }
   }
 
   &__container {
@@ -21,8 +37,11 @@
   }
 
   &__nav-list {
-    @include flex-align-row;
-    column-gap: 48px;
+    display: none;
+    @media (min-width: 1440px) {
+      @include flex-align-row;
+      column-gap: 48px;
+    }
   }
 
   &__nav-link {
@@ -31,13 +50,62 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+    transition: opacity 200ms linear;
+    padding: 8px 0;
+
+    @media (min-width: 1440px) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 }
+
+// ----nav-header-------
+
+.nav-header__menu {
+  &-box {
+    & > p {
+      display: none;
+    }
+
+    @media (min-width: 768px) and (max-width: 1439px) {
+      @include flex-align-row;
+      column-gap: 26px;
+
+      & > p {
+        display: block;
+      }
+    }
+
+    @media (min-width: 1439px) {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+    &-text {
+      font-size: 11px;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 0.66px;
+    }
+  }
+}
+
+// ---send-box----------
 
 .send-box {
   margin-left: auto;
   @include flex-align-row;
   column-gap: 83px;
+
+  @media (min-width: 768px) {
+    column-gap: 56px;
+  }
+  @media (min-width: 1440px) {
+    column-gap: 107px;
+  }
 
   &__leng {
     color: var(--white-base-color);
@@ -45,9 +113,14 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+
+    @media (max-width: 767px) {
+      margin-right: 82px;
+    }
   }
 
   &__btn {
+    display: none;
     border: 1px solid rgba(253, 253, 253, 0.32);
     background-color: transparent;
     color: var(--white-base-color);
@@ -59,10 +132,22 @@
     padding: 17px 48px;
     transition: background-color 250ms linear;
 
+    @media (min-width: 768px) {
+      display: block;
+      padding: 13px 35px;
+    }
+
     @media (min-width: 1440px) {
+      padding: 17px 35px;
       &:hover {
         background-color: rgba(253, 253, 253, 0.17);
       }
+    }
+  }
+
+  &__hambudger {
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 }
