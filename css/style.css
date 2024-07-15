@@ -914,6 +914,28 @@ body {
   margin-bottom: 40px;
 }
 
+.company__img-content {
+  position: relative;
+  height: 280px;
+}
+
+.company__img_top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 264px;
+  height: 162px;
+  z-index: 1;
+}
+
+.company__img_bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 131px;
+  height: 163px;
+}
+
 .company__sub-title {
   color: var(--black-base-color);
   display: -webkit-box;

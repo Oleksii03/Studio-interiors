@@ -16,11 +16,11 @@
     href="https://fonts.gstatic.com"
     crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&_v=20240715202035"
+    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&_v=20240715203510"
     rel="stylesheet" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240715202035" />
+    href="css/style.min.css?_v=20240715203510" />
   <title>Studio of interiors</title>
   <svg
   aria-hidden="true"
@@ -463,7 +463,27 @@
     </div>
     <p class="company__sub-title">Discover more</p>
 
-    <div class="company__img-content"></div>
+    <div class="company__img-content">
+      <picture class="company__picture company__picture_top">
+        <source
+          srcset="assets/img/main/company/tablet/big-img-tab.webp"
+          media="(min-width: 768px)" />
+        <img
+          class="company__img company__img_top"
+          src="assets/img/main/company/mobile/big-img-mob.webp"
+          alt="company-img" />
+      </picture>
+
+      <picture class="company__picture company__picture_bottom">
+        <source
+          srcset="assets/img/main/company/tablet/smal-img-tab.webp"
+          media="(min-width: 768px)" />
+        <img
+          class="company__img company__img_bottom"
+          src="assets/img/main/company/mobile/smal-img-mob.webp"
+          alt="company-img" />
+      </picture>
+    </div>
   </div>
 </section>
 
