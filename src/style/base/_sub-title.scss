@@ -1,0 +1,13 @@
+.sub-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 36px;
+  }
+}
