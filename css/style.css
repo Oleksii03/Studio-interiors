@@ -1265,7 +1265,7 @@ body {
     line-height: normal;
     letter-spacing: 0.66px;
     padding: 14px 34px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1335,8 +1335,12 @@ body {
   }
 
   .mob-menu__container {
-    padding-top: 160px;
+    padding-top: 130px;
     height: calc(100dvh - 125px);
+  }
+
+  .mob-menu__list {
+    row-gap: 41px;
   }
 
   .mob-menu__list-link {
