@@ -31,8 +31,12 @@
       overflow: auto;
 
       @media (min-width: 768px) {
-        padding-top: 160px;
+        padding-top: 130px;
         height: calc(100dvh - 125px);
+      }
+
+      @media (min-width: 1024px) {
+        padding-top: 80px;
       }
     }
 
@@ -45,6 +49,10 @@
 
       @media (max-width: 767px) {
         align-items: center;
+      }
+
+      @media (min-width: 768px) {
+        row-gap: 41px;
       }
 
       @media (min-width: 1024px) {
