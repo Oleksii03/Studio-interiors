@@ -1,0 +1,58 @@
+.mob-menu {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  min-height: 100dvh;
+  z-index: 2;
+  opacity: 0;
+  background-color: var(--black-base-color);
+  background-size: cover;
+  pointer-events: none;
+  transition: all 250ms ease-in-out;
+
+  padding-top: 100px;
+  padding-bottom: 24px;
+
+  &_visible {
+    pointer-events: auto;
+    opacity: 0.98;
+  }
+
+  &__container {
+    @include flex-align-column;
+    height: calc(100dvh - 124px);
+    overflow: auto;
+  }
+
+  &__list {
+    @include flex-align-column;
+    row-gap: 35px;
+    margin-bottom: 56px;
+
+    &-link {
+      color: var(--white-base-color);
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: normal;
+      opacity: 0.5;
+    }
+  }
+
+  &__send-btn {
+    border: 1px solid #fff;
+    color: var(--white-base-color);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    padding: 14px 34px;
+    margin-bottom: 20px;
+  }
+
+  &__data-box {
+    margin-top: auto;
+  }
+}

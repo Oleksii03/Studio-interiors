@@ -25,7 +25,7 @@
 
       &.is-open {
         animation: line-top;
-        animation-duration: 0.5s;
+        animation-duration: 250ms;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
       }
@@ -37,7 +37,7 @@
 
       &.is-open {
         animation: line-bottom;
-        animation-duration: 0.5s;
+        animation-duration: 250ms;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
       }

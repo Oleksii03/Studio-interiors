@@ -37,7 +37,7 @@ p {
   margin: 0;
 }
 
-.to-freeze {
+.no-scroll {
   @media (max-width: 767px) {
     overflow: hidden;
   }
