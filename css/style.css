@@ -369,6 +369,8 @@ body {
   --primary-font: "Montserrat", sans-serif;
   --white-base-color: #fff;
   --black-base-color: #080808;
+  --light-background-color: #fafafa;
+  --dark-background-color: #080808;
 }
 
 .container {
@@ -772,6 +774,12 @@ body {
   transition: background-color 250ms linear;
 }
 
+.sub-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: normal;
+}
+
 .hero {
   position: relative;
 }
@@ -876,6 +884,68 @@ body {
   display: none;
 }
 
+.company {
+  padding-top: 25px;
+  padding-bottom: 64px;
+}
+
+.company__title {
+  color: var(--black-base-color);
+  margin-bottom: 24px;
+}
+
+.company__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 24px;
+  color: var(--black-base-color);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 170.66%;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.company__sub-title {
+  color: var(--black-base-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
+  font-size: 10px;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 102px;
+}
+
+.company__sub-title::before {
+  content: "";
+  width: 8px;
+  height: 1px;
+  background: var(--black-base-color);
+}
+
+.company__sub-title::after {
+  content: "";
+  width: 56px;
+  height: 1px;
+  background: var(--black-base-color);
+}
+
 @media (min-width: 375px) {
   .container {
     max-width: 357px;
@@ -960,6 +1030,10 @@ body {
 
   .send-box__hambudger {
     display: none;
+  }
+
+  .sub-title {
+    font-size: 32px;
   }
 
   .hero__wrapper {
@@ -1135,6 +1209,10 @@ body {
 
   .mob-menu {
     display: none;
+  }
+
+  .sub-title {
+    font-size: 36px;
   }
 
   .hero__wrapper {
