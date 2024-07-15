@@ -100,11 +100,8 @@
   @include flex-align-row;
   column-gap: 83px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     column-gap: 56px;
-  }
-  @media (min-width: 1440px) {
-    column-gap: 107px;
   }
 
   &__leng {
@@ -116,6 +113,10 @@
 
     @media (max-width: 767px) {
       margin-right: 82px;
+    }
+
+    @media (max-width: 340px) {
+      margin-right: 50px;
     }
   }
 
@@ -138,7 +139,7 @@
     }
 
     @media (min-width: 1440px) {
-      padding: 17px 35px;
+      padding: 17px 47px;
       &:hover {
         background-color: rgba(253, 253, 253, 0.17);
       }

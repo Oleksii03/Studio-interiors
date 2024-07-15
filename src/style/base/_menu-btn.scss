@@ -1,12 +1,15 @@
 .menu-btn {
   position: relative;
-
   background-color: transparent;
   width: 28px;
   height: 8px;
 
   @media (max-width: 767px) {
     right: -354%;
+  }
+
+  @media (max-width: 350px) {
+    right: -230%;
   }
 
   &__line {
