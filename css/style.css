@@ -1358,6 +1358,10 @@ body {
 }
 
 @media (max-width: 1439px) and (min-width: 1024px) {
+  .mob-menu__container {
+    padding-top: 80px;
+  }
+
   .mob-menu__list {
     width: 66%;
   }
