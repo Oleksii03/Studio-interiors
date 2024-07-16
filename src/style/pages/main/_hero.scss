@@ -90,42 +90,19 @@
   }
 
   &__sub-title {
-    @include flex-align-row;
-    column-gap: 8px;
-    color: var(--white-base-color);
-    font-size: 10px;
-    line-height: normal;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
     margin-bottom: 102px;
 
     @media (min-width: 768px) {
       padding-left: 73px;
       margin-bottom: 315px;
     }
-
     @media (min-width: 1024px) {
       padding-left: 103px;
       margin-bottom: 213px;
     }
-
     @media (min-width: 1440px) {
       padding-left: 199px;
       margin-bottom: 214px;
-    }
-
-    &::before {
-      content: '';
-      width: 8px;
-      height: 1px;
-      background: rgba(255, 255, 255, 0.4);
-    }
-
-    &::after {
-      content: '';
-      width: 56px;
-      height: 1px;
-      background: rgba(255, 255, 255, 0.4);
     }
   }
 }

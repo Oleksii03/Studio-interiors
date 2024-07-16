@@ -1,16 +1,25 @@
 .company {
+  position: relative;
   padding-top: 78px;
   padding-bottom: 43px;
 
   @media (min-width: 768px) {
     padding-top: 103px;
-    padding-bottom: 73px;
+    padding-bottom: 75px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 180px;
+    padding-bottom: 127px;
   }
 
   &__container {
     @media (min-width: 768px) {
       padding: 0px 91px;
       position: relative;
+    }
+    @media (min-width: 1024px) {
+      padding: 0px 117px;
     }
   }
 
@@ -29,6 +38,14 @@
     opacity: 0.7;
     margin-bottom: 32px;
 
+    @media (min-width: 768px) {
+      margin-bottom: 31px;
+    }
+
+    @media (min-width: 1024px) {
+      width: 448px;
+    }
+
     &_bottom {
       @media (min-width: 768px) {
         max-width: 318px;
@@ -43,6 +60,10 @@
 
       @media (min-width: 768px) {
         padding-left: 27px;
+      }
+      @media (min-width: 1024px) {
+        padding-top: 156px;
+        transform: translateX(-22px);
       }
 
       &:before {
@@ -60,14 +81,27 @@
     }
   }
 
+  &__content-bottom {
+    @media (min-width: 1024px) {
+      display: flex;
+      align-items: top;
+    }
+  }
+
   &__img-content {
     position: relative;
+
     height: 280px;
     margin-bottom: 80px;
 
     @media (min-width: 768px) {
       height: 331px;
       margin-bottom: 23px;
+    }
+    @media (min-width: 1024px) {
+      height: 331px;
+      width: 344px;
+      margin-bottom: 0px;
     }
   }
 
@@ -85,7 +119,15 @@
       @media (min-width: 768px) {
         width: 383px;
         height: 235px;
-        background: url('@assets/img/main/company/tablet/big-img-tab.webp');
+        background: url('@assets/img/main/company/tablet/big-img-tab.webp') lightgray 50% / cover
+          no-repeat;
+      }
+
+      @media (min-width: 1024px) {
+        width: 190px;
+        height: 117px;
+        background: url('@assets/img/main/company/lap-top/smal-img-bottom-lap-top.webp') lightgray
+          50% / cover no-repeat;
       }
     }
 
@@ -101,38 +143,41 @@
       @media (min-width: 768px) {
         width: 153px;
         height: 191px;
-        background: url('@assets/img/main/company/tablet/smal-img-tab.webp');
+        background: url('@assets/img/main/company/tablet/smal-img-tab.webp') lightgray 50% / cover
+          no-repeat;
+      }
+
+      @media (min-width: 1024px) {
+        width: 190px;
+        height: 237px;
+        background: url('@assets/img/main/company/lap-top/big-img-bottom-lap-top.png') lightgray 50% /
+          cover no-repeat;
       }
     }
   }
 }
 
 .company__sub-title {
-  color: var(--black-base-color);
-  display: flex;
-  align-items: center;
-  column-gap: 8px;
-  font-size: 10px;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
   margin-bottom: 82px;
 
   @media (min-width: 768px) {
     margin-bottom: 63px;
   }
-
-  &::before {
-    content: '';
-    width: 8px;
-    height: 1px;
-    background: var(--black-base-color);
+  @media (min-width: 1024px) {
+    margin-bottom: 96px;
   }
+}
 
-  &::after {
-    content: '';
-    width: 56px;
-    height: 1px;
-    background: var(--black-base-color);
+// --company-description-img-box-----
+.company-description__img-box {
+  display: none;
+  @media (min-width: 1024px) {
+    display: block;
+    position: absolute;
+    top: 124px;
+    right: 0;
+    width: clamp(21.813rem, -3.479rem + 39.52vw, 32.063rem);
+    height: auto;
+    background: lightgray 50% / cover no-repeat;
   }
 }

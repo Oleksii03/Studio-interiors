@@ -1,24 +1,40 @@
 .discover-more {
   @include flex-align-row;
   column-gap: 8px;
-  color: var(--black-base-color);
   font-size: 10px;
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  margin-bottom: 102px;
 
   &::before {
     content: '';
     width: 8px;
     height: 1px;
-    background: rgba(49, 49, 49, 0.2);
   }
-
   &::after {
     content: '';
     width: 56px;
     height: 1px;
-    background: rgba(49, 49, 49, 0.2);
+  }
+  //---/-base---------
+
+  // ---dark----------
+  &__dark {
+    color: var(--black-base-color);
+
+    &::before,
+    &::after {
+      background: rgba(49, 49, 49, 0.2);
+    }
+  }
+
+  // ---light----------
+  &__light {
+    color: var(--white-base-color);
+
+    &::before,
+    &::after {
+      background: rgba(255, 255, 255, 0.4);
+    }
   }
 }

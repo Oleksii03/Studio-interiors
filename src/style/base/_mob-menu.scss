@@ -93,6 +93,14 @@
     &__data-box {
       margin-top: auto;
 
+      @media (max-width: 767px) {
+        width: 100%;
+
+        &_inner {
+          justify-content: space-between;
+        }
+      }
+
       @media (min-width: 768px) {
         align-self: flex-start;
       }

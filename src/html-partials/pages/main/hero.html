@@ -17,8 +17,11 @@
 
     <div class="hero__container container">
       <h1 class="hero__title">Thoughtful making of space</h1>
-      <p class="hero__sub-title">Discover more</p>
 
+      @@include('../../base/discover-more.html',{ "color-class":"discover-more__light",
+      "extends-class":"hero__sub-title" })
+
+      <!-- data-box -->
       @@include('../../base/data-box.htm',{})
     </div>
   </div>
