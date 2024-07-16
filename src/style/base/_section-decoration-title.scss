@@ -1,0 +1,45 @@
+.decoration-title__box {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 7%;
+    left: -5%;
+    transform: rotate(-90deg);
+  }
+}
+.decoration-title {
+  @media (min-width: 768px) {
+    @include flex-align-row;
+    column-gap: 13px;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 170.66%;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 57px;
+      height: 1px;
+    }
+
+    &__light {
+      color: rgba(130, 130, 130, 0.35);
+
+      &:before {
+        background: rgba(196, 196, 196, 0.83);
+      }
+    }
+
+    &__dark {
+      color: rgba(182, 15, 15, 0.35);
+
+      &:before {
+        background: rgba(172, 16, 16, 0.83);
+      }
+    }
+  }
+}
