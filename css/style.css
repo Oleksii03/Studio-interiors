@@ -801,7 +801,6 @@ body {
   line-height: normal;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  margin-bottom: 102px;
 }
 
 .discover-more::before {
@@ -997,35 +996,7 @@ body {
 }
 
 .company__sub-title {
-  color: var(--black-base-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-column-gap: 8px;
-     -moz-column-gap: 8px;
-          column-gap: 8px;
-  font-size: 10px;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
   margin-bottom: 82px;
-}
-
-.company__sub-title::before {
-  content: "";
-  width: 8px;
-  height: 1px;
-  background: var(--black-base-color);
-}
-
-.company__sub-title::after {
-  content: "";
-  width: 56px;
-  height: 1px;
-  background: var(--black-base-color);
 }
 
 @media (min-width: 375px) {
