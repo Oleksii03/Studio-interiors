@@ -8,9 +8,11 @@
     @media (min-width: 768px) {
       grid-template-columns: 1fr 112px;
     }
+
     @media (min-width: 1024px) {
       grid-template-columns: 1fr 161px;
     }
+
     @media (min-width: 1440px) {
       grid-template-columns: 1fr 213px;
     }
@@ -21,18 +23,18 @@
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 216px;
+    padding-top: 220px;
 
     @media (min-width: 768px) {
-      padding-top: 387px;
+      padding-top: 382px;
     }
 
     @media (min-width: 1024px) {
-      padding-top: 286px;
+      padding-top: 283px;
     }
 
     @media (min-width: 1440px) {
-      padding-top: 283px;
+      padding-top: 279px;
     }
   }
 
@@ -52,10 +54,12 @@
       background-image: url('@assets/img/main/hero/hero-img-right-m.png');
       height: 959px;
     }
+
     @media (min-width: 1024px) {
       background-image: url('@assets/img/main/hero/hero-img-right-l.png');
       height: 710px;
     }
+
     @media (min-width: 1440px) {
       background-image: url('@assets/img/main/hero/hero-img-right-xl.png');
       height: 744px;
@@ -65,27 +69,29 @@
   &__title {
     color: var(--white-base-color);
     font-size: 40px;
-    margin-bottom: 19px;
+    margin-bottom: 36px;
+    line-height: 97.52%;
 
     @media (min-width: 768px) {
       font-size: 44px;
       width: 400px;
       padding-left: 75px;
-      margin-bottom: 34px;
+      margin-bottom: 30px;
+      line-height: normal;
     }
 
     @media (min-width: 1024px) {
       font-size: 48px;
       width: 580px;
       padding-left: 101px;
-      margin-bottom: 31px;
+      margin-bottom: 30px;
     }
 
     @media (min-width: 1440px) {
       padding-left: 197px;
       font-size: 56px;
       width: 740px;
-      margin-bottom: 41px;
+      margin-bottom: 37px;
     }
   }
 
@@ -93,8 +99,8 @@
     margin-bottom: 102px;
 
     @media (min-width: 768px) {
-      padding-left: 73px;
-      margin-bottom: 315px;
+      padding-left: 76px;
+      margin-bottom: 316px;
     }
     @media (min-width: 1024px) {
       padding-left: 103px;
