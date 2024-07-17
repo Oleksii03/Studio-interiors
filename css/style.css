@@ -1014,11 +1014,8 @@ body {
 }
 
 .about-hero {
-  display: none;
-}
-
-.pa {
-  color: red;
+  background-color: #0e0e0f;
+  height: 100vh;
 }
 
 @media (min-width: 375px) {
