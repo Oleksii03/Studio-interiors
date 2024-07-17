@@ -850,7 +850,7 @@ body {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  padding-top: 216px;
+  padding-top: 220px;
 }
 
 .hero__slider {
@@ -873,7 +873,8 @@ body {
 .hero__title {
   color: var(--white-base-color);
   font-size: 40px;
-  margin-bottom: 19px;
+  margin-bottom: 36px;
+  line-height: 97.52%;
 }
 
 .hero__sub-title {
@@ -911,7 +912,7 @@ body {
 .company {
   position: relative;
   padding-top: 78px;
-  padding-bottom: 43px;
+  padding-bottom: 30px;
 }
 
 .company__title {
@@ -943,6 +944,7 @@ body {
   position: relative;
   padding-left: 42px;
   font-size: 16px;
+  line-height: 170%;
 }
 
 .company__description-text_bottom:before {
@@ -1057,11 +1059,7 @@ body {
   }
 
   .header {
-    padding: 25px 0;
-  }
-
-  .header {
-    padding: 23px 0;
+    padding: 24px 0;
   }
 
   .header__logo {
@@ -1070,7 +1068,7 @@ body {
 
   .send-box__btn {
     display: block;
-    padding: 13px 35px;
+    padding: 14px 35px;
   }
 
   .send-box__hambudger {
@@ -1138,7 +1136,7 @@ body {
   }
 
   .hero__container {
-    padding-top: 387px;
+    padding-top: 382px;
   }
 
   .no-webp .hero__static-img{
@@ -1152,12 +1150,13 @@ body {
     font-size: 44px;
     width: 400px;
     padding-left: 75px;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+    line-height: normal;
   }
 
   .hero__sub-title {
-    padding-left: 73px;
-    margin-bottom: 315px;
+    padding-left: 76px;
+    margin-bottom: 316px;
   }
 
   .static-content {
@@ -1182,7 +1181,7 @@ body {
 
   .company {
     padding-top: 103px;
-    padding-bottom: 75px;
+    padding-bottom: 63px;
   }
 
   .company__container {
@@ -1254,7 +1253,7 @@ body {
   }
 
   .hero__container {
-    padding-top: 286px;
+    padding-top: 283px;
   }
 
   .no-webp .hero__static-img{
@@ -1268,7 +1267,7 @@ body {
     font-size: 48px;
     width: 580px;
     padding-left: 101px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
   }
 
   .hero__sub-title {
@@ -1287,22 +1286,28 @@ body {
 
   .company {
     padding-top: 180px;
-    padding-bottom: 127px;
+    padding-bottom: 125px;
   }
 
   .company__container {
     padding: 0px 117px;
   }
 
+  .company__title {
+    margin-bottom: 14px;
+  }
+
   .company__description {
     width: 448px;
+    margin-bottom: 36px;
+  }
+
+  .company__description_bottom {
+    max-width: 337px;
   }
 
   .company__description-text_bottom {
-    padding-top: 156px;
-    -webkit-transform: translateX(-22px);
-        -ms-transform: translateX(-22px);
-            transform: translateX(-22px);
+    padding-top: 151px;
   }
 
   .company__content-bottom {
@@ -1326,12 +1331,10 @@ body {
     background: url("../assets/img/main/company/lap-top/smal-img-bottom-lap-top.webp") lightgray 50%/cover no-repeat;
   }
 
-  .no-webp .company__img_bottom{
-    background: url("../assets/img/main/company/lap-top/big-img-bottom-lap-top.png") lightgray 50%/cover no-repeat; }
-
   .company__img_bottom {
     width: 190px;
     height: 237px;
+    background: url("../assets/img/main/company/lap-top/big-img-bottom-lap-top.webp") lightgray 50%/cover no-repeat;
   }
 
   .company__sub-title {
@@ -1424,7 +1427,7 @@ body {
   }
 
   .hero__container {
-    padding-top: 283px;
+    padding-top: 279px;
   }
 
   .no-webp .hero__static-img{
@@ -1438,7 +1441,7 @@ body {
     padding-left: 197px;
     font-size: 56px;
     width: 740px;
-    margin-bottom: 41px;
+    margin-bottom: 37px;
   }
 
   .hero__sub-title {
@@ -1456,6 +1459,68 @@ body {
     font-weight: 700;
     line-height: 97.52%;
     letter-spacing: 1.92px;
+  }
+
+  .company {
+    padding-top: 220px;
+    padding-bottom: 140px;
+  }
+
+  .company__container {
+    padding: 0px 147px;
+  }
+
+  .company__title {
+    margin-bottom: 25px;
+  }
+
+  .company__description {
+    width: 510px;
+    margin-bottom: 57px;
+  }
+
+  .company__description_bottom {
+    max-width: 405px;
+  }
+
+  .company__description-text_bottom {
+    padding-top: 275px;
+    font-size: 20px;
+  }
+
+  .company__description-text_bottom:before {
+    font-size: 36px;
+    width: 18px;
+    height: 44px;
+    left: -20px;
+  }
+
+  .company__img-content {
+    height: 518px;
+    width: 515px;
+    margin-bottom: 0px;
+  }
+
+  .no-webp .company__img_top{
+    background: url("../assets/img/main/company/desctop/smal-img-desc.png") lightgray 50%/cover no-repeat; }
+
+  .company__img_top {
+    width: 279px;
+    height: 172px;
+  }
+
+  .company__img_bottom {
+    width: 316px;
+    height: 393px;
+    background: url("../assets/img/main/company/desctop/big-img-desc.webp") lightgray 50%/cover no-repeat;
+  }
+
+  .company__sub-title {
+    margin-bottom: 138px;
+  }
+
+  .company-description__img-box {
+    top: 140px;
   }
 }
 
@@ -1678,12 +1743,12 @@ body {
   .webp .hero__static-img{ background-image: url(../assets/img/main/hero/hero-img-right-l.webp); }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1440px){
 
-  .webp .company__img_bottom{ background: url(../assets/img/main/company/lap-top/big-img-bottom-lap-top.webp) lightgray 50%/cover no-repeat; }
+  .webp .hero__static-img{ background-image: url(../assets/img/main/hero/hero-img-right-xl.webp); }
 }
 
 @media (min-width: 1440px){
 
-  .webp .hero__static-img{ background-image: url(../assets/img/main/hero/hero-img-right-xl.webp); }
+  .webp .company__img_top{ background: url(../assets/img/main/company/desctop/smal-img-desc.webp) lightgray 50%/cover no-repeat; }
 }
