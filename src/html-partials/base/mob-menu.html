@@ -3,7 +3,7 @@
     <ul class="mob-menu__list">
       <li class="mob-menu__list-item">
         <a
-          class="mob-menu__list-link"
+          class="mob-menu__list-link @@if (title === 'Home') { @@active-class }"
           href="#">
           Home
         </a>
@@ -11,7 +11,7 @@
 
       <li class="mob-menu__list-item">
         <a
-          class="mob-menu__list-link"
+          class="mob-menu__list-link @@if (title === 'Projects') { @@active-class }"
           href="#about-us">
           Projects
         </a>
@@ -19,7 +19,7 @@
 
       <li class="mob-menu__list-item">
         <a
-          class="mob-menu__list-link"
+          class="mob-menu__list-link @@if (title === 'About us') { @@active-class }"
           href="#roadmap">
           About us
         </a>
@@ -27,7 +27,7 @@
 
       <li class="mob-menu__list-item">
         <a
-          class="mob-menu__list-link"
+          class="mob-menu__list-link @@if (title === 'Blog') { @@active-class }"
           href="#our-brands">
           Blog
         </a>
@@ -35,7 +35,7 @@
 
       <li class="mob-menu__list-item">
         <a
-          class="mob-menu__list-link"
+          class="mob-menu__list-link @@if (title === 'Contacts') { @@active-class }"
           href="#our-resources">
           Contacts
         </a>

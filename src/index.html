@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   @@include('html-partials/base/head.html',{ "title":"Studio of interiors" })
+
   <body>
-    @@include('html-partials/base/header.html',{}) @@include('html-partials/base/mob-menu.html',{})
+    @@include('html-partials/base/header.html',{})
+    <!-- mob-menu -->
+    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu__active", "title":
+    "Home" })
+
     <main>
       @@include('html-partials/pages/main/hero.html',{})
       @@include('html-partials/pages/main/company.html',{})
     </main>
+
     <script
       src="js/app.min.js"
       type="module"></script>

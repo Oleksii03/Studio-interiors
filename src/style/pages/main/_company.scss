@@ -2,6 +2,7 @@
   position: relative;
   padding-top: 78px;
   padding-bottom: 30px;
+  overflow-x: hidden;
 
   @media (min-width: 768px) {
     padding-top: 103px;
@@ -81,7 +82,7 @@
       }
 
       @media (min-width: 1440px) {
-        max-width: 405px;
+        max-width: 426px;
       }
     }
 
@@ -218,6 +219,17 @@
         background: url('@assets/img/main/company/desctop/big-img-desc.webp') lightgray 50% / cover
           no-repeat;
       }
+    }
+  }
+
+  &__decoration-title-bottom {
+    display: none;
+    @media (min-width: 1440px) {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 17%;
+      left: 96%;
     }
   }
 }

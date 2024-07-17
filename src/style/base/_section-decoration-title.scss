@@ -7,6 +7,11 @@
     left: -5%;
     transform: rotate(-90deg);
   }
+
+  @media (min-width: 1440px) {
+    top: 5%;
+    left: -3%;
+  }
 }
 .decoration-title {
   @media (min-width: 768px) {
