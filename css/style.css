@@ -776,6 +776,10 @@ body {
   transition: background-color 250ms linear;
 }
 
+.mob-menu__active {
+  opacity: 1;
+}
+
 .sub-title {
   font-size: 26px;
   font-weight: 700;
@@ -913,6 +917,7 @@ body {
   position: relative;
   padding-top: 78px;
   padding-bottom: 30px;
+  overflow-x: hidden;
 }
 
 .company__title {
@@ -983,6 +988,10 @@ body {
   width: 131px;
   height: 163px;
   background: url("../assets/img/main/company/mobile/smal-img-mob.webp") lightgray 50%/cover no-repeat;
+}
+
+.company__decoration-title-bottom {
+  display: none;
 }
 
 .company__sub-title {
@@ -1068,7 +1077,7 @@ body {
 
   .send-box__btn {
     display: block;
-    padding: 14px 35px;
+    padding: 13px 35px;
   }
 
   .send-box__hambudger {
@@ -1150,7 +1159,7 @@ body {
     font-size: 44px;
     width: 400px;
     padding-left: 75px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     line-height: normal;
   }
 
@@ -1267,7 +1276,6 @@ body {
     font-size: 48px;
     width: 580px;
     padding-left: 101px;
-    margin-bottom: 30px;
   }
 
   .hero__sub-title {
@@ -1406,7 +1414,7 @@ body {
   }
 
   .send-box__btn {
-    padding: 17px 47px;
+    padding: 16px 47px;
   }
 
   .send-box__btn:hover {
@@ -1419,6 +1427,11 @@ body {
 
   .sub-title {
     font-size: 36px;
+  }
+
+  .decoration-title__box {
+    top: 5%;
+    left: -3%;
   }
 
   .hero__wrapper {
@@ -1480,7 +1493,7 @@ body {
   }
 
   .company__description_bottom {
-    max-width: 405px;
+    max-width: 426px;
   }
 
   .company__description-text_bottom {
@@ -1513,6 +1526,14 @@ body {
     width: 316px;
     height: 393px;
     background: url("../assets/img/main/company/desctop/big-img-desc.webp") lightgray 50%/cover no-repeat;
+  }
+
+  .company__decoration-title-bottom {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 17%;
+    left: 96%;
   }
 
   .company__sub-title {
