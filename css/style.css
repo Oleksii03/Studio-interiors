@@ -787,7 +787,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-.mob-menu__active {
+.mob-menu .mob-menu__active {
   opacity: 1;
 }
 
