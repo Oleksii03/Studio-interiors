@@ -48,7 +48,8 @@
   }
 
   &__description {
-    @include flex-align-column;
+    display: flex;
+    flex-direction: column;
     row-gap: 14px;
     color: var(--black-base-color);
     font-size: 14px;

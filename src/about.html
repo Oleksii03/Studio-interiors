@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html-partials/base/head.html',{ "title":"Studio of interiors" })
+  @@include('./html-partials/base/head.html',{ "title":"About Us" })
 
   <body>
     @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
-    "color-class": "header__light", "title": "Home" })
+    "color-class": "header__dark", "title": "About us" })
     <!-- mob-menu -->
     @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu__active", "title":
-    "Home" })
+    "About us" })
 
-    <main>
-      @@include('html-partials/pages/main/hero.html',{})
-      @@include('html-partials/pages/main/company.html',{})
-    </main>
+    <main>@@include('./html-partials/pages/about/hero.html')</main>
 
     <script
-      src="js/app.min.js"
+      src="./js/about.min.js"
       type="module"></script>
   </body>
 </html>

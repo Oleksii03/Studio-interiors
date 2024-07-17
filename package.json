@@ -49,6 +49,7 @@
     "vinyl-ftp": "latest",
     "webp-converter": "2.2.3",
     "webpack": "latest",
+    "webpack-merge": "^6.0.1",
     "webpack-stream": "latest"
   }
 }

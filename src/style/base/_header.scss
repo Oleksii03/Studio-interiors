@@ -10,10 +10,6 @@
     padding: 24px 0;
   }
 
-  // @media (min-width: 1024px) {
-  //   padding: 23px 0;
-  // }
-
   &__logo {
     margin-right: 141px;
     color: var(--white-base-color);
@@ -55,8 +51,12 @@
 
     @media (min-width: 1440px) {
       &:hover {
-        opacity: 0.7;
+        opacity: 0.6;
       }
+    }
+
+    &_active {
+      opacity: 0.6;
     }
   }
 }

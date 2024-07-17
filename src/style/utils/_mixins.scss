@@ -3,10 +3,10 @@
   align-items: $align;
 }
 
-@mixin flex-align-column($disType: flex, $direction: column, $align: center) {
-  display: $disType;
-  flex-direction: $direction;
-  align-items: $align;
+@mixin flex-align-column() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @mixin grid-auto-fit($min: 250px) {
