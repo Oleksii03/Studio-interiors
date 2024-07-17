@@ -742,6 +742,10 @@ body {
   padding: 8px 0;
 }
 
+.header__nav-link_active {
+  opacity: 0.6;
+}
+
 .nav-header__menu-box > p {
   display: none;
 }
@@ -1417,7 +1421,7 @@ body {
   }
 
   .header__nav-link:hover {
-    opacity: 0.7;
+    opacity: 0.6;
   }
 
   .send-box__btn {
