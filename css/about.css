@@ -627,6 +627,10 @@ body {
   display: none;
 }
 
+.pa {
+  color: red;
+}
+
 @media (min-width: 375px) {
   .container {
     max-width: 357px;
