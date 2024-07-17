@@ -50,6 +50,13 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: Roboto;
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: 400;
+}
+
 *,
 ::before,
 ::after {
@@ -950,7 +957,6 @@ body {
   padding-left: 42px;
   font-size: 16px;
   line-height: 170%;
-  font-family: "Roboto";
 }
 
 .company__description-text_bottom:before {
