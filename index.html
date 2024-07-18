@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240718142517" />
+    href="css/style.min.css?_v=20240718154546" />
   <title>Studio of interiors</title>
   <svg
   aria-hidden="true"
@@ -88,7 +88,7 @@
     <header class="header">
   <div class="header__container container">
     <a
-      id="logo"
+      data-logo="logo"
       href="index.html"
       class="header__logo header__light">
       LOGO
@@ -134,22 +134,32 @@
           type="button"
           class="menu-btn"
           id="hamburger">
-          <span class="menu-btn__line header__light menu-btn__line_top"></span>
-          <span class="menu-btn__line header__light menu-btn__line_bottom"></span>
+          <span
+            data-line="line"
+            class="menu-btn__line header__light menu-btn__line_top"></span>
+          <span
+            data-line="line"
+            class="menu-btn__line header__light menu-btn__line_bottom"></span>
         </button>
 
-        <p class="nav-header__menu-text header__light">Menu</p>
+        <p
+          class="nav-header__menu-text header__light"
+          data-menu="text-menu">
+          Menu
+        </p>
       </div>
     </nav>
 
     <div class="header__send-box send-box">
       <a
+        data-leng="leng"
         class="send-box__leng header__light"
         href="#">
         En
       </a>
 
       <button
+        data-send-btn="send-btn"
         type="submit"
         class="send-box__btn header__light">
         Send Request

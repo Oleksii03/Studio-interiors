@@ -809,7 +809,7 @@ body {
 
 .send-box__btn.header__dark {
   color: var(--black-base-color);
-  border: 1px solid var(--black-base-color);
+  border: 1px solid rgba(0, 0, 0, 0.32);
 }
 
 .mob-menu .mob-menu__active {
@@ -1463,7 +1463,7 @@ body {
   }
 
   .send-box__btn.header__dark:hover {
-    background-color: rgba(0, 0, 0, 0.157);
+    background-color: rgba(0, 0, 0, 0.19);
   }
 
   .mob-menu {
