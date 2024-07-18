@@ -3,8 +3,6 @@
 
   &__wrapper {
     display: grid;
-
-    // grid-template-columns: 1fr 0px;
   }
 
   &__container {
@@ -13,6 +11,10 @@
     left: 50%;
     transform: translateX(-50%);
     padding-top: 220px;
+
+    @media (max-width: 767px) {
+      min-height: 100dvh;
+    }
 
     @media (min-width: 768px) {
       padding-top: 382px;
@@ -72,16 +74,16 @@
   }
 
   &__sub-title {
-    margin-bottom: 102px;
-
     @media (min-width: 768px) {
       padding-left: 76px;
       margin-bottom: 316px;
     }
+
     @media (min-width: 1024px) {
       padding-left: 103px;
       margin-bottom: 213px;
     }
+
     @media (min-width: 1440px) {
       padding-left: 199px;
       margin-bottom: 214px;
@@ -100,12 +102,7 @@
   writing-mode: vertical-rl;
   color: var(--white-base-color);
   padding-left: 11px;
-  padding-top: 8;
-
-  @media (min-width: 375px) {
-    padding-left: 11px;
-    padding-top: 8px;
-  }
+  padding-top: 8px;
 
   @media (min-width: 768px) {
     padding-left: 0px;

@@ -67,4 +67,9 @@
     line-height: normal;
     letter-spacing: 0.66px;
   }
+
+  @media (max-width: 767px) {
+    position: absolute;
+    bottom: 8px;
+  }
 }
