@@ -2,19 +2,6 @@
   <div class="hero__wrapper">
     <div class="hero__slider">@@include('../../../html-partials/base/slider.html',{})</div>
 
-    <div class="hero__static-img">
-      <div class="hero__static-wrapper">
-        <div class="hero__static-content static-content">
-          <p class="static-content__sup-title">Next Project</p>
-          <h2 class="static-content__title">
-            Perfect
-            <br />
-            proportions
-          </h2>
-        </div>
-      </div>
-    </div>
-
     <div class="hero__container container">
       <h1 class="hero__title">Thoughtful making of space</h1>
 
@@ -22,7 +9,20 @@
       "extends-class":"hero__sub-title" })
 
       <!-- data-box -->
-      @@include('../../base/data-box.htm',{})
+      @@include('../../base/data-box.htm')
+
+      <div class="hero__static">
+        <div class="hero__static-wrapper">
+          <div class="hero__static-content static-content">
+            <p class="static-content__sup-title">Next Project</p>
+            <h2 class="static-content__title">
+              Perfect
+              <br />
+              proportions
+            </h2>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

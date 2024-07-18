@@ -6,7 +6,7 @@ export function createSlider() {
   const spanPrev = document.querySelector('.js-span-prev');
   const spanNext = document.querySelector('.js-span-next');
 
-  let fullCount = images.length;
+  let fullCount = images.length - 1;
   let count = 0;
   let width;
 
@@ -27,7 +27,7 @@ export function createSlider() {
 
   btnNext.addEventListener('click', e => {
     count += 1;
-    if (count >= images.length) count = 0;
+    if (count >= images.length - 1) count = 0;
     rollSlider();
   });
 

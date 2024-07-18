@@ -5,9 +5,10 @@ export function hamburgerMenu() {
   hamburger.addEventListener('click', e => {
     animationHamburgerBtn();
     toggleMobMenu();
-    invertColors();
-    // if (window.location.pathname === '/about.html') {
-    // }
+
+    if (window.location.pathname === '/about.html') {
+      invertColors();
+    }
   });
 
   function animationHamburgerBtn() {

@@ -3,19 +3,8 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 1fr 61px;
 
-    @media (min-width: 768px) {
-      grid-template-columns: 1fr 112px;
-    }
-
-    @media (min-width: 1024px) {
-      grid-template-columns: 1fr 161px;
-    }
-
-    @media (min-width: 1440px) {
-      grid-template-columns: 1fr 213px;
-    }
+    // grid-template-columns: 1fr 0px;
   }
 
   &__container {
@@ -42,27 +31,15 @@
     overflow: hidden;
   }
 
-  &__static-img {
+  &__static {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: flex;
     height: 542px;
-    background-image: url('@assets/img/main/hero/hero-img-right-s.png');
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-    background-size: cover;
 
-    @media (min-width: 768px) {
-      background-image: url('@assets/img/main/hero/hero-img-right-m.png');
-      height: 959px;
-    }
-
-    @media (min-width: 1024px) {
-      background-image: url('@assets/img/main/hero/hero-img-right-l.png');
-      height: 710px;
-    }
-
-    @media (min-width: 1440px) {
-      background-image: url('@assets/img/main/hero/hero-img-right-xl.png');
-      height: 744px;
+    @media (min-width: 768px) and (max-width: 1439px) {
+      right: -4px;
     }
   }
 
@@ -122,27 +99,21 @@
   transform: rotate(180deg);
   writing-mode: vertical-rl;
   color: var(--white-base-color);
-  padding-right: 30px;
-  padding-top: 60px;
+  padding-left: 11px;
+  padding-top: 8;
 
   @media (min-width: 375px) {
-    padding-right: 20px;
-    padding-top: 24px;
+    padding-left: 11px;
+    padding-top: 8px;
   }
 
   @media (min-width: 768px) {
-    padding-right: 30px;
-    padding-top: 34px;
+    padding-left: 0px;
+    padding-top: 0px;
   }
 
   @media (min-width: 1024px) {
-    padding-right: 39px;
-    padding-top: 42px;
-  }
-
-  @media (min-width: 1440px) {
-    padding-right: 44px;
-    padding-top: 48px;
+    padding-top: 8px;
   }
 
   &__sup-title {
