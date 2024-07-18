@@ -15,19 +15,74 @@
   &__line {
     position: absolute;
     display: inline-block;
-    background-color: #fff;
+    background-color: var(--white-base-color);
     height: 1px;
     width: 100%;
+
+    &.header__dark {
+      transition: all 250ms ease-in-out;
+      background-color: var(--dark-background-color);
+
+      &.invert {
+        background-color: var(--white-base-color);
+      }
+    }
 
     &_top {
       top: 0;
       left: 0;
+
+      &.is-closed {
+        animation: line-top-closed;
+        animation-duration: 250ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+
+        @keyframes line-top-closed {
+          0% {
+            top: 4px;
+            left: 4px;
+            transform: rotate(45deg);
+            opacity: 1;
+          }
+          50% {
+            left: 0;
+            top: 50%;
+            transform: rotate(0deg);
+            opacity: 0.5;
+          }
+          100% {
+            top: 0;
+            opacity: 1;
+          }
+        }
+      }
 
       &.is-open {
         animation: line-top;
         animation-duration: 250ms;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
+
+        @keyframes line-top {
+          0% {
+            top: 0;
+            opacity: 1;
+          }
+          50% {
+            left: 0;
+            top: 50%;
+            transform: rotate(0deg);
+            opacity: 0.5;
+          }
+
+          100% {
+            top: 4px;
+            left: 4px;
+            transform: rotate(45deg);
+            opacity: 1;
+          }
+        }
       }
     }
 
@@ -35,51 +90,59 @@
       bottom: 0;
       left: 0;
 
+      &.is-closed {
+        animation: line-bottom-closed;
+        animation-duration: 250ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+
+        @keyframes line-bottom-closed {
+          0% {
+            bottom: 3px;
+            left: 3px;
+            transform: rotate(-45deg);
+            opacity: 1;
+          }
+          50% {
+            left: 0;
+            bottom: 50%;
+            transform: rotate(0deg);
+            opacity: 0.5;
+          }
+
+          100% {
+            bottom: 0;
+            opacity: 1;
+          }
+        }
+      }
+
       &.is-open {
         animation: line-bottom;
         animation-duration: 250ms;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
+
+        @keyframes line-bottom {
+          0% {
+            bottom: 0;
+            opacity: 1;
+          }
+          50% {
+            left: 0;
+            bottom: 50%;
+            transform: rotate(0deg);
+            opacity: 0.5;
+          }
+
+          100% {
+            bottom: 3px;
+            left: 3px;
+            transform: rotate(-45deg);
+            opacity: 1;
+          }
+        }
       }
-    }
-  }
-
-  @keyframes line-top {
-    0% {
-      top: 0;
-      opacity: 1;
-    }
-    50% {
-      left: 0;
-      top: 50%;
-      transform: rotate(0deg);
-      opacity: 0.5;
-    }
-
-    100% {
-      top: 4px;
-      left: 4px;
-      transform: rotate(45deg);
-      opacity: 1;
-    }
-  }
-  @keyframes line-bottom {
-    0% {
-      bottom: 0;
-      opacity: 1;
-    }
-    50% {
-      left: 0;
-      bottom: 50%;
-      transform: rotate(0deg);
-      opacity: 0.5;
-    }
-
-    100% {
-      bottom: 3px;
-      left: 3px;
-      transform: rotate(-45deg);
-      opacity: 1;
     }
   }
 }

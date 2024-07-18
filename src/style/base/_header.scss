@@ -26,6 +26,15 @@
     @media (min-width: 1440px) {
       margin-right: 139px;
     }
+
+    &.header__dark {
+      color: var(--black-base-color);
+      transition: all 250ms ease-in-out;
+
+      &.invert {
+        color: var(--white-base-color);
+      }
+    }
   }
 
   &__container {
@@ -34,6 +43,7 @@
 
   &__nav-list {
     display: none;
+
     @media (min-width: 1440px) {
       @include flex-align-row;
       column-gap: 48px;
@@ -48,6 +58,10 @@
     letter-spacing: 0.66px;
     transition: opacity 200ms linear;
     padding: 8px 0;
+
+    &.header__dark {
+      color: var(--black-base-color);
+    }
 
     @media (min-width: 1440px) {
       &:hover {
@@ -93,6 +107,15 @@
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
+
+      &.header__dark {
+        transition: all 250ms ease-in-out;
+        color: var(--black-base-color);
+
+        &.invert {
+          color: var(--white-base-color);
+        }
+      }
     }
   }
 }
@@ -114,6 +137,15 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+
+    &.header__dark {
+      transition: all 250ms ease-in-out;
+      color: var(--black-base-color);
+
+      &.invert {
+        color: var(--white-base-color);
+      }
+    }
 
     @media (max-width: 767px) {
       margin-right: 82px;
@@ -144,8 +176,26 @@
 
     @media (min-width: 1440px) {
       padding: 16px 47px;
+
       &:hover {
         background-color: rgba(253, 253, 253, 0.17);
+      }
+    }
+
+    &.header__dark {
+      transition: all 250ms ease-in-out;
+      color: var(--black-base-color);
+      border: 1px solid rgba(0, 0, 0, 0.32);
+
+      &.invert {
+        color: var(--white-base-color);
+        border: 1px solid rgba(221, 217, 217, 0.32);
+      }
+
+      @media (min-width: 1440px) {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.19);
+        }
       }
     }
   }

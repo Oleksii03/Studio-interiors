@@ -1,8 +1,9 @@
 <header class="header">
   <div class="header__container container">
     <a
+      data-logo="logo"
       href="index.html"
-      class="header__logo">
+      class="header__logo @@color-class">
       LOGO
     </a>
 
@@ -11,7 +12,7 @@
         <li class="header__nav-item">
           <a
             href="#projects"
-            class="header__nav-link @@if (title === 'Projects') {@@active-class}">
+            class="header__nav-link @@color-class @@if (title === 'Projects') {@@active-class}">
             Projects
           </a>
         </li>
@@ -19,7 +20,7 @@
         <li class="header__nav-item">
           <a
             href="about.html"
-            class="header__nav-link @@if (title === 'About us') {@@active-class}">
+            class="header__nav-link @@color-class @@if (title === 'About us') {@@active-class}">
             About Us
           </a>
         </li>
@@ -27,7 +28,7 @@
         <li class="header__nav-item">
           <a
             href="#blog"
-            class="header__nav-link @@if (title === 'Blog') {@@active-class}">
+            class="header__nav-link @@color-class @@if (title === 'Blog') {@@active-class}">
             Blog
           </a>
         </li>
@@ -35,7 +36,7 @@
         <li class="header__nav-item">
           <a
             href="#contacts"
-            class="header__nav-link @@if (title === 'Contacts') {@@active-class}">
+            class="header__nav-link @@color-class @@if (title === 'Contacts') {@@active-class}">
             Contacts
           </a>
         </li>
@@ -46,24 +47,34 @@
           type="button"
           class="menu-btn"
           id="hamburger">
-          <span class="menu-btn__line menu-btn__line_top"></span>
-          <span class="menu-btn__line menu-btn__line_bottom"></span>
+          <span
+            data-line="line"
+            class="menu-btn__line @@color-class menu-btn__line_top"></span>
+          <span
+            data-line="line"
+            class="menu-btn__line @@color-class menu-btn__line_bottom"></span>
         </button>
 
-        <p class="nav-header__menu-text">Menu</p>
+        <p
+          class="nav-header__menu-text @@color-class"
+          data-menu="text-menu">
+          Menu
+        </p>
       </div>
     </nav>
 
     <div class="header__send-box send-box">
       <a
-        class="send-box__leng"
+        data-leng="leng"
+        class="send-box__leng @@color-class"
         href="#">
         En
       </a>
 
       <button
+        data-send-btn="send-btn"
         type="submit"
-        class="send-box__btn">
+        class="send-box__btn @@color-class">
         Send Request
       </button>
     </div>
