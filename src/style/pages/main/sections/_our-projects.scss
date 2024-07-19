@@ -1,9 +1,14 @@
 .our-projects {
   background-color: var(--dark-background-color);
   padding-top: 80px;
+  padding-bottom: 94px;
 
   &__title {
     color: var(--white-secondary-color);
+
+    &_light {
+      color: var(--white-base-color);
+    }
   }
 
   &__project-sub-title {
@@ -16,16 +21,52 @@
     font-weight: 300;
     line-height: 170.66%;
     margin-bottom: 80px;
+
+    &_light {
+      color: var(--white-base-color);
+      margin-bottom: 48px;
+    }
   }
 
   // ---list----
   &__list {
     display: grid;
     gap: 6px;
+
+    margin-bottom: 96px;
   }
 
   &__project {
     position: relative;
+
+    &:last-child {
+      @include flex-align-column;
+      width: 100%;
+      max-width: 327px;
+      height: auto;
+      padding: 62px 0px;
+      background-color: var(--light-background-color);
+
+      & > .project__bg-img {
+        width: 121px;
+        height: 162px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 16.12%, rgba(0, 0, 0, 0.63) 101.15%),
+          url('@assets/img/main/our-projects/img.webp') lightgray 50% / cover no-repeat;
+      }
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 14px 49px;
+    background-color: var(--white-base-color);
+    color: var(--black-base-color);
+    text-align: center;
+    font-size: 11px;
+
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
   }
 }
 
@@ -59,7 +100,14 @@
     color: var(--white-secondary-color);
     font-size: 20px;
     font-weight: 700;
-    line-height: 126.776%;
+    line-height: 126%;
     margin-bottom: 12px;
+
+    &.project-overlay__title_dark {
+      margin-bottom: 16px;
+      & > a {
+        color: var(--black-base-color);
+      }
+    }
   }
 }
