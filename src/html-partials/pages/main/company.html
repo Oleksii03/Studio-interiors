@@ -1,48 +1,49 @@
 <section class="company">
   <div class="company__container container">
     @@include('../../base/section-decoration-title.html',{ "title":"About",
-    "class":"decoration-title__light"})
+    "class":"decoration-title_light", "extends-class":"company__decoration-title" })
 
     <div class="company__decoration-title-bottom">
       @@include('../../base/section-decoration-title.html',{ "title":"Ceo company",
-      "class":"decoration-title__light"})
+      "class":"decoration-title_light" })
     </div>
 
-    <h2 class="company__title sub-title">Company Philosophy</h2>
+    <div class="company__content">
+      <h2 class="company__title sub-title">Company Philosophy</h2>
 
-    <div class="company__description company-description">
-      <p class="company__description-text">
-        The basic philosophy of our studio is to create individual, aesthetically stunning solutions
-        for our customers by lightning-fast development of projects employing unique styles and
-        architecture. Even if you don't have a ready sketch of what you want - we will help you get
-        the result.
-      </p>
+      <div class="company__description company-description">
+        <p class="company__description-text">
+          The basic philosophy of our studio is to create individual, aesthetically stunning
+          solutions for our customers by lightning-fast development of projects employing unique
+          styles and architecture. Even if you don't have a ready sketch of what you want - we will
+          help you get the result.
+        </p>
 
-      <p class="company__description-text">
-        We can also help you create harmony out of seemingly completely incompatible elements in the
-        interior or the exterior design. Do you want to combine classics and abstract art? Modern
-        and retro? Love everything associated with the 1940's? No problem!
-      </p>
-    </div>
-
-    @@include('../../base/discover-more.html',{ "color-class":"discover-more__dark",
-    "extends-class":"company__sub-title" })
-
-    <div class="company__content-bottom">
-      <div class="company__img-content">
-        <div class="company__img company__img_top"></div>
-        <div class="company__img company__img_bottom"></div>
+        <p class="company__description-text">
+          We can also help you create harmony out of seemingly completely incompatible elements in
+          the interior or the exterior design. Do you want to combine classics and abstract art?
+          Modern and retro? Love everything associated with the 1940's? No problem!
+        </p>
       </div>
 
-      <div class="company__description company__description_bottom">
-        <p class="company__description-text company__description-text_bottom">
-          We can also help you create harmony out of seemingly completely incompatible elements in
-          the interior or the exterior design.
-        </p>
+      @@include('../../base/discover-more.html',{ "color-class":"discover-more__dark",
+      "extends-class":"company__sub-title" })
+
+      <div class="company__content-bottom">
+        <div class="company__img-content">
+          <div class="company__img company__img_top"></div>
+          <div class="company__img company__img_bottom"></div>
+        </div>
+
+        <div class="company__description company__description_bottom">
+          <p class="company__description-text company__description-text_bottom">
+            We can also help you create harmony out of seemingly completely incompatible elements in
+            the interior or the exterior design.
+          </p>
+        </div>
       </div>
     </div>
   </div>
-
   <div class="company-description__img-box">
     <picture>
       <source

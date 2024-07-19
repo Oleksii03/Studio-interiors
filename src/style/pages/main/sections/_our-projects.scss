@@ -5,7 +5,11 @@
 
   @media (min-width: 768px) {
     padding-top: 105px;
-    padding-bottom: 123px;
+    padding-bottom: 124px;
+  }
+
+  &__container {
+    position: relative;
   }
 
   &__title {
@@ -29,6 +33,10 @@
 
   &__project-sub-title {
     margin-bottom: 5px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 1px;
+    }
   }
 
   &__description {
@@ -43,7 +51,8 @@
       max-width: 455px;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 103px;
+      margin-bottom: 97px;
+      margin-top: 21px;
     }
 
     &_light {
@@ -117,6 +126,16 @@
       margin: 0 auto;
     }
   }
+
+  &__bottom-content {
+    position: relative;
+  }
+
+  &__decoration-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 // ---project-overlay--
@@ -131,6 +150,10 @@
   padding: 21px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 768px) {
+    padding: 31px;
+  }
 
   &__list {
     @include flex-align-row;
@@ -151,6 +174,10 @@
     font-weight: 700;
     line-height: 126%;
     margin-bottom: 12px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 19px;
+    }
 
     &.project-overlay__title_dark {
       margin-bottom: 16px;

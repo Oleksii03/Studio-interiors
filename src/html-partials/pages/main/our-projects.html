@@ -1,5 +1,8 @@
 <section class="our-projects">
   <div class="our-projects__container container">
+    @@include('../../base/section-decoration-title.html', { "title":"Projects",
+    "class":"decoration-title_dark", "extends-class":"our-projects__decoration-title"})
+
     <h2 class="sub-title our-projects__title">Our Projects</h2>
 
     <p class="our-projects__description">
@@ -189,19 +192,24 @@
       </li>
     </ul>
 
-    <h2 class="sub-title our-projects__title our-projects__title_light">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </h2>
+    <div class="our-projects__bottom-content">
+      @@include('../../base/section-decoration-title.html', { "title":"Make request",
+      "class":"decoration-title_dark", "extends-class":"our-projects__decoration-title"})
 
-    <p class="our-projects__description our-projects__description_light">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
-      posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
-    </p>
+      <h2 class="sub-title our-projects__title our-projects__title_light">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </h2>
 
-    <a
-      class="our-projects__btn"
-      href="#">
-      Make request
-    </a>
+      <p class="our-projects__description our-projects__description_light">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+        posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+      </p>
+
+      <a
+        class="our-projects__btn"
+        href="#">
+        Make request
+      </a>
+    </div>
   </div>
 </section>

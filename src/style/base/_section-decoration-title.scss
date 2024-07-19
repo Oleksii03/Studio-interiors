@@ -1,37 +1,38 @@
 .decoration-title__box {
   display: none;
+
   @media (min-width: 768px) {
-    display: block;
     position: absolute;
-    top: 7%;
-    left: -5%;
+    display: block;
     transform: rotate(-90deg);
+    z-index: 1;
   }
 
   @media (min-width: 1440px) {
-    top: 5%;
-    left: -3%;
+    // top: 5%;
+    // left: -3%;
   }
 }
 .decoration-title {
   @media (min-width: 768px) {
     @include flex-align-row;
+    white-space: nowrap;
     column-gap: 13px;
     font-size: 8px;
     font-style: normal;
     font-weight: 700;
-    line-height: 170.66%;
+    line-height: 170%;
     letter-spacing: 1.6px;
     text-transform: uppercase;
 
     &:before {
       content: '';
-      display: inline-block;
+      display: block;
       width: 57px;
       height: 1px;
     }
 
-    &__light {
+    &_light {
       color: rgba(130, 130, 130, 0.35);
 
       &:before {
@@ -39,11 +40,11 @@
       }
     }
 
-    &__dark {
-      color: rgba(182, 15, 15, 0.35);
+    &_dark {
+      color: rgba(255, 255, 255, 0.13);
 
       &:before {
-        background: rgba(172, 16, 16, 0.83);
+        background: rgba(255, 255, 255, 0.04);
       }
     }
   }

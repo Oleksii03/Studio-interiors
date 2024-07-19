@@ -20,13 +20,16 @@
   }
 
   &__container {
+    position: relative;
+  }
+
+  &__content {
     @media (min-width: 768px) {
-      padding: 0px 91px;
-      position: relative;
+      padding: 0px 75px;
     }
 
     @media (min-width: 1024px) {
-      padding: 0px 117px;
+      padding: 0px 103px;
     }
 
     @media (min-width: 1440px) {
@@ -231,6 +234,12 @@
       bottom: 17%;
       left: 96%;
     }
+  }
+
+  &__decoration-title {
+    position: absolute;
+
+    right: 0;
   }
 }
 
