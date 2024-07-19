@@ -1196,7 +1196,7 @@ body {
   color: #828282;
   font-size: 14px;
   font-weight: 300;
-  line-height: 170.66%;
+  line-height: 170%;
   margin-bottom: 80px;
 }
 
@@ -1227,8 +1227,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  max-width: 327px;
   height: auto;
   padding: 62px 0px;
   background-color: var(--light-background-color);
@@ -1243,7 +1241,14 @@ body {
 }
 
 .our-projects__btn {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 14px 49px;
   background-color: var(--white-base-color);
   color: var(--black-base-color);
@@ -1534,6 +1539,56 @@ body {
 
   .company__sub-title {
     margin-bottom: 63px;
+  }
+
+  .our-projects {
+    padding-top: 105px;
+    padding-bottom: 94px;
+  }
+
+  .our-projects__title {
+    text-align: center;
+  }
+
+  .our-projects__title_light {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 142%;
+  }
+
+  .our-projects__description {
+    text-align: center;
+    max-width: 455px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 103px;
+  }
+
+  .our-projects__description_light {
+    margin-top: 23px;
+    margin-bottom: 53px;
+  }
+
+  .our-projects__list {
+    margin-bottom: 122px;
+  }
+
+  .our-projects__project:nth-child(2) {
+    display: none;
+  }
+
+  .our-projects__project:last-child {
+    padding: 146px 0px;
+  }
+
+  .our-projects__project:last-child > .project__bg-img {
+    width: 251px;
+    height: 331px;
+  }
+
+  .project-overlay__title.project-overlay__title_dark {
+    margin-bottom: 23px;
   }
 
   .about-hero {
