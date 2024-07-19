@@ -1177,10 +1177,15 @@ body {
 .our-projects {
   background-color: var(--dark-background-color);
   padding-top: 80px;
+  padding-bottom: 94px;
 }
 
 .our-projects__title {
   color: var(--white-secondary-color);
+}
+
+.our-projects__title_light {
+  color: var(--white-base-color);
 }
 
 .our-projects__project-sub-title {
@@ -1195,14 +1200,58 @@ body {
   margin-bottom: 80px;
 }
 
+.our-projects__description_light {
+  color: var(--white-base-color);
+  margin-bottom: 48px;
+}
+
 .our-projects__list {
   display: -ms-grid;
   display: grid;
   gap: 6px;
+  margin-bottom: 96px;
 }
 
 .our-projects__project {
   position: relative;
+}
+
+.our-projects__project:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 327px;
+  height: auto;
+  padding: 62px 0px;
+  background-color: var(--light-background-color);
+}
+
+.our-projects__project:last-child > .project__bg-img {
+  width: 121px;
+  height: 162px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.12%, rgba(0, 0, 0, 0)), color-stop(101.15%, rgba(0, 0, 0, 0.63))), url("../assets/img/main/our-projects/img.webp") lightgray 50%/cover no-repeat;
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 16.12%, rgba(0, 0, 0, 0.63) 101.15%), url("../assets/img/main/our-projects/img.webp") lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 16.12%, rgba(0, 0, 0, 0.63) 101.15%), url("../assets/img/main/our-projects/img.webp") lightgray 50%/cover no-repeat;
+}
+
+.our-projects__btn {
+  display: inline-block;
+  padding: 14px 49px;
+  background-color: var(--white-base-color);
+  color: var(--black-base-color);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.66px;
 }
 
 .project-overlay {
@@ -1248,8 +1297,16 @@ body {
   color: var(--white-secondary-color);
   font-size: 20px;
   font-weight: 700;
-  line-height: 126.776%;
+  line-height: 126%;
   margin-bottom: 12px;
+}
+
+.project-overlay__title.project-overlay__title_dark {
+  margin-bottom: 16px;
+}
+
+.project-overlay__title.project-overlay__title_dark > a {
+  color: var(--black-base-color);
 }
 
 .about-hero {
