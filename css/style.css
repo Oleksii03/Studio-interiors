@@ -1180,6 +1180,10 @@ body {
   padding-bottom: 94px;
 }
 
+.our-projects__container {
+  position: relative;
+}
+
 .our-projects__title {
   color: var(--white-secondary-color);
 }
@@ -1251,6 +1255,16 @@ body {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.66px;
+}
+
+.our-projects__bottom-content {
+  position: relative;
+}
+
+.our-projects__decoration-title {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .project-overlay {
@@ -1404,14 +1418,12 @@ body {
   }
 
   .decoration-title__box {
-    display: block;
     position: absolute;
-    top: 7%;
-    left: -5%;
+    display: block;
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
-    z-index: 10;
+    z-index: 1;
   }
 
   .decoration-title {
@@ -1421,38 +1433,40 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    white-space: nowrap;
+    height: 11px;
     -webkit-column-gap: 13px;
        -moz-column-gap: 13px;
             column-gap: 13px;
     font-size: 8px;
     font-style: normal;
     font-weight: 700;
-    line-height: 170.66%;
+    line-height: 170%;
     letter-spacing: 1.6px;
     text-transform: uppercase;
   }
 
   .decoration-title:before {
     content: "";
-    display: inline-block;
+    display: block;
     width: 57px;
     height: 1px;
   }
 
-  .decoration-title__light {
-    color: rgb(244, 3, 3);
+  .decoration-title_light {
+    color: rgba(130, 130, 130, 0.35);
   }
 
-  .decoration-title__light:before {
+  .decoration-title_light:before {
     background: rgba(196, 196, 196, 0.83);
   }
 
-  .decoration-title__dark {
-    color: rgba(182, 15, 15, 0.35);
+  .decoration-title_dark {
+    color: rgba(255, 255, 255, 0.13);
   }
 
-  .decoration-title__dark:before {
-    background: rgba(172, 16, 16, 0.83);
+  .decoration-title_dark:before {
+    background: rgba(255, 255, 255, 0.04);
   }
 
   .hero__container {
@@ -1810,11 +1824,6 @@ body {
 
   .sub-title {
     font-size: 36px;
-  }
-
-  .decoration-title__box {
-    top: 5%;
-    left: -3%;
   }
 
   .hero__container {
