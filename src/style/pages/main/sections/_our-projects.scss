@@ -3,11 +3,27 @@
   padding-top: 80px;
   padding-bottom: 94px;
 
+  @media (min-width: 768px) {
+    padding-top: 105px;
+    padding-bottom: 123px;
+  }
+
   &__title {
     color: var(--white-secondary-color);
 
+    @media (min-width: 768px) {
+      text-align: center;
+    }
+
     &_light {
       color: var(--white-base-color);
+
+      @media (min-width: 768px) {
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 142%;
+      }
     }
   }
 
@@ -19,12 +35,25 @@
     color: #828282;
     font-size: 14px;
     font-weight: 300;
-    line-height: 170.66%;
+    line-height: 170%;
     margin-bottom: 80px;
+
+    @media (min-width: 768px) {
+      text-align: center;
+      max-width: 455px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 103px;
+    }
 
     &_light {
       color: var(--white-base-color);
       margin-bottom: 48px;
+
+      @media (min-width: 768px) {
+        margin-top: 23px;
+        margin-bottom: 53px;
+      }
     }
   }
 
@@ -32,41 +61,61 @@
   &__list {
     display: grid;
     gap: 6px;
-
     margin-bottom: 96px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 122px;
+    }
   }
 
   &__project {
     position: relative;
 
+    &:nth-child(2) {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
     &:last-child {
       @include flex-align-column;
-      width: 100%;
-      max-width: 327px;
       height: auto;
       padding: 62px 0px;
       background-color: var(--light-background-color);
+
+      @media (min-width: 768px) {
+        padding: 146px 0px;
+      }
 
       & > .project__bg-img {
         width: 121px;
         height: 162px;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 16.12%, rgba(0, 0, 0, 0.63) 101.15%),
           url('@assets/img/main/our-projects/img.webp') lightgray 50% / cover no-repeat;
+
+        @media (min-width: 768px) {
+          width: 251px;
+          height: 331px;
+        }
       }
     }
   }
 
   &__btn {
-    display: inline-block;
+    display: block;
     padding: 14px 49px;
+    width: 184px;
     background-color: var(--white-base-color);
     color: var(--black-base-color);
     text-align: center;
     font-size: 11px;
-
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -105,6 +154,10 @@
 
     &.project-overlay__title_dark {
       margin-bottom: 16px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 23px;
+      }
       & > a {
         color: var(--black-base-color);
       }
