@@ -1241,15 +1241,9 @@ body {
 }
 
 .our-projects__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   padding: 14px 49px;
+  width: 184px;
   background-color: var(--white-base-color);
   color: var(--black-base-color);
   text-align: center;
@@ -1543,7 +1537,7 @@ body {
 
   .our-projects {
     padding-top: 105px;
-    padding-bottom: 94px;
+    padding-bottom: 123px;
   }
 
   .our-projects__title {
@@ -1585,6 +1579,10 @@ body {
   .our-projects__project:last-child > .project__bg-img {
     width: 251px;
     height: 331px;
+  }
+
+  .our-projects__btn {
+    margin: 0 auto;
   }
 
   .project-overlay__title.project-overlay__title_dark {
