@@ -1092,6 +1092,10 @@ body {
   overflow-x: hidden;
 }
 
+.company__container {
+  position: relative;
+}
+
 .company__title {
   color: var(--black-base-color);
   margin-bottom: 16px;
@@ -1164,6 +1168,11 @@ body {
 
 .company__decoration-title-bottom {
   display: none;
+}
+
+.company__decoration-title {
+  position: absolute;
+  right: 0;
 }
 
 .company__sub-title {
@@ -1434,7 +1443,6 @@ body {
         -ms-flex-align: center;
             align-items: center;
     white-space: nowrap;
-    height: 11px;
     -webkit-column-gap: 13px;
        -moz-column-gap: 13px;
             column-gap: 13px;
@@ -1511,9 +1519,8 @@ body {
     padding-bottom: 63px;
   }
 
-  .company__container {
-    padding: 0px 91px;
-    position: relative;
+  .company__content {
+    padding: 0px 75px;
   }
 
   .company__description {
@@ -1682,8 +1689,8 @@ body {
     padding-bottom: 125px;
   }
 
-  .company__container {
-    padding: 0px 117px;
+  .company__content {
+    padding: 0px 103px;
   }
 
   .company__title {
@@ -1854,7 +1861,7 @@ body {
     padding-bottom: 140px;
   }
 
-  .company__container {
+  .company__content {
     padding: 0px 147px;
   }
 
