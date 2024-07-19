@@ -377,6 +377,7 @@ body {
 :root {
   --primary-font: "Montserrat", sans-serif;
   --white-base-color: #fff;
+  --white-secondary-color: #fafafa;
   --black-base-color: #080808;
   --light-background-color: #fafafa;
   --dark-background-color: #080808;
@@ -963,6 +964,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
+  margin-bottom: 16px;
 }
 
 .decoration-title__box {
@@ -1170,6 +1172,80 @@ body {
 
 .company-description__img-box {
   display: none;
+}
+
+.our-projects {
+  background-color: var(--dark-background-color);
+  padding-top: 80px;
+}
+
+.our-projects__title {
+  color: var(--white-secondary-color);
+}
+
+.our-projects__description {
+  color: #828282;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 170.66%;
+  margin-bottom: 80px;
+}
+
+.our-projects__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 6px;
+}
+
+.our-projects__project {
+  position: relative;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(16.12%, rgba(0, 0, 0, 0)), color-stop(101.15%, rgba(0, 0, 0, 0.63)));
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 16.12%, rgba(0, 0, 0, 0.63) 101.15%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 16.12%, rgba(0, 0, 0, 0.63) 101.15%);
+  padding: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-overlay__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 170.66%;
+}
+
+.project-overlay__title-box {
+  margin-top: auto;
+  width: 273px;
+}
+
+.project-overlay__title {
+  color: #fafafa;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 126.776%;
+  margin-bottom: 16px;
 }
 
 .about-hero {
