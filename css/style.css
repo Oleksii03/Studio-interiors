@@ -1183,6 +1183,10 @@ body {
   color: var(--white-secondary-color);
 }
 
+.our-projects__project-sub-title {
+  margin-bottom: 5px;
+}
+
 .our-projects__description {
   color: #828282;
   font-size: 14px;
@@ -1241,11 +1245,11 @@ body {
 }
 
 .project-overlay__title {
-  color: #fafafa;
+  color: var(--white-secondary-color);
   font-size: 20px;
   font-weight: 700;
   line-height: 126.776%;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .about-hero {
