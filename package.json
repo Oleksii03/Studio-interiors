@@ -16,7 +16,8 @@
   "author": "FLS",
   "license": "ISC",
   "dependencies": {
-    "gulp-cli": "^2.3.0"
+    "gulp-cli": "^2.3.0",
+    "lodash.debounce": "^4.0.8"
   },
   "devDependencies": {
     "browser-sync": "latest",

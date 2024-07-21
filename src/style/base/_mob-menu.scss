@@ -97,7 +97,11 @@
         width: 100%;
 
         &_inner {
-          justify-content: space-between;
+          @media (min-width: 375px) {
+            justify-content: space-between;
+            width: 100%;
+            max-width: 327px;
+          }
         }
       }
 
