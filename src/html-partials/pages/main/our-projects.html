@@ -20,8 +20,12 @@
           </ul>
 
           <div class="project-overlay__title-box">
-            <h3 class="project-overlay__title project-overlay__title_small">
+            <h3 class="project-overlay__title project-overlay__title_mob">
               Residence by the lighthouse
+            </h3>
+
+            <h3 class="project-overlay__title project-overlay__title_desc">
+              Eyewear store interior
             </h3>
 
             @@include('../../base/discover-more.html', { "color-class":"discover-more__light",
@@ -156,7 +160,11 @@
           </ul>
 
           <div class="project-overlay__title-box">
-            <h3 class="project-overlay__title project-overlay__title_small">House on a Hillside</h3>
+            <h3 class="project-overlay__title project-overlay__title_mob">House on a Hillside</h3>
+
+            <h3 class="project-overlay__title project-overlay__title_desc">
+              Residence by the lighthouse
+            </h3>
 
             @@include('../../base/discover-more.html', { "color-class":"discover-more__light",
             "extends-class":"our-projects__project-sub-title" })
@@ -166,6 +174,9 @@
           href="#"
           class="our-projects__project-link">
           <picture class="our-projects__project-picture">
+            <source
+              srcset="@assets/img/main/our-projects/desctop/img-3.png"
+              media="(min-width: 1024px)" />
             <source
               srcset="@assets/img/main/our-projects/tablet/img-4.png"
               media="(min-width: 768px)" />
@@ -200,16 +211,19 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       </h2>
 
-      <p class="our-projects__description our-projects__description_light">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
-        posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
-      </p>
+      <div class="our-projects__description-box">
+        <p class="our-projects__description our-projects__description_light">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris
+          vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium
+          velit.
+        </p>
 
-      <a
-        class="our-projects__btn"
-        href="#">
-        Make request
-      </a>
+        <a
+          class="our-projects__btn"
+          href="#">
+          Make request
+        </a>
+      </div>
     </div>
   </div>
 </section>
