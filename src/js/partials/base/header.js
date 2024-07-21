@@ -13,11 +13,18 @@ export function header() {
   window.addEventListener('scroll', debouncedActiveHeader);
 
   function activeHeader() {
-    if (window.scrollY < 10) {
+    if (window.scrollY < 60) {
       header.classList.remove('header_active');
     } else if (window.scrollY > 60) {
       header.classList.toggle('header_active');
-      console.log(window.scrollY);
     }
   }
+
+  activeHeader();
+
+  window.addEventListener('load', () => {
+    if (!header.classList.contains('header_active') && window.scrollY > 60) {
+      header.classList.add('header_active');
+    }
+  });
 }
