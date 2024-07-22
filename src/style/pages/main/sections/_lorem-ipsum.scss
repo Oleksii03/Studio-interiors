@@ -1,0 +1,93 @@
+.lorem-ipsum {
+  position: relative;
+  min-height: 675px;
+
+  // padding-top: 290px;
+  // padding-bottom: 257px;
+
+  background-color: var(--light-background-color);
+  background-image: url('@assets/img/main/lorem-ipsum/bg-mob.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    min-height: 831px;
+    background-image: url('@assets/img/main/lorem-ipsum/bg-tablet.webp');
+  }
+  @media (min-width: 1024px) {
+    min-height: 790px;
+    background-image: url('@assets/img/main/lorem-ipsum/bg-leptop.webp');
+  }
+  @media (min-width: 1440px) {
+    min-height: 814px;
+    background-image: url('@assets/img/main/lorem-ipsum/bg-desctop.webp');
+  }
+
+  &__content {
+    width: 288px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+    @media (min-width: 1440px) {
+      width: 500px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+    @media (min-width: 1024px) {
+      margin-bottom: 21px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 18px;
+    }
+
+    &_small {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+
+    &_dig {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    & > a {
+      color: var(--black-base-color);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (min-width: 768px) {
+        font-size: 44px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 48px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 56px;
+      }
+    }
+  }
+
+  &__text {
+    color: var(--black-base-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 170.66%;
+  }
+}

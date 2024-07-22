@@ -8,36 +8,47 @@ export function header() {
     trailing: true,
   };
 
-  const debouncedActiveHeader = debounce(activeHeader, 300, options);
+  const debouncedActiveHeader = debounce(activeHeader, 250, options);
 
   window.addEventListener('scroll', debouncedActiveHeader);
 
   function activeHeader() {
-    const scrollPastThreshold = window.scrollY > 60;
+    const activeScroll = window.scrollY > 60;
+    const activeHeader = header.classList.contains('header_active');
+    const opacityHeader = header.classList.contains('opacity');
 
     if (window.scrollY < 60) {
       header.classList.remove('header_active');
+      header.classList.remove('opacity');
       header.style.opacity = 1;
-    } else if (scrollPastThreshold) {
-      header.classList.toggle('header_active');
+    } else if (activeScroll && !activeHeader) {
+      header.classList.add('header_active');
+    } else if (activeScroll && activeHeader) {
+      header.classList.remove('header_active');
     }
 
-    if (!header.classList.contains('opacity') && scrollPastThreshold) {
+    if (!opacityHeader && activeScroll) {
       header.style.opacity = 1;
       header.classList.add('opacity');
-    } else if (header.classList.contains('opacity') && scrollPastThreshold) {
+    } else if (activeScroll && opacityHeader) {
       header.style.opacity = 0;
       header.classList.remove('opacity');
     }
   }
 
-  window.addEventListener('load', onReboot);
-  window.addEventListener('resize', onReboot);
-
-  function onReboot() {
-    if (!header.classList.contains('header_active') && window.scrollY > 60) {
-      header.classList.add('header_active');
-      header.style.opacity = 1;
-    }
+  window.addEventListener('resize', onReload);
+  window.addEventListener('load', onReload);
+  function onReload() {
+    setTimeout(() => {
+      if (
+        window.scrollY > 60 &&
+        !header.classList.contains('header_active') &&
+        !header.classList.contains('opacity')
+      ) {
+        header.classList.add('header_active');
+        header.style.opacity = 1;
+        header.classList.add('opacity');
+      }
+    }, 400);
   }
 }
