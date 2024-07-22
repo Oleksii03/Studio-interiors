@@ -13,18 +13,31 @@ export function header() {
   window.addEventListener('scroll', debouncedActiveHeader);
 
   function activeHeader() {
+    const scrollPastThreshold = window.scrollY > 60;
+
     if (window.scrollY < 60) {
       header.classList.remove('header_active');
-    } else if (window.scrollY > 60) {
+      header.style.opacity = 1;
+    } else if (scrollPastThreshold) {
       header.classList.toggle('header_active');
+    }
+
+    if (!header.classList.contains('opacity') && scrollPastThreshold) {
+      header.style.opacity = 1;
+      header.classList.add('opacity');
+    } else if (header.classList.contains('opacity') && scrollPastThreshold) {
+      header.style.opacity = 0;
+      header.classList.remove('opacity');
     }
   }
 
-  activeHeader();
+  window.addEventListener('load', onReboot);
+  window.addEventListener('resize', onReboot);
 
-  window.addEventListener('load', () => {
+  function onReboot() {
     if (!header.classList.contains('header_active') && window.scrollY > 60) {
       header.classList.add('header_active');
+      header.style.opacity = 1;
     }
-  });
+  }
 }
