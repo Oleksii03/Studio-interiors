@@ -1,0 +1,28 @@
+.contacts {
+  position: relative;
+  min-height: 100vh;
+
+  background-image: url('@assets/img/components/contacts/bg-mob.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    background-image: url('@assets/img/components/contacts/bg-tab.webp');
+  }
+  @media (min-width: 1024px) {
+    background-image: url('@assets/img/components/contacts/bg-lap-top.webp');
+  }
+  @media (min-width: 1440px) {
+    background-image: url('@assets/img/components/contacts/bg-desctop.webp');
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    pointer-events: none;
+  }
+}
