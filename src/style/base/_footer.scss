@@ -1,1 +1,20 @@
+.footer {
+  &__contacts {
+    min-height: 745px;
 
+    @media (min-width: 768px) {
+      min-height: 574px;
+    }
+
+    &_overlay {
+      padding-top: 56px;
+      padding-bottom: 41px;
+
+      @media (min-width: 768px) {
+        padding-top: 89px;
+        padding-bottom: 25px;
+        min-height: 574px;
+      }
+    }
+  }
+}
