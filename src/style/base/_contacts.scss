@@ -40,7 +40,13 @@
 
     margin-bottom: 38px;
   }
+
+  &__btn {
+    margin-bottom: 56px;
+  }
 }
+
+// ----address-contacts---------
 
 .address-contacts {
   font-style: normal;
@@ -107,5 +113,44 @@
 .language-box__link {
   @media (max-width: 767px) {
     color: var(--white-secondary-color);
+  }
+}
+
+// ----trademark--------
+
+.trademark {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+
+  &__content {
+    color: var(--gray-base-color);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 152%;
+
+    &_bottom {
+      @include flex-align-row;
+      column-gap: 32px;
+    }
+  }
+
+  &__first-text {
+    color: var(--white-base-color);
+    font-family: Adieu;
+    font-size: 12.686px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 80%;
+  }
+
+  &__last-text {
+    margin-left: 30px;
+    color: var(--white-base-color);
+    font-family: FreightBigProLight-Italic;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 80%;
   }
 }
