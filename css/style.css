@@ -1045,6 +1045,22 @@ body {
   pointer-events: none;
 }
 
+.contacts__title {
+  color: var(--white-secondary-color);
+}
+
+.contacts__description {
+  color: var(--white-secondary-color);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 170.66%;
+  opacity: 0.6;
+}
+
+.footer__contacts {
+  padding-top: 95px;
+}
+
 .hero {
   position: relative;
 }
