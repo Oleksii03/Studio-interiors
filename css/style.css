@@ -378,6 +378,7 @@ body {
   --primary-font: "Montserrat", sans-serif;
   --white-base-color: #fff;
   --white-secondary-color: #fafafa;
+  --gray-base-color: #828282;
   --black-base-color: #080808;
   --light-background-color: #fafafa;
   --secondary-light-background-color: #c4c4c4;
@@ -1072,6 +1073,10 @@ body {
   margin-bottom: 38px;
 }
 
+.contacts__btn {
+  margin-bottom: 56px;
+}
+
 .address-contacts {
   font-style: normal;
 }
@@ -1131,6 +1136,55 @@ body {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.66px;
+}
+
+.trademark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 11px;
+}
+
+.trademark__content {
+  color: var(--gray-base-color);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 152%;
+}
+
+.trademark__content_bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.trademark__first-text {
+  color: var(--white-base-color);
+  font-family: Adieu;
+  font-size: 12.686px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 80%;
+}
+
+.trademark__last-text {
+  margin-left: 30px;
+  color: var(--white-base-color);
+  font-family: FreightBigProLight-Italic;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 80%;
 }
 
 .hero {
