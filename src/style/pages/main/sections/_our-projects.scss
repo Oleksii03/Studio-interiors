@@ -113,7 +113,7 @@
 
     &_light {
       color: var(--white-base-color);
-      margin-bottom: 48px;
+      margin-bottom: 44px;
 
       @media (min-width: 768px) {
         margin-top: 23px;
@@ -243,30 +243,8 @@
   }
 
   &__btn {
-    display: block;
-    padding: 14px 49px;
-    width: 184px;
-    background-color: var(--white-base-color);
-    color: var(--black-base-color);
-    text-align: center;
-    font-size: 11px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 0.66px;
-
     @media (min-width: 768px) and (max-width: 1439px) {
       margin: 0 auto;
-    }
-
-    @media (min-width: 1440px) {
-      padding: 17px 47px;
-      transition: all 250ms linear;
-
-      &:hover {
-        background: transparent;
-        color: var(--white-base-color);
-        outline: 1px solid var(--white-base-color);
-      }
     }
   }
 

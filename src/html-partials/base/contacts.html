@@ -1,6 +1,88 @@
 <div class="contacts">
-  <div class="contacts__overlay"></div>
-  <div class="contacts__container container">
-    <h2 class="sub-title contacts__title">Get in touch</h2>
+  <div class="contacts__overlay @@extends-class">
+    <div class="contacts__container container">
+      <h2 class="sub-title contacts__title">Get in touch</h2>
+
+      <p class="contacts__description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+        posuere.
+      </p>
+
+      <address class="contacts__address address-contacts">
+        <ul class="address-contacts__list">
+          <li class="address-contacts__list-item">
+            <h4 class="address-contacts__list-title">Kyiv</h4>
+
+            <div class="address-contacts__list-link">
+              <a href="tel:+2095550104">(209) 555-0104</a>
+
+              <a
+                href="https://www.google.com/maps/@49.2678987,23.3268093,4.38z?entry=ttu"
+                target="_blank"
+                rel="noreferrer noopener nofollow">
+                6391 Elgin St. Celina, Delaware 10299
+              </a>
+            </div>
+          </li>
+          <li class="address-contacts__list-item">
+            <h4 class="address-contacts__list-title">Lviv</h4>
+
+            <div class="address-contacts__list-link">
+              <a href="tel:+2095550104">(209) 555-0104</a>
+
+              <a
+                href="https://www.google.com/maps/@49.2678987,23.3268093,4.38z?entry=ttu"
+                target="_blank"
+                rel="noreferrer noopener nofollow">
+                6391 Elgin St. Celina, Delaware 10299
+              </a>
+            </div>
+          </li>
+          <li class="address-contacts__list-item">
+            <div>
+              <h4 class="address-contacts__list-title">Kharkiv</h4>
+
+              <div class="address-contacts__list-link">
+                <a href="tel:+2095550104">(209) 555-0104</a>
+
+                <a
+                  href="https://www.google.com/maps/@49.2678987,23.3268093,4.38z?entry=ttu"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow">
+                  6391 Elgin St. Celina, Delaware 10299
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <a
+                class="address-contacts__mail"
+                href="mailto:info@gmail.com"
+                class="button contacts__button button_type_link">
+                info@gmail.com
+              </a>
+
+              @@include('./box-language.html', { 'extends-class': 'address-contacts__language' })
+            </div>
+          </li>
+        </ul>
+      </address>
+
+      @@include('../base/make-request-btn.html',{ "extends-class":"contacts__btn" })
+
+      <div class="contacts__trademark-box trademark">
+        <div class="trademark__content trademark__content_top">
+          <p class="contacts__trademark-text">© Copyright 2018. All rights reserved</p>
+        </div>
+        <div class="trademark__content trademark__content_bottom">
+          <p class="contacts__trademark-text">Made with love in</p>
+
+          <div class="trademark__first-last-box">
+            <p class="trademark__first-text">The First</p>
+            <p class="trademark__last-text">The Last.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
