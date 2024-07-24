@@ -1,4 +1,8 @@
 <footer class="footer">
+  <div class="footer__container container">
+    @@include('./section-decoration-title.html',{ "title":"Contacts",
+    "class":"decoration-title_dark", "extends-class":"footer__decoration-title"})
+  </div>
   @@include('./contacts.html',{ "parent-class":"footer__contacts",
   "extends-class":"footer__contacts-overlay" })
 </footer>

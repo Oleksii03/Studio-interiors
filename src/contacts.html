@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./html-partials/base/head.html',{ "title":"Contacts" })
+
+  <body>
+    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+    "color-class": "", "title": "Contacts" })
+    <!-- mob-menu -->
+    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
+    "Contacts" })
+
+    <main>
+      <section class="contacts-section">
+        @@include('./html-partials/base/contacts.html',{
+        "parent-class":"contacts-section__contacts",
+        "extends-class":"contacts-section__contacts-overlay" })
+      </section>
+    </main>
+
+    <script
+      src="./js/about.min.js"
+      type="module"></script>
+  </body>
+</html>
