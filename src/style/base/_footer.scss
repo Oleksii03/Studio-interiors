@@ -8,6 +8,9 @@
     @media (min-width: 1024px) {
       min-height: 628px;
     }
+    @media (min-width: 1024px) {
+      min-height: 669px;
+    }
 
     &-overlay {
       padding-top: 56px;
@@ -16,12 +19,14 @@
       @media (min-width: 768px) {
         padding-top: 89px;
         padding-bottom: 25px;
-        min-height: 574px;
       }
       @media (min-width: 1024px) {
         padding-top: 105px;
         padding-bottom: 34px;
-        min-height: 574px;
+      }
+      @media (min-width: 1440px) {
+        padding-top: 117px;
+        padding-bottom: 27px;
       }
     }
   }
