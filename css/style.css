@@ -594,14 +594,14 @@ body {
   width: 100%;
 }
 
-.menu-btn__line.header__dark {
+.menu-btn__line.header_dark {
   -webkit-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   background-color: var(--dark-background-color);
 }
 
-.menu-btn__line.header__dark.invert {
+.menu-btn__line.header_dark.invert {
   background-color: var(--white-base-color);
 }
 
@@ -871,14 +871,14 @@ body {
   text-transform: uppercase;
 }
 
-.header__logo.header__dark {
+.header__logo.header_dark {
   color: var(--black-base-color);
   -webkit-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
 }
 
-.header__logo.header__dark.invert {
+.header__logo.header_dark.invert {
   color: var(--white-base-color);
 }
 
@@ -907,7 +907,7 @@ body {
   padding: 8px 0;
 }
 
-.header__nav-link.header__dark {
+.header__nav-link.header_dark {
   color: var(--black-base-color);
 }
 
@@ -940,14 +940,14 @@ body {
   letter-spacing: 0.66px;
 }
 
-.send-box__leng.header__dark {
+.send-box__leng.header_dark {
   -webkit-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   color: var(--black-base-color);
 }
 
-.send-box__leng.header__dark.invert {
+.send-box__leng.header_dark.invert {
   color: var(--white-base-color);
 }
 
@@ -967,7 +967,7 @@ body {
   transition: background-color 250ms linear;
 }
 
-.send-box__btn.header__dark {
+.send-box__btn.header_dark {
   -webkit-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
@@ -975,12 +975,12 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.32);
 }
 
-.send-box__btn.header__dark.invert {
+.send-box__btn.header_dark.invert {
   color: var(--white-base-color);
   border: 1px solid rgba(221, 217, 217, 0.32);
 }
 
-.mob-menu .mob-menu__active {
+.mob-menu .mob-menu_active {
   opacity: 1;
 }
 
@@ -1079,12 +1079,6 @@ body {
   opacity: 0.6;
   margin-bottom: 38px;
   max-width: 320px;
-}
-
-.contacts__decoration-title {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .address-contacts {
@@ -1192,6 +1186,10 @@ body {
   font-style: italic;
   font-weight: 400;
   line-height: 80%;
+}
+
+.footer {
+  overflow: hidden;
 }
 
 .footer__contacts {
@@ -1565,6 +1563,23 @@ body {
   background-position: center;
 }
 
+.contacts-section {
+  background-color: #000000;
+}
+
+.contacts-section__contacts {
+  min-height: 700px;
+  height: 100dvh;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contacts-section__contacts-overlay {
+  padding-bottom: 24px;
+}
+
 @media (min-width: 375px) {
   .container {
     max-width: 357px;
@@ -1760,6 +1775,12 @@ body {
     padding-bottom: 25px;
   }
 
+  .footer__decoration-title {
+    position: absolute;
+    top: 0;
+    right: 100px;
+  }
+
   .hero__container {
     padding-top: 382px;
   }
@@ -1941,6 +1962,10 @@ body {
     background-size: cover;
     background-position: center;
   }
+
+  .contacts-section__contacts {
+    min-height: 500px;
+  }
 }
 
 @media (min-width: 768px) and (min-width: 1024px) {
@@ -2011,6 +2036,12 @@ body {
   .footer__contacts-overlay {
     padding-top: 105px;
     padding-bottom: 34px;
+  }
+
+  .footer__decoration-title {
+    position: absolute;
+    top: 0;
+    right: 115px;
   }
 
   .hero__container {
@@ -2291,7 +2322,7 @@ body {
     background-color: rgba(253, 253, 253, 0.17);
   }
 
-  .send-box__btn.header__dark:hover {
+  .send-box__btn.header_dark:hover {
     background-color: rgba(0, 0, 0, 0.19);
   }
 
@@ -2348,6 +2379,12 @@ body {
   .footer__contacts-overlay {
     padding-top: 117px;
     padding-bottom: 27px;
+  }
+
+  .footer__decoration-title {
+    position: absolute;
+    top: 0;
+    right: 120px;
   }
 
   .hero__container {
@@ -2743,14 +2780,14 @@ body {
     letter-spacing: 0.66px;
   }
 
-  .nav-header__menu-text.header__dark {
+  .nav-header__menu-text.header_dark {
     -webkit-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
     color: var(--black-base-color);
   }
 
-  .nav-header__menu-text.header__dark.invert {
+  .nav-header__menu-text.header_dark.invert {
     color: var(--white-base-color);
   }
 

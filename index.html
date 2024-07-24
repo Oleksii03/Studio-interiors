@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240724130802" />
+    href="css/style.min.css?_v=20240724143343" />
   <title>Studio of interiors</title>
   <svg
   aria-hidden="true"
@@ -90,7 +90,7 @@
     <a
       data-logo="logo"
       href="index.html"
-      class="header__logo header__light">
+      class="header__logo header_light">
       LOGO
     </a>
 
@@ -99,7 +99,7 @@
         <li class="header__nav-item">
           <a
             href="#projects"
-            class="header__nav-link header__light ">
+            class="header__nav-link header_light ">
             Projects
           </a>
         </li>
@@ -107,7 +107,7 @@
         <li class="header__nav-item">
           <a
             href="about.html"
-            class="header__nav-link header__light ">
+            class="header__nav-link header_light ">
             About Us
           </a>
         </li>
@@ -115,15 +115,15 @@
         <li class="header__nav-item">
           <a
             href="#blog"
-            class="header__nav-link header__light ">
+            class="header__nav-link header_light ">
             Blog
           </a>
         </li>
 
         <li class="header__nav-item">
           <a
-            href="#contacts"
-            class="header__nav-link header__light ">
+            href="contacts.html"
+            class="header__nav-link header_light ">
             Contacts
           </a>
         </li>
@@ -136,14 +136,14 @@
           id="hamburger">
           <span
             data-line="line"
-            class="menu-btn__line header__light menu-btn__line_top"></span>
+            class="menu-btn__line header_light menu-btn__line_top"></span>
           <span
             data-line="line"
-            class="menu-btn__line header__light menu-btn__line_bottom"></span>
+            class="menu-btn__line header_light menu-btn__line_bottom"></span>
         </button>
 
         <p
-          class="nav-header__menu-text header__light"
+          class="nav-header__menu-text header_light"
           data-menu="text-menu">
           Menu
         </p>
@@ -153,7 +153,7 @@
     <div class="header__send-box send-box">
       <a
         data-leng="leng"
-        class="send-box__leng header__light"
+        class="send-box__leng header_light"
         href="#">
         En
       </a>
@@ -161,7 +161,7 @@
       <button
         data-send-btn="send-btn"
         type="submit"
-        class="send-box__btn header__light">
+        class="send-box__btn header_light">
         Send Request
       </button>
     </div>
@@ -174,7 +174,7 @@
     <ul class="mob-menu__list">
       <li class="mob-menu__list-item">
         <a
-          class="mob-menu__list-link mob-menu__active"
+          class="mob-menu__list-link mob-menu_active"
           href="index.html">
           Home
         </a>
@@ -207,7 +207,7 @@
       <li class="mob-menu__list-item">
         <a
           class="mob-menu__list-link "
-          href="#contacts">
+          href="contacts.html">
           Contacts
         </a>
       </li>
@@ -793,14 +793,16 @@
     </main>
 
     <footer class="footer">
+  <div class="footer__container container">
+    <div class="decoration-title__box">
+  <p class="decoration-title decoration-title_dark footer__decoration-title">Contacts</p>
+</div>
+
+  </div>
   <div class="contacts footer__contacts">
   <div class="contacts__overlay footer__contacts-overlay">
     <div class="contacts__container container">
-      <div class="decoration-title__box">
-  <p class="decoration-title decoration-title_dark contacts__decoration-title">Contacts</p>
-</div>
-
-      <div class="contacts__content">
+      <div class="contacts__content footer__contacts">
         <h2 class="sub-title contacts__title contacts__title-mob">Get in touch</h2>
 
         <h2 class="sub-title contacts__title contacts__title-desctop">Drop us a line</h2>
@@ -894,7 +896,7 @@
         </address>
 
         <a
-  class="make-request__btn contacts__btn"
+  class="make-request__btn contacts-section__btn"
   href="#">
   Make request
 </a>
