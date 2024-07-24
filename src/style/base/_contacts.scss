@@ -64,6 +64,7 @@
     line-height: 170.66%;
     opacity: 0.6;
     margin-bottom: 38px;
+    max-width: 320px;
 
     @media (min-width: 768px) {
       margin-bottom: 46px;
@@ -92,7 +93,7 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 41px;
+    column-gap: 20px;
     row-gap: 33px;
 
     @media (min-width: 768px) {
@@ -186,7 +187,7 @@
       margin-top: 5px;
       margin-bottom: 19px;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1440px) {
       margin-top: 1px;
       margin-bottom: 21px;
     }
