@@ -17,7 +17,7 @@ export function preloader() {
         setTimeout(() => {
           preloader.style.display = 'none';
         }, 500);
-      }, 800);
+      }, 700);
     }
   };
 
