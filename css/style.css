@@ -1078,6 +1078,7 @@ body {
   line-height: 170.66%;
   opacity: 0.6;
   margin-bottom: 38px;
+  max-width: 320px;
 }
 
 .contacts__decoration-title {
@@ -1095,9 +1096,9 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 41px;
-     -moz-column-gap: 41px;
-          column-gap: 41px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
   row-gap: 33px;
 }
 
@@ -2003,17 +2004,8 @@ body {
     margin-bottom: 19px;
   }
 
-  .address-contacts__mail {
-    margin-top: 1px;
-    margin-bottom: 21px;
-  }
-
   .footer__contacts {
     min-height: 628px;
-  }
-
-  .footer__contacts {
-    min-height: 669px;
   }
 
   .footer__contacts-overlay {
@@ -2342,6 +2334,15 @@ body {
     -webkit-column-gap: 296px;
        -moz-column-gap: 296px;
             column-gap: 296px;
+  }
+
+  .address-contacts__mail {
+    margin-top: 1px;
+    margin-bottom: 21px;
+  }
+
+  .footer__contacts {
+    min-height: 669px;
   }
 
   .footer__contacts-overlay {
