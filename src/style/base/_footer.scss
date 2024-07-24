@@ -5,14 +5,22 @@
     @media (min-width: 768px) {
       min-height: 574px;
     }
+    @media (min-width: 1024px) {
+      min-height: 628px;
+    }
 
-    &_overlay {
+    &-overlay {
       padding-top: 56px;
       padding-bottom: 41px;
 
       @media (min-width: 768px) {
         padding-top: 89px;
         padding-bottom: 25px;
+        min-height: 574px;
+      }
+      @media (min-width: 1024px) {
+        padding-top: 105px;
+        padding-bottom: 34px;
         min-height: 574px;
       }
     }
