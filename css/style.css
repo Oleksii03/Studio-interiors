@@ -1046,6 +1046,7 @@ body {
   background-image: url("../assets/img/components/contacts/bg-mob.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 50%;
 }
 
 .contacts__container {
@@ -1198,6 +1199,9 @@ body {
 
 .footer__contacts {
   min-height: 745px;
+}
+
+.footer__contacts_overlay {
   padding-top: 56px;
   padding-bottom: 41px;
 }
@@ -1752,8 +1756,12 @@ body {
 
   .footer__contacts {
     min-height: 574px;
+  }
+
+  .footer__contacts_overlay {
     padding-top: 89px;
     padding-bottom: 25px;
+    min-height: 574px;
   }
 
   .hero__container {
