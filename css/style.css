@@ -404,6 +404,14 @@ body {
   z-index: 100;
 }
 
+.preloader__text {
+  color: var(--white-secondary-color);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
 .make-request__btn {
   display: block;
   padding: 14px 40px;
