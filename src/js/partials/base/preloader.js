@@ -12,6 +12,7 @@ export function preloader() {
 
       if (increment < 40) {
         preloader.style.display = 'none';
+        percents.textContent = 100;
       }
     });
   });
