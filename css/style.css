@@ -437,6 +437,7 @@ body {
      -moz-column-gap: 5px;
           column-gap: 5px;
   width: 106px;
+  letter-spacing: 6.24px;
 }
 
 .preloader__text {
@@ -460,8 +461,8 @@ body {
 }
 
 .preloader__text_animation {
-  -webkit-animation: greeting 0.3s linear 0.3s;
-          animation: greeting 0.3s linear 0.3s;
+  -webkit-animation: greeting 0.3s linear 0.5s;
+          animation: greeting 0.3s linear 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -470,8 +471,8 @@ body {
   to {
     width: 45px;
     background-color: transparent;
-    -webkit-transform: translateX(-110%);
-            transform: translateX(-110%);
+    -webkit-transform: translateX(-155%);
+            transform: translateX(-155%);
   }
 }
 
@@ -479,8 +480,8 @@ body {
   to {
     width: 45px;
     background-color: transparent;
-    -webkit-transform: translateX(-110%);
-            transform: translateX(-110%);
+    -webkit-transform: translateX(-155%);
+            transform: translateX(-155%);
   }
 }
 
@@ -502,8 +503,8 @@ body {
 }
 
 .preloader__percents_animation {
-  -webkit-animation: percents 0.3s linear 0.3s;
-          animation: percents 0.3s linear 0.3s;
+  -webkit-animation: percents 0.3s linear 0.5s;
+          animation: percents 0.3s linear 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
