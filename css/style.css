@@ -404,12 +404,100 @@ body {
   z-index: 100;
 }
 
-.preloader__text {
+.preloader__line {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px;
+  width: 106px;
   color: var(--white-secondary-color);
   font-size: 24px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.preloader__text {
+  position: absolute;
+  left: 50%;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: var(--dark-background-color);
+  z-index: 1;
+  -webkit-animation: greeting 0.5s linear 1s;
+          animation: greeting 0.5s linear 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes greeting {
+  to {
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
+}
+
+@keyframes greeting {
+  to {
+    -webkit-transform: translateX(-70%);
+            transform: translateX(-70%);
+  }
+}
+
+.preloader__percents {
+  position: absolute;
+  left: 30%;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-animation: percents 0.5s linear 1s;
+          animation: percents 0.5s linear 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes percents {
+  to {
+    background-color: transparent;
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+    opacity: 1;
+  }
+}
+
+@keyframes percents {
+  to {
+    background-color: transparent;
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+    opacity: 1;
+  }
 }
 
 .make-request__btn {
