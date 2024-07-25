@@ -1578,11 +1578,7 @@ body {
 
 .about-hero {
   background-color: var(--light-background-color);
-  padding-top: 60px;
-}
-
-.about-hero__wrapper {
-  min-height: calc(100dvh - 60px);
+  height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url("../assets/img/main/hero/slides/s/slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/s/slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/s/slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
@@ -1979,11 +1975,6 @@ body {
   }
 
   .about-hero {
-    padding-top: 90px;
-  }
-
-  .about-hero__wrapper {
-    min-height: calc(100dvh - 90px);
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url("../assets/img/main/hero/slides/m/slider-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
     background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/m/slider-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/m/slider-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
@@ -2271,7 +2262,7 @@ body {
     font-size: 48px;
   }
 
-  .about-hero__wrapper {
+  .about-hero {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url("../assets/img/main/hero/slides/l/hero-img-slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
     background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/l/hero-img-slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/l/hero-img-slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
@@ -2620,14 +2611,6 @@ body {
 
   .lorem-ipsum__title > a {
     font-size: 56px;
-  }
-
-  .about-hero {
-    padding-top: 96px;
-  }
-
-  .about-hero__wrapper {
-    min-height: calc(100dvh - 96px);
   }
 }
 
