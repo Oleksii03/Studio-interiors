@@ -8,13 +8,71 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 1;
+  visibility: visible;
+  transition: all 200ms linear;
+  transition-delay: 300ms;
   z-index: 100;
 
+  &_hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &__line {
+    position: relative;
+    @include flex-align-row;
+    justify-content: center;
+    column-gap: 5px;
+    width: 106px;
+    letter-spacing: 6.24px;
+  }
+
   &__text {
-    color: var(--white-secondary-color);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    @include flex-align-row;
+    justify-content: center;
+    transform: translateX(-50%);
+    background-color: var(--dark-background-color);
+    z-index: 1;
+
+    &_animation {
+      animation: greeting 0.3s linear 0.5s;
+      animation-fill-mode: forwards;
+
+      @keyframes greeting {
+        to {
+          width: 45px;
+          background-color: transparent;
+          transform: translateX(-155%);
+        }
+      }
+    }
+  }
+
+  &__percents {
+    position: absolute;
+    left: 30%;
+    width: 50px;
+    height: 50px;
+    @include flex-align-row;
+    justify-content: center;
+    opacity: 0;
+
+    &_animation {
+      animation: percents 0.3s linear 0.5s;
+      animation-fill-mode: forwards;
+
+      @keyframes percents {
+        to {
+          background-color: transparent;
+          transform: translateX(40%);
+          opacity: 1;
+        }
+      }
+    }
   }
 }

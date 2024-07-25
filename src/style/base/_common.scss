@@ -37,10 +37,24 @@ p {
   margin: 0;
 }
 
-.no-scroll {
-  @media (max-width: 1439px) {
-    overflow: hidden;
+@media (min-width: 1440px) {
+  ::-webkit-scrollbar {
+    width: 12px;
   }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    background-color: #0000009e;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #00000057;
+    border: 5px solid var(--black-background-color);
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 body {
