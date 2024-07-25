@@ -368,6 +368,10 @@ p {
   margin: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   font-family: var(--primary-font);
   font-weight: 700;
@@ -2721,10 +2725,6 @@ body {
 }
 
 @media (max-width: 1439px) {
-  .no-scroll {
-    overflow: hidden;
-  }
-
   .mob-menu {
     position: fixed;
     top: 0px;
