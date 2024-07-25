@@ -447,8 +447,8 @@ body {
 }
 
 .preloader__text_animation {
-  -webkit-animation: greeting 0.3s linear;
-          animation: greeting 0.3s linear;
+  -webkit-animation: greeting 0.3s linear 0.5s;
+          animation: greeting 0.3s linear 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -485,8 +485,8 @@ body {
 }
 
 .preloader__percents_animation {
-  -webkit-animation: percents 0.3s linear;
-          animation: percents 0.3s linear;
+  -webkit-animation: percents 0.3s linear 0.5s;
+          animation: percents 0.3s linear 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
