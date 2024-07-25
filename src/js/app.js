@@ -6,8 +6,8 @@ import { preloader } from './partials/base/preloader.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   flsFunctions.isWebp();
+  preloader();
   createSlider();
   hamburgerMenu();
   header();
-  preloader();
 });
