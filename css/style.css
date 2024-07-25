@@ -419,11 +419,6 @@ body {
      -moz-column-gap: 5px;
           column-gap: 5px;
   width: 106px;
-  color: var(--white-secondary-color);
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 
 .preloader__text {
