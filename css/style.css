@@ -401,7 +401,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+  -webkit-transition-delay: 400ms;
+       -o-transition-delay: 400ms;
+          transition-delay: 400ms;
   z-index: 100;
+}
+
+.preloader_hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .preloader__line {
