@@ -412,6 +412,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-column-gap: 5px;
      -moz-column-gap: 5px;
           column-gap: 5px;
@@ -441,23 +444,26 @@ body {
           transform: translateX(-50%);
   background-color: var(--dark-background-color);
   z-index: 1;
-  -webkit-animation: greeting 0.5s linear 1s;
-          animation: greeting 0.5s linear 1s;
+}
+
+.preloader__text_animation {
+  -webkit-animation: greeting 0.3s linear;
+          animation: greeting 0.3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes greeting {
   to {
-    -webkit-transform: translateX(-70%);
-            transform: translateX(-70%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
 @keyframes greeting {
   to {
-    -webkit-transform: translateX(-70%);
-            transform: translateX(-70%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
@@ -476,8 +482,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   opacity: 0;
-  -webkit-animation: percents 0.5s linear 1s;
-          animation: percents 0.5s linear 1s;
+}
+
+.preloader__percents_animation {
+  -webkit-animation: percents 0.3s linear;
+          animation: percents 0.3s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -485,8 +494,8 @@ body {
 @-webkit-keyframes percents {
   to {
     background-color: transparent;
-    -webkit-transform: translateX(70%);
-            transform: translateX(70%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
     opacity: 1;
   }
 }
@@ -494,8 +503,8 @@ body {
 @keyframes percents {
   to {
     background-color: transparent;
-    -webkit-transform: translateX(70%);
-            transform: translateX(70%);
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
     opacity: 1;
   }
 }
@@ -2799,7 +2808,7 @@ body {
 
 @media (max-width: 767px) {
   .slider__img {
-    min-height: 100dvh;
+    min-height: 100vh;
   }
 
   .data-box {
