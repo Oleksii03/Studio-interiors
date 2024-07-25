@@ -410,9 +410,9 @@ body {
   -webkit-transition: all 250ms linear;
   -o-transition: all 250ms linear;
   transition: all 250ms linear;
-  -webkit-transition-delay: 400ms;
-       -o-transition-delay: 400ms;
-          transition-delay: 400ms;
+  -webkit-transition-delay: 300ms;
+       -o-transition-delay: 300ms;
+          transition-delay: 300ms;
   z-index: 100;
 }
 
@@ -468,6 +468,8 @@ body {
 
 @-webkit-keyframes greeting {
   to {
+    width: 45px;
+    background-color: transparent;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
@@ -475,6 +477,8 @@ body {
 
 @keyframes greeting {
   to {
+    width: 45px;
+    background-color: transparent;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
