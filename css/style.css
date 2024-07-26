@@ -485,6 +485,31 @@ body {
   }
 }
 
+.preloader__text .preloader__percents_animation-slow {
+  -webkit-animation: greeting-slaw 0.3s linear 0.5s;
+          animation: greeting-slaw 0.3s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes greeting-slaw {
+  to {
+    width: 45px;
+    background-color: transparent;
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+  }
+}
+
+@keyframes greeting-slaw {
+  to {
+    width: 45px;
+    background-color: transparent;
+    -webkit-transform: translateX(-110%);
+            transform: translateX(-110%);
+  }
+}
+
 .preloader__percents {
   position: absolute;
   left: 30%;
@@ -523,6 +548,31 @@ body {
     background-color: transparent;
     -webkit-transform: translateX(40%);
             transform: translateX(40%);
+    opacity: 1;
+  }
+}
+
+.preloader__percents .preloader__percents_animation-slow {
+  -webkit-animation: percents-slaw 0.3s linear 0.5s;
+          animation: percents-slaw 0.3s linear 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes percents-slaw {
+  to {
+    background-color: transparent;
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
+    opacity: 1;
+  }
+}
+
+@keyframes percents-slaw {
+  to {
+    background-color: transparent;
+    -webkit-transform: translateX(80%);
+            transform: translateX(80%);
     opacity: 1;
   }
 }
