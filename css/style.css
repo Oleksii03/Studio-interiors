@@ -1815,7 +1815,34 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: 170.66%;
-  /* 23.892px */
+  margin-bottom: 16px;
+}
+
+.about-company__philosophy-slider {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  aspect-ratio: 1/1;
+}
+
+.about-company__philosophy-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/1;
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+  width: 100%;
+  height: 100%;
+}
+
+.about-company__philosophy-btn {
+  background-color: rgba(29, 27, 27, 0.4823529412);
+  width: 100%;
+  top: calc(100% - 35px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .contacts-section {
