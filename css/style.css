@@ -1829,8 +1829,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 1/1;
-  -o-object-position: 50% 70%;
-     object-position: 50% 70%;
+  -o-object-position: 50% 90%;
+     object-position: 50% 90%;
   width: 100%;
   height: 100%;
 }
@@ -2239,6 +2239,11 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/m/slider-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .about-company__philosophy-btn {
+    padding: 30px;
+    top: calc(100% - 74px);
   }
 
   .contacts-section__contacts {
