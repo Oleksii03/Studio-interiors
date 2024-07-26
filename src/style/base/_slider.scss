@@ -93,6 +93,8 @@
     &-svg {
       width: 4px;
       height: 8px;
+      fill: #00000000;
+      stroke: var(--white-base-color);
     }
 
     & > span {
@@ -103,6 +105,7 @@
       font-weight: 300;
       line-height: normal;
       letter-spacing: 0.66px;
+      stroke: #171515;
     }
 
     &_prev-num {

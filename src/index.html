@@ -3,22 +3,25 @@
   @@include('html-partials/base/head.html',{ "title":"Studio of interiors" })
 
   <body>
-    @@include('html-partials/base/preloader.html')
-    <!-- ------ -->
-    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
-    "color-class": "header_light", "title": "Home" })
-    <!-- mob-menu -->
-    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
-    "Home" })
+    <div class="wrapper">
+      @@include('html-partials/base/preloader.html')
+      <!-- ------ -->
+      @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+      "color-class": "header_light", "title": "Home" })
+      <!-- mob-menu -->
+      @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
+      "Home" })
 
-    <main>
-      @@include('html-partials/pages/main/hero.html')
-      @@include('html-partials/pages/main/company.html')
-      @@include('./html-partials/pages/main/our-projects.html')
-      @@include('./html-partials/pages/main/lorem-ipsum.html')
-    </main>
+      <main>
+        @@include('html-partials/pages/main/hero.html')
+        @@include('html-partials/pages/main/company.html')
+        @@include('./html-partials/pages/main/our-projects.html')
+        @@include('./html-partials/pages/main/lorem-ipsum.html')
+      </main>
 
-    @@include('html-partials/base/footer.html')
+      @@include('html-partials/base/footer.html')
+    </div>
+
     <script
       src="js/app.min.js"
       type="module"></script>

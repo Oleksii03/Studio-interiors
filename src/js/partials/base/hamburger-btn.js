@@ -5,7 +5,7 @@ export function hamburgerMenu() {
   hamburger.addEventListener('click', e => {
     animationHamburgerBtn();
     toggleMobMenu();
-    invertColors();
+    // invertColors();
 
     // if (window.location.pathname === '/about.html') {
     // }
@@ -27,15 +27,15 @@ export function hamburgerMenu() {
     document.body.classList.toggle('no-scroll');
   }
 
-  function invertColors() {
-    const logo = document.querySelector('[data-logo="logo"]');
-    const menuText = document.querySelector('[data-menu="text-menu"]');
-    const menuLines = document.querySelectorAll('[data-line="line"]');
-    const leng = document.querySelector('[data-leng="leng"]');
-    const btnSend = document.querySelector('[data-send-btn="send-btn"]');
+  // function invertColors() {
+  //   const logo = document.querySelector('[data-logo="logo"]');
+  //   const menuText = document.querySelector('[data-menu="text-menu"]');
+  //   const menuLines = document.querySelectorAll('[data-line="line"]');
+  //   const leng = document.querySelector('[data-leng="leng"]');
+  //   const btnSend = document.querySelector('[data-send-btn="send-btn"]');
 
-    [logo, menuText, ...menuLines, leng, btnSend].forEach(el => {
-      el.classList.toggle('invert');
-    });
-  }
+  //   [logo, menuText, ...menuLines, leng, btnSend].forEach(el => {
+  //     el.classList.toggle('invert');
+  //   });
+  // }
 }
