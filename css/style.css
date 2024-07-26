@@ -1637,7 +1637,7 @@ body {
 
 .our-projects__bottom-content {
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .our-projects__decoration-title {
