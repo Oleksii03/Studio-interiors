@@ -3,12 +3,16 @@ export function preloader() {
     preloader = document.getElementById('preloader'),
     boxPercentsSpan = document.querySelector('.js-box-percents  > span'),
     boxPercent = document.querySelector('.js-box-percents'),
-    preloaderText = document.querySelector('.js-preloader-text');
+    preloaderText = document.querySelector('.js-preloader-text'),
+    percents = document.getElementById('percents');
 
   let percent = 0;
 
   function fastInternet() {
     let interval = setInterval(() => {
+      boxPercent.classList.add('preloader__percents_animation');
+      preloaderText.classList.add('preloader__text_animation');
+
       percent += 1;
       boxPercentsSpan.textContent = '';
       percentElement.textContent = 'LIGHT';
@@ -16,31 +20,49 @@ export function preloader() {
       if (percent >= 100) {
         setTimeout(() => {
           clearInterval(interval);
-          preloader.style.opacity = 0;
 
           preloader.classList.add('preloader_hidden');
           document.body.classList.remove('no-scroll');
-        }, 1000);
+        }, 300);
       }
     }, 10);
   }
 
   function slowInternet() {
     let interval = setInterval(() => {
+      boxPercent.classList.add('preloader__percents_animation-slow');
+      preloaderText.classList.add('preloader__text_animation-slow');
+
       percent += 1;
       percentElement.textContent = percent;
 
       if (percent >= 100) {
         clearInterval(interval);
-        preloader.style.opacity = 0;
 
-        setTimeout(() => {
-          preloader.classList.add('preloader_hidden');
-          document.body.classList.remove('no-scroll');
-        }, 1000);
+        handleCompletion();
       }
     }, 30);
   }
+
+  function handleCompletion() {
+    setTimeout(() => {
+      percents.style.opacity = 0;
+      percents.textContent = '';
+      boxPercentsSpan.textContent = '';
+
+      setTimeout(() => {
+        percents.style.opacity = 1;
+        percents.textContent = 'LIGHT';
+      }, 1000);
+
+      setTimeout(() => {
+        preloader.classList.add('preloader_hidden');
+        document.body.classList.remove('no-scroll');
+      }, 2100);
+    }, 500);
+  }
+
+  // ----------------------------------------
 
   const image = new Image();
   const startTime = new Date().getTime();

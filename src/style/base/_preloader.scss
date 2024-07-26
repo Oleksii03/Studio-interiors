@@ -10,8 +10,8 @@
   align-items: center;
   opacity: 1;
   visibility: visible;
-  transition: all 200ms linear;
-  transition-delay: 300ms;
+  transition: all 150ms linear;
+  transition-delay: 150ms;
   z-index: 100;
 
   &_hidden {
@@ -47,7 +47,20 @@
         to {
           width: 45px;
           background-color: transparent;
-          transform: translateX(-155%);
+          transform: translateX(-142%);
+        }
+      }
+    }
+
+    &.preloader__text_animation-slow {
+      animation: greeting-slaw 0.3s linear 0.5s;
+      animation-fill-mode: forwards;
+
+      @keyframes greeting-slaw {
+        to {
+          width: 45px;
+          background-color: transparent;
+          transform: translateX(-142%);
         }
       }
     }
@@ -69,10 +82,27 @@
       @keyframes percents {
         to {
           background-color: transparent;
-          transform: translateX(40%);
+          transform: translateX(56%);
+          opacity: 1;
+        }
+      }
+    }
+
+    &.preloader__percents_animation-slow {
+      animation: percents-slaw 0.3s linear 0.5s;
+      animation-fill-mode: forwards;
+
+      @keyframes percents-slaw {
+        to {
+          background-color: transparent;
+          transform: translateX(56%);
           opacity: 1;
         }
       }
     }
   }
+}
+
+.percents {
+  transition: all 250ms linear;
 }
