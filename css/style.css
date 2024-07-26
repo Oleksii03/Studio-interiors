@@ -372,10 +372,15 @@ p {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 body {
   font-family: var(--primary-font);
   font-weight: 700;
-  color: var(--white-base-color);
+  background-color: var(--gray-base-color);
 }
 
 :root {
@@ -414,7 +419,6 @@ body {
        -o-transition-delay: 150ms;
           transition-delay: 150ms;
   z-index: 100;
-  display: none;
 }
 
 .preloader_hidden {
@@ -681,6 +685,8 @@ body {
 .slider__btn-svg {
   width: 4px;
   height: 8px;
+  fill: rgba(0, 0, 0, 0);
+  stroke: var(--white-base-color);
 }
 
 .slider__btn > span {
@@ -691,6 +697,7 @@ body {
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.66px;
+  stroke: #171515;
 }
 
 .slider__btn_prev-num {
@@ -1047,7 +1054,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 6;
   padding: 21px 0;
 }
 
@@ -1075,10 +1082,6 @@ body {
   -webkit-transition: all 250ms ease-in-out;
   -o-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
-}
-
-.header__logo.header_dark.invert {
-  color: var(--white-base-color);
 }
 
 .header__container {
@@ -1146,10 +1149,6 @@ body {
   color: var(--black-base-color);
 }
 
-.send-box__leng.header_dark.invert {
-  color: var(--white-base-color);
-}
-
 .send-box__btn {
   display: none;
   border: 1px solid rgba(253, 253, 253, 0.32);
@@ -1172,11 +1171,6 @@ body {
   transition: all 250ms ease-in-out;
   color: var(--black-base-color);
   border: 1px solid rgba(0, 0, 0, 0.32);
-}
-
-.send-box__btn.header_dark.invert {
-  color: var(--white-base-color);
-  border: 1px solid rgba(221, 217, 217, 0.32);
 }
 
 .mob-menu .mob-menu_active {
@@ -1477,6 +1471,7 @@ body {
   padding-top: 78px;
   padding-bottom: 30px;
   overflow-x: hidden;
+  background-color: var(--light-background-color);
 }
 
 .company__container {
@@ -1792,6 +1787,7 @@ body {
   padding-top: 78px;
   padding-bottom: 78px;
   background-color: var(--light-background-color);
+  overflow: hidden;
 }
 
 .about-company__philosophy {
@@ -1822,7 +1818,8 @@ body {
   position: relative;
   overflow: hidden;
   padding: 0;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1.025;
+  padding-right: 30px;
 }
 
 .about-company__philosophy-img {
@@ -1833,12 +1830,13 @@ body {
      object-position: 50% 90%;
   width: 100%;
   height: 100%;
+  padding-right: 12px;
 }
 
-.about-company__philosophy-btn {
+.about-company__philosophy-btn-box {
   background-color: rgba(29, 27, 27, 0.4823529412);
   width: 100%;
-  top: calc(100% - 35px);
+  top: calc(100% - 34px);
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -2241,7 +2239,11 @@ body {
     background-position: center;
   }
 
-  .about-company__philosophy-btn {
+  .about-company__philosophy-slider {
+    aspect-ratio: 1/1.072;
+  }
+
+  .about-company__philosophy-btn-box {
     padding: 30px;
     top: calc(100% - 74px);
   }
@@ -2532,6 +2534,58 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/l/hero-img-slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  .about-company {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about-company__text-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 383px;
+    margin-left: auto;
+    margin-right: 35px;
+  }
+
+  .about-company__philosophy-title > br {
+    display: block;
+  }
+
+  .about-company__philosophy-slider {
+    position: static;
+    aspect-ratio: 0;
+  }
+
+  .about-company__philosophy-btn-box::before {
+    background-color: var(--gray-base-color);
+  }
+
+  .about-company__philosophy-btn-box button > svg,
+  .about-company__philosophy-btn-box span {
+    stroke: var(--gray-base-color);
+    color: var(--gray-base-color);
+  }
+
+  .about-company__philosophy-btn-box {
+    top: 70%;
+    left: 20%;
+    width: 308px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 5px;
   }
 }
 
@@ -3107,8 +3161,41 @@ body {
     font-size: 56px;
   }
 
-  .about-company__philosophy-title > br {
-    display: block;
+  .about-company {
+    padding-top: 138px;
+    -webkit-column-gap: 82px;
+       -moz-column-gap: 82px;
+            column-gap: 82px;
+  }
+
+  .about-company__container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about-company__philosophy-title {
+    margin-bottom: 24px;
+  }
+
+  .about-company__philosophy-description {
+    margin-bottom: 0px;
+  }
+
+  .about-company__philosophy-slider {
+    position: static;
+    padding-right: 80px;
+    margin-left: 20px;
+  }
+
+  .about-company__philosophy-img {
+    width: 515px;
+    height: 444px;
+  }
+
+  .about-company__philosophy-btn-box {
+    top: 76%;
+    left: 412px;
+    width: 308px;
   }
 }
 
@@ -3119,7 +3206,7 @@ body {
     left: 0;
     width: 100vw;
     min-height: 100dvh;
-    z-index: 2;
+    z-index: 5;
     opacity: 0;
     background-color: var(--black-base-color);
     background-size: cover;
@@ -3287,16 +3374,6 @@ body {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
-  }
-
-  .nav-header__menu-text.header_dark {
-    -webkit-transition: all 250ms ease-in-out;
-    -o-transition: all 250ms ease-in-out;
-    transition: all 250ms ease-in-out;
-    color: var(--black-base-color);
-  }
-
-  .nav-header__menu-text.header_dark.invert {
     color: var(--white-base-color);
   }
 

@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240726233749" />
+    href="css/style.min.css?_v=20240727022123" />
 
   <title>About Us</title>
   <svg
@@ -37,9 +37,6 @@
       id="icon-arrow-next"
       viewBox="0 0 19 32">
       <path
-        fill="none"
-        stroke="#fff"
-        style="stroke: var(--color1, #fff)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -50,9 +47,6 @@
       id="icon-arrow-prev"
       viewBox="0 0 19 32">
       <path
-        fill="none"
-        stroke="#fff"
-        style="stroke: var(--color1, #fff)"
         stroke-linejoin="miter"
         stroke-linecap="butt"
         stroke-miterlimit="4"
@@ -97,8 +91,9 @@
 
 
   <body>
-    <!-- preloader -->
-    <div
+    <div class="wrapper">
+      <!-- preloader -->
+      <div
   id="preloader"
   class="preloader">
   <div class="preloader__line">
@@ -115,8 +110,8 @@
   </div>
 </div>
 
-    <!-- header -->
-    <header class="header js-header">
+      <!-- header -->
+      <header class="header js-header">
   <div class="header__container container">
     <a
       data-logo="logo"
@@ -199,8 +194,8 @@
   </div>
 </header>
 
-    <!-- mob-menu -->
-    <div class="mob-menu js-menu">
+      <!-- mob-menu -->
+      <div class="mob-menu js-menu">
   <div class="mob-menu__container container">
     <ul class="mob-menu__list">
       <li class="mob-menu__list-item">
@@ -310,8 +305,8 @@
 </div>
 
 
-    <main>
-      <section class="about-hero">
+      <main>
+        <section class="about-hero">
   <div class="about-hero__container container">
     <div class="about-hero__content">
       <h1 class="about-hero__title">Company Philosophy</h1>
@@ -324,7 +319,7 @@
   </div>
 </section>
 
-      <section class="about-company">
+        <section class="about-company">
   <div class="about-company__container container">
     <div class="about-company__philosophy">
       <div class="about-company__text-box">
@@ -340,8 +335,9 @@
           styles and architecture.
         </p>
       </div>
-
-      <div class="slider about-company__philosophy-slider">
+    </div>
+  </div>
+  <div class="slider about-company__philosophy-slider">
   <div class="slider__track js-slider-track">
     <ul class="slider__line js-slider-line">
       <li class="slider__slide">
@@ -398,14 +394,11 @@
       <li class="slider__slide">
         <picture>
           <source
-            srcset="assets/img/main/hero/slides/l/hero-img-slide-1.webp"
-            media="(min-width: 1024px)" />
-          <source
-            srcset="assets/img/main/hero/slides/m/slider-1.webp"
+            srcset="assets/img/main/hero/slides/l/hero-img-slide-5.webp"
             media="(min-width: 768px)" />
           <img
             class="about-company__philosophy-img js-slider-img"
-            src="assets/img/main/hero/slides/s/slide-1.webp"
+            src="assets/img/main/hero/slides/m/slider-5.webp"
             alt="hero-img-slide-1" />
         </picture>
       </li>
@@ -413,25 +406,29 @@
       <li class="slider__slide">
         <picture>
           <source
-            srcset="assets/img/main/hero/slides/l/hero-img-slide-5.png.webp"
+            srcset="assets/img/main/hero/slides/l/hero-img-slide-1.webp"
+            media="(min-width: 1024px)" />
+          <source
+            srcset="assets/img/main/hero/slides/m/slider-1.webp"
             media="(min-width: 768px)" />
           <img
             width="1000"
             height="1000"
             class="about-company__philosophy-img js-slider-img"
-            src="assets/img/main/hero/slides/m/slider-5.webp"
+            src="assets/img/main/hero/slides/s/slide-1.webp"
             alt="hero-img-slide-5" />
         </picture>
       </li>
     </ul>
 
-    <div class="slider__btn-box about-company__philosophy-btn">
+    <div class="slider__btn-box about-company__philosophy-btn-box">
       <button
         type="button"
         class="slider__btn slider__btn_prev js-slider-btn-prev">
         <svg class="slider__btn-svg">
           <use xlink:href="#icon-arrow-prev"></use>
         </svg>
+        <!-- &#8249; -->
         <span class="slider__btn_prev-num js-span-prev">01</span>
       </button>
 
@@ -443,16 +440,16 @@
         <svg class="slider__btn-svg">
           <use xlink:href="#icon-arrow-next"></use>
         </svg>
+        <!-- &#8250; -->
       </button>
     </div>
   </div>
 </div>
 
-    </div>
-  </div>
 </section>
 
-    </main>
+      </main>
+    </div>
 
     <script
       src="./js/about.min.js"
