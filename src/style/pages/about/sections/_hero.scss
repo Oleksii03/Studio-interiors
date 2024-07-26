@@ -1,6 +1,5 @@
 .about-hero {
   background-color: var(--light-background-color);
-  height: 100vh;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%),
     url('@assets/img/main/hero/slides/s/slide-1.webp') lightgray -4.799px 0px / 103.037% 100% no-repeat;
@@ -20,5 +19,30 @@
         no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+  &__container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  }
+
+  &__content {
+    max-width: 383px;
+    color: var(--white-base-color);
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: normal;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170%;
   }
 }

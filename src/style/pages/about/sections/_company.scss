@@ -1,0 +1,54 @@
+.about-company {
+  padding-top: 78px;
+  padding-bottom: 78px;
+
+  background-color: var(--light-background-color);
+
+  &__philosophy {
+    color: var(--black-base-color);
+
+    &-title {
+      font-size: clamp(1.625rem, 1.405rem + 0.94vw, 2.25rem);
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 16px;
+
+      & > br {
+        display: none;
+        @media (min-width: 1440px) {
+          display: block;
+        }
+      }
+    }
+
+    &-description {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 170.66%;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__philosophy-slider {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    aspect-ratio: 1/1;
+  }
+
+  &__philosophy-img {
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    object-position: 50% 50%;
+  }
+
+  &__philosophy-btn {
+    background-color: #1d1b1b7b;
+    width: 100%;
+    top: calc(100% - 35px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
