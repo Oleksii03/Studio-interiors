@@ -414,6 +414,7 @@ body {
        -o-transition-delay: 150ms;
           transition-delay: 150ms;
   z-index: 100;
+  display: none;
 }
 
 .preloader_hidden {
@@ -1754,12 +1755,67 @@ body {
 
 .about-hero {
   background-color: var(--light-background-color);
-  height: 100vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url("../assets/img/main/hero/slides/s/slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/s/slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/s/slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.about-hero__container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.about-hero__content {
+  max-width: 383px;
+  color: var(--white-base-color);
+  text-align: center;
+}
+
+.about-hero__title {
+  font-size: 36px;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.about-hero__text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 170%;
+}
+
+.about-company {
+  padding-top: 78px;
+  padding-bottom: 78px;
+  background-color: var(--light-background-color);
+}
+
+.about-company__philosophy {
+  color: var(--black-base-color);
+}
+
+.about-company__philosophy-title {
+  font-size: clamp(1.625rem, 1.405rem + 0.94vw, 2.25rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.about-company__philosophy-title > br {
+  display: none;
+}
+
+.about-company__philosophy-description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 170.66%;
+  /* 23.892px */
 }
 
 .contacts-section {
@@ -3017,6 +3073,10 @@ body {
 
   .lorem-ipsum__title > a {
     font-size: 56px;
+  }
+
+  .about-company__philosophy-title > br {
+    display: block;
   }
 }
 
