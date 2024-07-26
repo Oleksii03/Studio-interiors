@@ -496,8 +496,8 @@ body {
   to {
     width: 45px;
     background-color: transparent;
-    -webkit-transform: translateX(-136%);
-            transform: translateX(-136%);
+    -webkit-transform: translateX(-142%);
+            transform: translateX(-142%);
   }
 }
 
@@ -505,8 +505,8 @@ body {
   to {
     width: 45px;
     background-color: transparent;
-    -webkit-transform: translateX(-136%);
-            transform: translateX(-136%);
+    -webkit-transform: translateX(-142%);
+            transform: translateX(-142%);
   }
 }
 
@@ -537,8 +537,8 @@ body {
 @-webkit-keyframes percents {
   to {
     background-color: transparent;
-    -webkit-transform: translateX(54%);
-            transform: translateX(54%);
+    -webkit-transform: translateX(56%);
+            transform: translateX(56%);
     opacity: 1;
   }
 }
@@ -546,8 +546,8 @@ body {
 @keyframes percents {
   to {
     background-color: transparent;
-    -webkit-transform: translateX(54%);
-            transform: translateX(54%);
+    -webkit-transform: translateX(56%);
+            transform: translateX(56%);
     opacity: 1;
   }
 }
@@ -562,8 +562,8 @@ body {
 @-webkit-keyframes percents-slaw {
   to {
     background-color: transparent;
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%);
+    -webkit-transform: translateX(56%);
+            transform: translateX(56%);
     opacity: 1;
   }
 }
@@ -571,8 +571,8 @@ body {
 @keyframes percents-slaw {
   to {
     background-color: transparent;
-    -webkit-transform: translateX(60%);
-            transform: translateX(60%);
+    -webkit-transform: translateX(56%);
+            transform: translateX(56%);
     opacity: 1;
   }
 }
