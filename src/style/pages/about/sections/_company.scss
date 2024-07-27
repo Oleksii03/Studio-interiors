@@ -95,30 +95,28 @@
     width: 100%;
     height: 100%;
 
-    padding-right: 12px;
+    padding-right: 5px;
 
     @media (min-width: 1440px) {
       width: 515px;
       height: 444px;
+      padding-right: 12px;
     }
   }
 
   &__philosophy-btn-box {
-    background-color: #1d1b1b7b;
     width: 100%;
-    top: calc(100% - 34px);
+    top: calc(100% - 30px);
     left: 50%;
     transform: translateX(-50%);
 
-    @media (min-width: 1024px) {
-      &::before {
-        background-color: var(--gray-base-color);
-      }
+    &::before {
+      background-color: var(--gray-base-color);
     }
 
-    & button > svg,
-    span {
-      @media (min-width: 1024px) {
+    & button {
+      & > svg,
+      span {
         stroke: var(--gray-base-color);
         color: var(--gray-base-color);
       }

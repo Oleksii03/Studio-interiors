@@ -21,7 +21,7 @@ export function createSlider() {
 
   btnPrev.addEventListener('click', e => {
     count -= 1;
-    if (count < 0) count = images.length - 1;
+    if (count <= -1) count = images.length - 2;
     rollSlider();
   });
 
@@ -32,9 +32,13 @@ export function createSlider() {
   });
 
   function rollSlider() {
+    // console.log(count);
+    // console.log(fullCount);
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
+
     spanPrev.textContent = count + 1;
     spanNext.textContent = fullCount - count;
+
     spanPrev.textContent = spanPrev.textContent.padStart(2, '0');
     spanNext.textContent = spanNext.textContent.padStart(2, '0');
   }
