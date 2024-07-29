@@ -419,6 +419,7 @@ body {
        -o-transition-delay: 150ms;
           transition-delay: 150ms;
   z-index: 100;
+  display: none;
 }
 
 .preloader_hidden {
@@ -1790,6 +1791,14 @@ body {
   overflow: hidden;
 }
 
+.about-company__wrapper-top {
+  margin-bottom: 78px;
+}
+
+.about-company__wrapper-middle {
+  margin-bottom: 78px;
+}
+
 .about-company__philosophy {
   color: var(--black-base-color);
 }
@@ -1850,6 +1859,49 @@ body {
 .about-company__philosophy-btn-box button span {
   stroke: var(--gray-base-color);
   color: var(--gray-base-color);
+}
+
+.statistics {
+  color: var(--black-base-color);
+  display: -ms-grid;
+  display: grid;
+  row-gap: clamp(1.625rem, 0.965rem + 2.82vw, 3.5rem);
+}
+
+.statistics__list {
+  margin-bottom: clamp(1.625rem, 0.965rem + 2.82vw, 3.5rem);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (151px)[2];
+  grid-template-columns: repeat(2, 151px);
+  gap: 20px;
+}
+
+.statistics__number {
+  font-size: clamp(2.25rem, 1.81rem + 1.88vw, 3.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.statistics__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 132%;
+}
+
+.statistics__description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 170%;
+}
+
+.statistics__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .contacts-section {
@@ -2257,6 +2309,26 @@ body {
     top: calc(100% - 74px);
   }
 
+  .statistics {
+    -ms-grid-columns: calc(55% - 25px) calc(45% - 25px);
+    grid-template-columns: calc(55% - 25px) calc(45% - 25px);
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .statistics__in-numbers {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+
   .contacts-section__contacts {
     min-height: 500px;
   }
@@ -2545,7 +2617,7 @@ body {
     background-position: center;
   }
 
-  .about-company {
+  .about-company__wrapper-top {
     position: relative;
     display: -ms-grid;
     display: grid;
@@ -2554,6 +2626,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 120px;
+  }
+
+  .about-company__wrapper-middle {
+    margin-bottom: 120px;
   }
 
   .about-company__text-box {
@@ -2585,6 +2662,14 @@ body {
     background-color: transparent;
     border-radius: 10px;
     padding: 5px;
+  }
+
+  .statistics {
+    -ms-grid-columns: calc(55% - 40px) calc(45% - 40px);
+    grid-template-columns: calc(55% - 40px) calc(45% - 40px);
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px;
   }
 }
 
@@ -3162,9 +3247,29 @@ body {
 
   .about-company {
     padding-top: 138px;
+  }
+
+  .about-company__wrapper-top {
     -webkit-column-gap: 82px;
        -moz-column-gap: 82px;
             column-gap: 82px;
+    margin-bottom: 140px;
+  }
+
+  .about-company__wrapper-middle {
+    padding-left: 116px;
+    position: relative;
+    margin-bottom: 180px;
+  }
+
+  .about-company__wrapper-middle:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -42px;
+    width: 168px;
+    height: 216px;
+    background-image: url("../assets/img/pagrs/about/company/small-img.webp");
   }
 
   .about-company__container {
@@ -3182,7 +3287,7 @@ body {
 
   .about-company__philosophy-slider {
     position: static;
-    padding-right: 80px;
+    padding-right: 95px;
     margin-left: 20px;
   }
 
@@ -3193,9 +3298,30 @@ body {
   }
 
   .about-company__philosophy-btn-box {
-    top: 76%;
+    top: 82%;
     left: 412px;
     width: 308px;
+  }
+
+  .statistics {
+    -ms-grid-columns: 516px 382px;
+    grid-template-columns: 516px 382px;
+    -webkit-column-gap: 132px;
+       -moz-column-gap: 132px;
+            column-gap: 132px;
+  }
+
+  .statistics__list {
+    -webkit-column-gap: 26px;
+       -moz-column-gap: 26px;
+            column-gap: 26px;
+    row-gap: 40px;
+    margin-bottom: 56px;
+  }
+
+  .statistics__img {
+    width: 516px;
+    height: 607px;
   }
 }
 
