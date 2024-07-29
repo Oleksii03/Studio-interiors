@@ -1,0 +1,22 @@
+.btn-up {
+  position: fixed;
+  right: 10%;
+  bottom: 5%;
+
+  border-radius: 50%;
+
+  background-color: #28272792;
+  z-index: 2;
+
+  &__link {
+    @include flex-align-row;
+    padding: 10px;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+    fill: #ffffff94;
+    line-height: normal;
+  }
+}

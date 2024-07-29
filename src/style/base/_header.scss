@@ -5,9 +5,9 @@
   width: 100%;
   z-index: 6;
   padding: 21px 0;
+  transition: all 400ms linear;
 
   &_active {
-    transition: all 400ms linear;
     background-color: #000000bb;
     backdrop-filter: blur(10px);
   }

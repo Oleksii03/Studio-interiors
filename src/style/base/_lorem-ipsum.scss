@@ -33,7 +33,7 @@
       top: 50%;
     }
     @media (min-width: 1440px) {
-      width: 500px;
+      width: 440px;
     }
   }
 
@@ -87,5 +87,24 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 170.66%;
+  }
+
+  // ----------------------
+
+  &--light {
+    background-color: var(--white-base-color);
+    color: var(--black-base-color);
+  }
+  &--dark {
+    background-color: var(--dark-background-color);
+
+    & {
+      & > .lorem-ipsum__text {
+        color: var(--white-base-color);
+      }
+    }
+    > h2 > .lorem-ipsum__title-link {
+      color: var(--white-base-color);
+    }
   }
 }

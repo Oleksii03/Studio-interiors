@@ -7,6 +7,7 @@
 
   @media (min-width: 1440px) {
     padding-top: 138px;
+    padding-bottom: 144px;
   }
 
   &__wrapper-top {
@@ -254,6 +255,7 @@
     row-gap: 20px;
 
     @media (min-width: 1440px) {
+      position: relative;
       align-items: start;
       column-gap: 113px;
       row-gap: 0px;
@@ -265,6 +267,10 @@
       padding-left: 200px;
       padding-top: 68px;
     }
+  }
+
+  &__content-bottom {
+    grid-column: 2/3;
   }
 
   &__title {
@@ -321,7 +327,8 @@
 
     @media (min-width: 1440px) {
       margin-top: 100px;
-      gap: 79px;
+      gap: 83px;
+      margin-bottom: 57px;
     }
   }
 
@@ -335,15 +342,29 @@
 
   &__description-bottom {
     @extend .statistics__description;
+    @media (min-width: 1440px) {
+      width: 516px;
+    }
   }
 
   &__img {
-    object-fit: cover;
-    aspect-ratio: 1/1;
-    width: 100%;
-    height: 100%;
+    display: none;
 
+    @media (min-width: 768px) {
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      width: 100%;
+      height: 100%;
+    }
     @media (min-width: 1024px) {
+      width: 315px;
+      height: 380px;
+    }
+    @media (min-width: 1440px) {
+      position: absolute;
+      left: 133px;
+      bottom: 104px;
       width: 315px;
       height: 380px;
     }
@@ -351,13 +372,12 @@
 
   &__founder {
     margin-bottom: 22px;
-
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 100%;
+    height: 100%;
     @media (min-width: 768px) {
-      object-fit: cover;
-      object-position: 50% 0;
-      aspect-ratio: 1/1;
-      width: 100%;
-      height: 100%;
       margin-bottom: 0px;
     }
 
