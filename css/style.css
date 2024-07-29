@@ -1399,6 +1399,49 @@ body {
   display: none;
 }
 
+.lorem-ipsum {
+  position: relative;
+  min-height: 675px;
+  background-color: var(--light-background-color);
+  background-image: url("../assets/img/main/lorem-ipsum/bg-mob.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lorem-ipsum__content {
+  width: 288px;
+  text-align: center;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.lorem-ipsum__title {
+  margin-bottom: 16px;
+}
+
+.lorem-ipsum__title_dig {
+  display: none;
+}
+
+.lorem-ipsum__title > a {
+  color: var(--black-base-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.lorem-ipsum__text {
+  color: var(--black-base-color);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 170.66%;
+}
+
 .hero {
   position: relative;
 }
@@ -1706,49 +1749,6 @@ body {
   color: var(--black-base-color);
 }
 
-.lorem-ipsum {
-  position: relative;
-  min-height: 675px;
-  background-color: var(--light-background-color);
-  background-image: url("../assets/img/main/lorem-ipsum/bg-mob.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.lorem-ipsum__content {
-  width: 288px;
-  text-align: center;
-  position: absolute;
-  top: 53%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.lorem-ipsum__title {
-  margin-bottom: 16px;
-}
-
-.lorem-ipsum__title_dig {
-  display: none;
-}
-
-.lorem-ipsum__title > a {
-  color: var(--black-base-color);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.lorem-ipsum__text {
-  color: var(--black-base-color);
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 170.66%;
-}
-
 .about-hero {
   background-color: var(--light-background-color);
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url("../assets/img/main/hero/slides/s/slide-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
@@ -1903,6 +1903,12 @@ body {
      object-position: 50% 50%;
 }
 
+.team__content-bottom {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
 .team__title {
   font-size: 26px;
   font-weight: 700;
@@ -1939,15 +1945,18 @@ body {
 }
 
 .team__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 1/1;
-  width: 100%;
-  height: 100%;
+  display: none;
 }
 
 .team__founder {
   margin-bottom: 22px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0;
+     object-position: 50% 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contacts-section {
@@ -2169,6 +2178,32 @@ body {
     right: 100px;
   }
 
+  .lorem-ipsum {
+    min-height: 831px;
+    background-image: url("../assets/img/main/lorem-ipsum/bg-tablet.webp");
+  }
+
+  .lorem-ipsum__content {
+    width: 400px;
+    top: 50%;
+  }
+
+  .lorem-ipsum__title {
+    margin-bottom: 24px;
+  }
+
+  .lorem-ipsum__title_small {
+    display: none;
+  }
+
+  .lorem-ipsum__title_dig {
+    display: block;
+  }
+
+  .lorem-ipsum__title > a {
+    font-size: 44px;
+  }
+
   .hero__container {
     padding-top: 382px;
   }
@@ -2312,32 +2347,6 @@ body {
     margin-bottom: 23px;
   }
 
-  .lorem-ipsum {
-    min-height: 831px;
-    background-image: url("../assets/img/main/lorem-ipsum/bg-tablet.webp");
-  }
-
-  .lorem-ipsum__content {
-    width: 400px;
-    top: 50%;
-  }
-
-  .lorem-ipsum__title {
-    margin-bottom: 24px;
-  }
-
-  .lorem-ipsum__title_small {
-    display: none;
-  }
-
-  .lorem-ipsum__title_dig {
-    display: block;
-  }
-
-  .lorem-ipsum__title > a {
-    font-size: 44px;
-  }
-
   .about-hero {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.24)), to(rgba(0, 0, 0, 0.24))), url("../assets/img/main/hero/slides/m/slider-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
     background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.24) 0%, rgba(0, 0, 0, 0.24) 100%), url("../assets/img/main/hero/slides/m/slider-1.webp") lightgray -4.799px 0px/103.037% 100% no-repeat;
@@ -2389,14 +2398,16 @@ body {
     row-gap: 20px;
   }
 
-  .team__founder {
+  .team__img {
+    display: block;
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: 50% 0;
-       object-position: 50% 0;
     aspect-ratio: 1/1;
     width: 100%;
     height: 100%;
+  }
+
+  .team__founder {
     margin-bottom: 0px;
   }
 
@@ -2417,6 +2428,7 @@ body {
 
 @media (min-width: 768px) and (min-width: 1440px) {
   .team {
+    position: relative;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -2495,6 +2507,19 @@ body {
     position: absolute;
     top: 0;
     right: 115px;
+  }
+
+  .lorem-ipsum {
+    min-height: 790px;
+    background-image: url("../assets/img/main/lorem-ipsum/bg-leptop.webp");
+  }
+
+  .lorem-ipsum__title {
+    margin-bottom: 21px;
+  }
+
+  .lorem-ipsum__title > a {
+    font-size: 48px;
   }
 
   .hero__container {
@@ -2677,19 +2702,6 @@ body {
 
   .project-overlay__title_desc {
     display: block;
-  }
-
-  .lorem-ipsum {
-    min-height: 790px;
-    background-image: url("../assets/img/main/lorem-ipsum/bg-leptop.webp");
-  }
-
-  .lorem-ipsum__title {
-    margin-bottom: 21px;
-  }
-
-  .lorem-ipsum__title > a {
-    font-size: 48px;
   }
 
   .about-hero {
@@ -3144,6 +3156,23 @@ body {
     height: 273px;
   }
 
+  .lorem-ipsum {
+    min-height: 814px;
+    background-image: url("../assets/img/main/lorem-ipsum/bg-desctop.webp");
+  }
+
+  .lorem-ipsum__content {
+    width: 500px;
+  }
+
+  .lorem-ipsum__title {
+    margin-bottom: 18px;
+  }
+
+  .lorem-ipsum__title > a {
+    font-size: 56px;
+  }
+
   .hero__container {
     padding-top: 279px;
   }
@@ -3316,25 +3345,9 @@ body {
     font-size: 22px;
   }
 
-  .lorem-ipsum {
-    min-height: 814px;
-    background-image: url("../assets/img/main/lorem-ipsum/bg-desctop.webp");
-  }
-
-  .lorem-ipsum__content {
-    width: 500px;
-  }
-
-  .lorem-ipsum__title {
-    margin-bottom: 18px;
-  }
-
-  .lorem-ipsum__title > a {
-    font-size: 56px;
-  }
-
   .about-company {
     padding-top: 138px;
+    padding-bottom: 144px;
   }
 
   .about-company__wrapper-top {
@@ -3441,7 +3454,20 @@ body {
 
   .team__list {
     margin-top: 100px;
-    gap: 79px;
+    gap: 83px;
+    margin-bottom: 57px;
+  }
+
+  .team__description-bottom {
+    width: 516px;
+  }
+
+  .team__img {
+    position: absolute;
+    left: 133px;
+    bottom: 104px;
+    width: 315px;
+    height: 380px;
   }
 
   .team__founder {
