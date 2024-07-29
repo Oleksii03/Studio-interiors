@@ -1,16 +1,19 @@
 .btn-up {
   position: fixed;
-  right: 10%;
+  right: 5%;
   bottom: 5%;
-
   border-radius: 50%;
-
-  background-color: #28272792;
+  background-color: #00000092;
+  backdrop-filter: blur(10px);
+  outline: 1px solid #ffffff23;
   z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear;
 
   &__link {
     @include flex-align-row;
-    padding: 10px;
+    padding: clamp(0.938rem, 0.827rem + 0.47vw, 1.25rem);
   }
 
   &__icon {
@@ -18,5 +21,10 @@
     height: 15px;
     fill: #ffffffd2;
     line-height: normal;
+  }
+
+  &--active {
+    opacity: 1;
+    pointer-events: auto;
   }
 }

@@ -2,64 +2,50 @@ import debounce from 'lodash.debounce';
 
 export function header() {
   const header = document.querySelector('.js-header');
+  const btnUp = document.querySelector('.js-btn-up');
 
-  window.addEventListener('scroll', debounce(activeHeader, 250));
+  // window.addEventListener('scroll', debounce(activeHeader, 250));
+
+  // function activeHeader() {
+  //   if (window.scrollY < 60) {
+  //     header.classList.remove('header_active');
+  //     btnUp.classList.remove('btn-up--active');
+  //     return;
+  //   }
+
+  //   btnUp.classList.add('btn-up--active');
+  //   header.classList.add('header_active');
+  // }
+
+  // -------------------------------------------
+
+  const options = {
+    leading: true,
+    trailing: true,
+  };
+
+  const debouncedActiveHeader = debounce(activeHeader, 350, options);
+
+  window.addEventListener('scroll', debouncedActiveHeader);
 
   function activeHeader() {
     if (window.scrollY < 60) {
       header.classList.remove('header_active');
-      return;
+      btnUp.classList.remove('btn-up--active');
+    } else if (window.scrollY > 60) {
+      btnUp.classList.toggle('btn-up--active');
+      header.classList.add('header_active');
     }
-
-    header.classList.add('header_active');
   }
 
-  // const options = {
-  //   leading: true,
-  //   trailing: true,
-  // };
+  window.addEventListener('resize', onReload);
+  window.addEventListener('load', onReload);
 
-  // const debouncedActiveHeader = debounce(activeHeader, 250, options);
-
-  // window.addEventListener('scroll', debouncedActiveHeader);
-
-  // function activeHeader() {
-  //   const activeScroll = window.scrollY > 60;
-  //   const activeHeader = header.classList.contains('header_active');
-  //   const opacityHeader = header.classList.contains('opacity');
-
-  //   if (window.scrollY < 60) {
-  //     header.classList.remove('header_active');
-  //     header.classList.remove('opacity');
-  //     header.style.opacity = 1;
-  //   } else if (activeScroll && !activeHeader) {
-  //     header.classList.add('header_active');
-  //   } else if (activeScroll && activeHeader) {
-  //     header.classList.remove('header_active');
-  //   }
-
-  //   if (!opacityHeader && activeScroll) {
-  //     header.style.opacity = 1;
-  //     header.classList.add('opacity');
-  //   } else if (activeScroll && opacityHeader) {
-  //     header.style.opacity = 0;
-  //     header.classList.remove('opacity');
-  //   }
-  // }
-
-  // window.addEventListener('resize', onReload);
-  // window.addEventListener('load', onReload);
-  // function onReload() {
-  //   setTimeout(() => {
-  //     if (
-  //       window.scrollY > 60 &&
-  //       !header.classList.contains('header_active') &&
-  //       !header.classList.contains('opacity')
-  //     ) {
-  //       header.classList.add('header_active');
-  //       header.style.opacity = 1;
-  //       header.classList.add('opacity');
-  //     }
-  //   }, 400);
-  // }
+  function onReload() {
+    setTimeout(() => {
+      if (window.scrollY > 60 && !header.classList.contains('btn-up--active')) {
+        btnUp.classList.add('btn-up--active');
+      }
+    }, 400);
+  }
 }
