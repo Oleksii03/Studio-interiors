@@ -74,20 +74,7 @@
         @@include('../base/make-request-btn.html',{ "extends-class":"contacts-section__btn" })
       </div>
 
-      <div class="contacts__trademark-box trademark">
-        <div class="trademark__content trademark__content_top">
-          <p class="contacts__trademark-text">© Copyright 2018. All rights reserved</p>
-        </div>
-
-        <div class="trademark__content trademark__content_bottom">
-          <p class="contacts__trademark-text">Made with love in</p>
-
-          <div class="trademark__first-last-box">
-            <p class="trademark__first-text">The First</p>
-            <p class="trademark__last-text">The Last.</p>
-          </div>
-        </div>
-      </div>
+      @@include('./trademark.html', { "extends-class": "contacts__trademark" })
     </div>
   </div>
 </div>

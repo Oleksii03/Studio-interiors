@@ -77,6 +77,19 @@
       margin-bottom: 63px;
     }
   }
+
+  &__trademark {
+    position: absolute;
+    bottom: 0;
+
+    & > .trademark__content {
+      color: var(--gray-base-color);
+    }
+
+    & .trademark__first-last-box > p {
+      color: var(--white-base-color);
+    }
+  }
 }
 
 // ----address-contacts---------
@@ -191,57 +204,5 @@
 .language-box__link {
   @media (max-width: 767px) {
     color: var(--white-secondary-color);
-  }
-}
-
-// ----trademark--------
-
-.trademark {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  row-gap: 11px;
-
-  @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 30px);
-
-    @media (min-width: 1024px) {
-      width: calc(100% - 27px);
-    }
-  }
-
-  &__content {
-    color: var(--gray-base-color);
-    font-size: 12px;
-    font-weight: 300;
-    line-height: 152%;
-
-    &_bottom {
-      @include flex-align-row;
-      column-gap: 32px;
-    }
-  }
-
-  &__first-text {
-    color: var(--white-base-color);
-    font-family: Adieu;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 80%;
-  }
-
-  &__last-text {
-    margin-left: 30px;
-    color: var(--white-base-color);
-    font-family: FreightBigProLight-Italic;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 80%;
   }
 }

@@ -1,0 +1,45 @@
+.trademark {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 30px);
+
+    @media (min-width: 1024px) {
+      width: calc(100% - 27px);
+    }
+  }
+
+  &__content {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 152%;
+
+    &_bottom {
+      @include flex-align-row;
+      column-gap: 32px;
+    }
+  }
+
+  &__first-text {
+    font-family: Adieu;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 80%;
+  }
+
+  &__last-text {
+    margin-left: 30px;
+
+    font-family: FreightBigProLight-Italic;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 80%;
+  }
+}

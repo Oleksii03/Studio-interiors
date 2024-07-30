@@ -1,23 +1,57 @@
 .about-footer {
   color: var(--black-base-color);
   padding-top: 78px;
-  padding-bottom: 78px;
+  padding-bottom: 24px;
   background-color: #ececec;
+
+  @media (min-width: 1440px) {
+    padding-top: 135px;
+    padding-bottom: 24px;
+  }
+
+  &__trademark {
+    margin-top: 58px;
+    @media (min-width: 1440px) {
+      margin-top: 138px;
+      width: 100%;
+    }
+
+    &-content_bottom {
+      column-gap: 20px;
+    }
+  }
+
+  &__content {
+    @media (min-width: 1440px) {
+      padding: 0px 135px;
+    }
+  }
 }
 
 .form {
   max-width: 424px;
   color: var(--black-base-color);
+
   &__title {
     font-size: 26px;
     font-weight: 700;
     line-height: 142.4%;
     margin-bottom: 80px;
+
+    @media (min-width: 1440px) {
+      font-size: 36px;
+      margin-bottom: 122px;
+    }
   }
 
   &__wrapper {
     position: relative;
     margin-bottom: 80px;
+    max-width: 382px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: -40px;
+    }
   }
 
   &__email {
@@ -30,6 +64,10 @@
     background-color: #ececec;
     transition: all 250ms linear;
     padding-right: 30px;
+
+    @media (min-width: 1440px) {
+      height: 42px;
+    }
 
     &:focus {
       border-bottom-color: #a6a818;
@@ -84,12 +122,20 @@
 
 .about-footer__description {
   max-width: 366px;
+
+  @media (min-width: 768px) {
+    margin-left: auto;
+  }
+  @media (min-width: 1440px) {
+    margin-right: 13px;
+  }
+
   &-text {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 170%;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 }
 
@@ -99,10 +145,12 @@
 
   &__mail {
     color: inherit;
+    font-size: 11px;
   }
 
   &__lang-list {
     @include flex-align-row;
     column-gap: 16px;
+    font-size: 11px;
   }
 }

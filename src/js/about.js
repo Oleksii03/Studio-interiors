@@ -3,6 +3,7 @@ import { hamburgerMenu } from './partials/base/hamburger-btn.js';
 import { header } from './partials/base/header.js';
 import { preloader } from './partials/base/preloader.js';
 import { createSlider } from './partials/base/slider.js';
+import { popUp } from './partials/base/pop-up.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   flsFunctions.isWebp();
@@ -10,4 +11,5 @@ document.addEventListener('DOMContentLoaded', () => {
   header();
   preloader();
   createSlider();
+  popUp();
 });
