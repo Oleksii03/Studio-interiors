@@ -419,7 +419,6 @@ body {
        -o-transition-delay: 150ms;
           transition-delay: 150ms;
   z-index: 100;
-  display: none;
 }
 
 .preloader_hidden {
@@ -591,7 +590,7 @@ body {
 
 .btn-up {
   position: fixed;
-  right: 5%;
+  right: 3%;
   bottom: 3%;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5725490196);
@@ -2029,8 +2028,18 @@ body {
 .about-footer {
   color: var(--black-base-color);
   padding-top: 78px;
-  padding-bottom: 78px;
+  padding-bottom: 24px;
   background-color: #ececec;
+}
+
+.about-footer__trademark {
+  margin-top: 58px;
+}
+
+.about-footer__trademark-content_bottom {
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 .form {
@@ -2177,7 +2186,7 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: 170%;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .description-info {
@@ -2194,6 +2203,7 @@ body {
 
 .description-info__mail {
   color: inherit;
+  font-size: 11px;
 }
 
 .description-info__lang-list {
@@ -2206,6 +2216,7 @@ body {
   -webkit-column-gap: 16px;
      -moz-column-gap: 16px;
           column-gap: 16px;
+  font-size: 11px;
 }
 
 .contacts-section {
@@ -3726,6 +3737,37 @@ body {
   .team__founder {
     width: 516px;
     height: 607px;
+  }
+
+  .about-footer {
+    padding-top: 135px;
+    padding-bottom: 24px;
+  }
+
+  .about-footer__trademark {
+    margin-top: 138px;
+    width: 100%;
+  }
+
+  .about-footer__content {
+    padding: 0px 135px;
+  }
+
+  .form__title {
+    font-size: 36px;
+    margin-bottom: 122px;
+  }
+
+  .form__wrapper {
+    margin-bottom: -40px;
+  }
+
+  .form__email {
+    height: 42px;
+  }
+
+  .about-footer__description {
+    margin-right: 13px;
   }
 }
 
