@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240730154404" />
+    href="css/style.min.css?_v=20240730195848" />
 
   <title>Studio of interiors</title>
   <svg
@@ -205,9 +205,8 @@
       </a>
 
       <button
-        data-send-btn="send-btn"
         type="submit"
-        class="send-box__btn header_light">
+        class="send-box__btn header_light js-backdrop-open">
         Send Request
       </button>
     </div>
@@ -259,11 +258,11 @@
       </li>
     </ul>
 
-    <a
-      class="mob-menu__send-btn"
-      href="#">
+    <botton
+      type="submit"
+      class="mob-menu__send-btn js-backdrop-open">
       Send Request
-    </a>
+    </botton>
 
     <div class="mob-menu__data-box">
       <div class="data-box mob-menu__data-box_inner">
@@ -1054,6 +1053,129 @@
       <use xlink:href="#icon-arrow-up"></use>
     </svg>
   </a>
+</div>
+
+
+      <!-- ---pop-up--- -->
+      <div class="backdrop backdrop--hidden js-backdrop">
+  <button
+    class="backdrop__btn js-backdrop-btn"
+    type="button"></button>
+  <div class="modal">
+    <!-- BACKDROP-FORM -->
+    <form class="modal__form form">
+      <div class="form__wrap">
+        <p class="modal__title">Make request</p>
+
+        <ul class="form__list">
+          <li class="form__lis-item">
+            <div class="modal__label">
+              <input
+                placeholder="Name"
+                class="modal__input input--person"
+                type="text"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+                name="username" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Last name"
+                class="modal__input input--person"
+                type="text"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+                name="username" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Phone"
+                class="modal__input input--phone"
+                type="tel"
+                name="userphone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                required />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Email"
+                class="modal__input input--email"
+                type="email"
+                name="useremail"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Your city"
+                class="modal__input input--city"
+                type="text"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+                name="username" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <label class="modal__label">
+              <p class="modal__subtitle">Property type</p>
+              <select
+                type="text"
+                name="select-type"
+                class="modal__input">
+                <option
+                  class="modal__select-option"
+                  value=""></option>
+                <option
+                  class="modal__select-option"
+                  value="Dark">
+                  Dark
+                </option>
+                <option
+                  class="modal__select-option"
+                  value="White">
+                  White
+                </option>
+              </select>
+            </label>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <textarea
+                placeholder="Your commen"
+                class="modal__input modal__input-textarea"
+                name=""
+                id=""></textarea>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="form__radio-btns radio-btns">
+        <p class="radio-btns__title">Area (m2)</p>
+
+        <input type="radio" />
+        <input type="radio" />
+        <input type="radio" />
+        <input type="radio" />
+        <input type="radio" />
+      </div>
+    </form>
+    <!--/ BACKDROP-FORM -->
+  </div>
 </div>
 
     </div>

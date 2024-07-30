@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240730154404" />
+    href="css/style.min.css?_v=20240730195848" />
 
   <title>Contacts</title>
   <svg
@@ -205,9 +205,8 @@
       </a>
 
       <button
-        data-send-btn="send-btn"
         type="submit"
-        class="send-box__btn ">
+        class="send-box__btn  js-backdrop-open">
         Send Request
       </button>
     </div>
@@ -259,11 +258,11 @@
       </li>
     </ul>
 
-    <a
-      class="mob-menu__send-btn"
-      href="#">
+    <botton
+      type="submit"
+      class="mob-menu__send-btn js-backdrop-open">
       Send Request
-    </a>
+    </botton>
 
     <div class="mob-menu__data-box">
       <div class="data-box mob-menu__data-box_inner">
@@ -454,7 +453,7 @@
 
       </section>
     </main>
-
+    @@include('html-partials/base/pop-up.html)
     <script
       src="./js/contacts.min.js"
       type="module"></script>
