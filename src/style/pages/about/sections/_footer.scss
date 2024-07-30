@@ -1,0 +1,108 @@
+.about-footer {
+  color: var(--black-base-color);
+  padding-top: 78px;
+  padding-bottom: 78px;
+  background-color: #ececec;
+}
+
+.form {
+  max-width: 424px;
+  color: var(--black-base-color);
+  &__title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 142.4%;
+    margin-bottom: 80px;
+  }
+
+  &__wrapper {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  &__email {
+    width: 100%;
+    max-width: 382px;
+    outline: none;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background-color: #ececec;
+    transition: all 250ms linear;
+    padding-right: 30px;
+
+    &:focus {
+      border-bottom-color: #a6a818;
+
+      & ~ .form__btn {
+        box-shadow: 0px 0px 10px -1px #a6a818;
+        animation: scale 1200ms linear infinite;
+
+        @keyframes scale {
+          0% {
+            box-shadow: 0px 0px 10px -1px #a6a818;
+          }
+          50% {
+            box-shadow: 0px 0px 25px -1px #a6a818;
+          }
+          100% {
+            box-shadow: 0px 0px 10px -1px #a6a818;
+          }
+        }
+      }
+    }
+
+    &::placeholder {
+      font-size: 20px;
+      color: var(--black-base-color);
+      font-weight: 300;
+      line-height: 170.66%;
+    }
+  }
+
+  &__btn {
+    background-color: #ececec;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    border-radius: 50%;
+    transition: all 250ms linear;
+    transform: translateY(-50%);
+
+    &-icon {
+      width: 16px;
+      height: 12px;
+      fill: none;
+      stroke: #515151;
+    }
+  }
+}
+
+// ----footer-description-----
+
+.about-footer__description {
+  max-width: 366px;
+  &-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170%;
+    margin-bottom: 20px;
+  }
+}
+
+.description-info {
+  @include flex-align-row;
+  justify-content: space-between;
+
+  &__mail {
+    color: inherit;
+  }
+
+  &__lang-list {
+    @include flex-align-row;
+    column-gap: 16px;
+  }
+}
