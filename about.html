@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240730120921" />
+    href="css/style.min.css?_v=20240730134251" />
 
   <title>About Us</title>
   <svg
@@ -20,6 +20,22 @@
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
+    <symbol
+      id="icon-arrow-right"
+      viewBox="0 0 39 32">
+      <path
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="2.2857"
+        d="M0 16h36.571"></path>
+      <path
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="2.2857"
+        d="M22.857 2.286l13.714 13.714-13.714 13.714"></path>
+    </symbol>
     <symbol
       id="icon-arrow-up"
       viewBox="0 0 32 32">
@@ -620,7 +636,53 @@
 </section>
 
       </main>
+      <footer class="about-footer">
+  <div class="about-footer__container container">
+    <form class="about-footer__form form">
+      <h2 class="form__title">Do you want to work in our team?</h2>
 
+      <div class="form__wrapper">
+        <input
+          class="form__email"
+          type="email"
+          name="useremail"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+
+        <button
+          class="form__btn"
+          type="submit">
+          <svg class="form__btn-icon">
+            <use xlink:href="#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </form>
+
+    <div class="about-footer__description">
+      <p class="about-footer__description-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
+        posuere. Ut at luctus ligula. Nunc ante felis, aliquam.
+      </p>
+
+      <div class="about-footer__description-info description-info">
+        <a
+          class="description-info__mail"
+          href="mailto:info@hi-light.pl">
+          info@hi-light.pl
+        </a>
+
+        <ul class="description-info__lang-list lang-list">
+          <li class="lang-list__item">Fb</li>
+          <li class="lang-list__item">In</li>
+          <li class="lang-list__item">In</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      <!-- btn-up -->
       <div class="btn-up js-btn-up">
   <a
     class="btn-up__link"
