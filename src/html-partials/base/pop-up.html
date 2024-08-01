@@ -1,7 +1,11 @@
 <div class="backdrop backdrop--hidden js-backdrop">
   <button
     class="backdrop__btn js-backdrop-btn"
-    type="button"></button>
+    type="button">
+    <svg class="backdrop__btn-icon">
+      <use xlink:href="#icon-backdrop-cross"></use>
+    </svg>
+  </button>
   <div class="modal">
     <!-- BACKDROP-FORM -->
     <form class="modal__form form">
@@ -105,14 +109,108 @@
         </ul>
       </div>
 
+      <!-- Area -->
+
       <div class="form__radio-btns radio-btns">
         <p class="radio-btns__title">Area (m2)</p>
 
-        <input type="radio" />
-        <input type="radio" />
-        <input type="radio" />
-        <input type="radio" />
-        <input type="radio" />
+        <ul class="radio-btns__list">
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="50" />
+
+              <p class="radio-btns__label-text">to 50</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="50-150" />
+
+              <p class="radio-btns__label-text">50-150</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="150-250" />
+
+              <p class="radio-btns__label-text">150-250</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="250-400" />
+
+              <p class="radio-btns__label-text">250-400</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="400-600" />
+
+              <p class="radio-btns__label-text">400-600</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="600-800" />
+
+              <p class="radio-btns__label-text">600-800</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="800-1000" />
+
+              <p class="radio-btns__label-text">800-1000</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="1000+" />
+
+              <p class="radio-btns__label-text">1000+</p>
+            </label>
+          </li>
+        </ul>
       </div>
     </form>
     <!--/ BACKDROP-FORM -->

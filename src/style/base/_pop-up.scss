@@ -16,77 +16,27 @@
 
   &__btn {
     position: absolute;
-    top: 14px;
+    top: 24px;
     right: 24px;
-    width: 30px;
-    height: 30px;
+    width: 16px;
+    height: 16px;
     padding: 0;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    background-color: var(--blue-accent-color);
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid #bfafaf8b;
+    background-color: transparent;
 
-    &::before {
-      position: absolute;
-      top: 12px;
-      left: 8px;
-      transform: rotate(113deg);
-      content: '';
-      width: 18px;
-      height: 3px;
-      background-color: #fff;
-      border-radius: 2px;
-      transition-property: transform, background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &::after {
-      position: absolute;
-      top: 15px;
-      left: 3px;
-      transform: rotate(50deg);
-      content: '';
-      width: 14px;
-      height: 3px;
-      content: '';
-      background-color: #fff;
-      border-radius: 2px;
-      transition-property: transform, background-color;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &:focus::before,
-    &:hover::before {
-      transform: rotate(45deg);
-      top: 13px;
-      left: 4px;
-      width: 20px;
-      height: 3px;
-    }
-
-    &:focus::after,
-    &:hover::after {
-      transform: rotate(-45deg);
-      top: 13px;
-      left: 4px;
-      width: 20px;
-      height: 3px;
+    &-icon {
+      width: 12px;
+      height: 12px;
     }
   }
   z-index: 20;
 }
 
-.backdrop--hidden {
-  transform: scale(0.5);
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
+// .backdrop--hidden {
+//   transform: scale(0.5);
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
 
 // ------modal------------------
 
@@ -177,6 +127,119 @@
     line-height: normal;
     letter-spacing: 0.66px;
     margin-bottom: 24px;
+  }
+
+  &__list {
+    position: relative;
+    @include grid-auto-fit($min: 45px);
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 24px;
+    overflow-x: hidden;
+    z-index: 3;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 91%;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+      background: rgba(214, 214, 214, 0.3);
+
+      z-index: -1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 29%;
+      left: 0;
+
+      width: 100%;
+      height: 1px;
+      background: rgba(214, 214, 214, 0.3);
+
+      z-index: -1;
+    }
+
+    &-item {
+      &:nth-child(1) {
+        & > label > p,
+        input {
+          margin-right: auto;
+        }
+      }
+      &:nth-child(2) {
+        margin-right: 15px;
+      }
+      &:nth-child(3) {
+        margin-left: 10px;
+      }
+      &:nth-child(4) {
+        & > label > p,
+        input {
+          margin-left: auto;
+        }
+      }
+      &:nth-child(5) {
+        & > label > p,
+        input {
+          margin-right: auto;
+        }
+      }
+      &:nth-child(6) {
+        margin-left: -15px;
+      }
+      &:nth-child(7) {
+        margin-right: -11px;
+      }
+      &:nth-child(8) {
+        & > label > p,
+        input {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+      color: rgba(58, 62, 75, 0.45);
+      font-size: 9px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.54px;
+      margin-bottom: 10px;
+      order: 1;
+    }
+  }
+
+  &__input {
+    order: 2;
+    appearance: none;
+    transition: all 150ms linear;
+    width: 18px;
+    height: 18px;
+    background-color: #afb0b2;
+    border-radius: 50%;
+    border: 7px solid #f7f7f6;
+
+    &:checked {
+      background-color: var(--white-base-color);
+      transition: all 150ms linear;
+      border-color: #1d1f26;
+      // outline: 1px solid var(--white-base-color);
+
+      & ~ .radio-btns__label-text {
+        color: #3a3e4b;
+      }
+    }
   }
 }
 
