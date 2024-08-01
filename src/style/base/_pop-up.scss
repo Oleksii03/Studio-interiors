@@ -47,12 +47,12 @@
   z-index: 20;
 }
 
-// .backdrop--hidden {
-//   transform: scale(0.5);
-//   opacity: 0;
-//   pointer-events: none;
-//   visibility: hidden;
-// }
+.backdrop--hidden {
+  transform: scale(0.5);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
 
 // ------modal------------------
 
@@ -69,6 +69,10 @@
   @media (min-width: 1024px) {
     width: 808px;
     padding: 32px 51px;
+  }
+  @media (min-width: 1440px) {
+    width: 1046px;
+    padding: 57px 123px;
   }
 }
 
@@ -87,6 +91,9 @@
   }
   @media (min-width: 1024px) {
     width: 706px;
+  }
+  @media (min-width: 1440px) {
+    width: 800px;
   }
 }
 
@@ -136,6 +143,7 @@
   }
 
   &.modal__input-textarea {
+    resize: none;
     &::placeholder {
       position: absolute;
       top: 50%;
@@ -147,10 +155,6 @@
 // -------form---------------------------
 
 .form {
-  @media (min-width: 768px) {
-    width: 478px;
-  }
-
   &__list {
     display: grid;
     row-gap: 40px;
@@ -182,6 +186,9 @@
   @media (min-width: 1024px) {
     width: 706px;
   }
+  @media (min-width: 1440px) {
+    width: 800px;
+  }
 
   &__title {
     color: #3a3e4b;
@@ -196,7 +203,7 @@
     position: relative;
     @include grid-auto-fit($min: 45px, $max: 1fr);
     justify-content: space-between;
-    column-gap: 24px;
+    column-gap: 20px;
     row-gap: 24px;
     overflow-x: hidden;
     z-index: 3;
@@ -248,10 +255,6 @@
     }
 
     &-item {
-      &:not(:last-child) {
-        margin-right: 10px;
-      }
-
       @media (max-width: 1023px) {
         &:nth-child(1) {
           & > label > p,
@@ -288,6 +291,12 @@
           input {
             margin-left: auto;
           }
+        }
+      }
+
+      @media (min-width: 1024px) {
+        &:not(:last-child) {
+          margin-right: 10px;
         }
       }
     }

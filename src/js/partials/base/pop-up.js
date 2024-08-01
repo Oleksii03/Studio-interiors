@@ -11,5 +11,6 @@ export function popUp() {
 
   function toggleModal() {
     backdrop.classList.toggle('backdrop--hidden');
+    document.body.classList.toggle('no-scroll');
   }
 }
