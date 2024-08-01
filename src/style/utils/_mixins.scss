@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-@mixin grid-auto-fit($min: 250px) {
+@mixin grid-auto-fit($min, $max) {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax($min, $max));
 }
