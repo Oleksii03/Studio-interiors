@@ -3144,6 +3144,14 @@ body {
     padding: 32px 51px;
   }
 
+  .modal__form {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
   .form__wrap {
     width: 706px;
   }
