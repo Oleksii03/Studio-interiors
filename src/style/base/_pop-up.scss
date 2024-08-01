@@ -8,11 +8,16 @@
   transition-property: opacity, transform, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 64px;
-  padding-bottom: 64px;
   overflow: hidden;
   display: flex;
   justify-content: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  @media (min-width: 768px) {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 
   &__btn {
     position: absolute;
@@ -43,23 +48,40 @@
 .modal {
   width: 310px;
   overflow: auto;
+
+  @media (min-width: 768px) {
+    width: 558px;
+    background: #f6f6f6;
+    box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.04);
+    padding: 32px 40px;
+  }
 }
 
 .form__wrap {
-  max-width: 310px;
+  width: 310px;
   padding: 24px 24px 40px;
   display: flex;
   flex-direction: column;
   margin-bottom: 8px;
   background-color: var(--white-base-color);
+  border: 1px rgba(0, 0, 0, 0.04);
+
+  @media (min-width: 768px) {
+    width: 478px;
+    padding: 44px 56px;
+  }
 }
 
 .modal__title {
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: normal;
   text-align: center;
   color: var(--black-text-color);
   margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .modal__label {
@@ -71,7 +93,6 @@
   top: 50%;
   transform: translateY(-50%);
   color: #3a3e4b;
-  font-family: Montserrat;
   font-size: 11px;
   font-style: normal;
   font-weight: 500;
@@ -89,7 +110,6 @@
 
   &::placeholder {
     color: #3a3e4b;
-    font-family: Montserrat;
     font-size: 11px;
     font-style: normal;
     font-weight: 500;
@@ -109,6 +129,9 @@
 // -------form---------------------------
 
 .form {
+  @media (min-width: 768px) {
+    width: 478px;
+  }
   &__list {
     display: flex;
     flex-direction: column;
@@ -119,6 +142,11 @@
 .radio-btns {
   background-color: var(--white-base-color);
   padding: 40px 24px;
+
+  @media (min-width: 768px) {
+    width: 478px;
+    padding: 44px 56px;
+  }
 
   &__title {
     color: #3a3e4b;
@@ -137,6 +165,12 @@
     row-gap: 24px;
     overflow-x: hidden;
     z-index: 3;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 36px;
+      column-gap: 40px;
+    }
 
     &::before {
       content: '';
@@ -240,6 +274,19 @@
         color: #3a3e4b;
       }
     }
+  }
+
+  &__btn-submit {
+    background: #3a3e4b;
+    padding: 14px 48px;
+    display: block;
+    margin: 0 auto;
+    color: var(--white-base-color);
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
   }
 }
 
