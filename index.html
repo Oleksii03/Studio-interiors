@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240802135149" />
+    href="css/style.min.css?_v=20240802154619" />
 
   <title>Studio of interiors</title>
   <svg
@@ -20,6 +20,31 @@
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
+    <symbol
+      id="icon-attach-file"
+      viewBox="0 0 32 32">
+      <path
+        fill="#f7f7f6"
+        style="fill: var(--color1, #f7f7f6)"
+        d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+      <path
+        fill="none"
+        stroke="#3a3e4b"
+        style="stroke: var(--color2, #3a3e4b)"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="0.8205"
+        d="M31.59 16c0 8.61-6.98 15.59-15.59 15.59s-15.59-6.98-15.59-15.59c0-8.61 6.98-15.59 15.59-15.59s15.59 6.98 15.59 15.59z"></path>
+      <path
+        fill="#3a3e4b"
+        style="fill: var(--color2, #3a3e4b)"
+        d="M12.308 15.59h7.385v0.821h-7.385v-0.82z"></path>
+      <path
+        fill="#3a3e4b"
+        style="fill: var(--color2, #3a3e4b)"
+        d="M15.59 12.308h0.821v7.385h-0.82v-7.385z"></path>
+    </symbol>
     <symbol
       id="icon-backdrop-cross"
       viewBox="0 0 32 32">
@@ -1079,7 +1104,8 @@
     <!-- BACKDROP-FORM -->
     <form class="modal__form">
       <div class="form__wrap">
-        <p class="modal__title">Make request</p>
+        <p class="modal__title modal__title_mob">Make request</p>
+        <p class="modal__title modal__title_desc">Calculate the cost of work</p>
 
         <ul class="form__list">
           <li class="form__lis-item">
@@ -1281,11 +1307,46 @@
           </li>
         </ul>
 
-        <button
-          type="submit"
-          class="radio-btns__btn-submit">
-          Send Request
-        </button>
+        <div class="radio-btns__btn-submit-box">
+          <div class="radio-btns__btn-file-box">
+            <label class="radio-btns__btn-file-label file-label">
+              <div class="file-label__input-wrapper">
+                <input
+                  class="file-label__input"
+                  type="file"
+                  name="file"
+                  class="radio-btns__btn-file" />
+              </div>
+
+              <div class="file-label__title-box">
+                <p class="file-label__title_top">Attach your file</p>
+                <p class="file-label__title_bottom">File size not more than 10 MB</p>
+              </div>
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="radio-btns__btn-submit">
+            Send Request
+          </button>
+        </div>
+
+        <div class="radio-btns__policy">
+          <p class="radio-btns__policy-text">
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page
+            <a
+              class="radio-btns__policy-text-link"
+              href="#"
+              target="_blank">
+              when looking
+            </a>
+            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content here', making it
+            look like readable English.
+          </p>
+        </div>
       </div>
     </form>
     <!--/ BACKDROP-FORM -->
