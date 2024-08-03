@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240803145528" />
+    href="css/style.min.css?_v=20240803170247" />
 
   <title>Our Projects</title>
   <svg
@@ -150,6 +150,7 @@
 
   <body>
     <div class="wrapper">
+      <!-- preloader -->
       <div
   id="preloader"
   class="preloader">
@@ -167,7 +168,7 @@
   </div>
 </div>
 
-      <!-- ------ -->
+      <!-- ---header--- -->
       <header class="header js-header">
   <div class="header__container container">
     <a
@@ -242,6 +243,7 @@
       </a>
 
       <button
+        data-send-btn="send-btn"
         type="submit"
         class="send-box__btn header_dark js-backdrop-open">
         Send Request
@@ -265,7 +267,7 @@
       <li class="mob-menu__list-item">
         <a
           class="mob-menu__list-link mob-menu_active"
-          href="#projects">
+          href="projects.html">
           Projects
         </a>
       </li>
@@ -361,7 +363,8 @@
 </div>
 
 
-      <main></main>
+      <main><section class="our-projects"></section>
+</main>
 
       <!-- ---pop-up--- -->
       <div class="backdrop backdrop--hidden js-backdrop">
@@ -623,6 +626,18 @@
     </form>
     <!--/ BACKDROP-FORM -->
   </div>
+</div>
+
+      <!-- ---btn-up--- -->
+      <div class="btn-up js-btn-up">
+  <a
+    class="btn-up__link"
+    href="#"
+    target="_top">
+    <svg class="btn-up__icon">
+      <use xlink:href="#icon-arrow-up"></use>
+    </svg>
+  </a>
 </div>
 
     </div>

@@ -2587,6 +2587,11 @@ body {
   padding-bottom: 15px;
 }
 
+.our-projects {
+  height: 200vh;
+  background-color: var(--light-background-color);
+}
+
 @media (min-width: 375px) {
   .container {
     max-width: 357px;
