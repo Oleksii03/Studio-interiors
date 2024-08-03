@@ -4,10 +4,6 @@ export function header() {
   const header = document.querySelector('.js-header');
   let btnUp = document.querySelector('.js-btn-up');
 
-  if (!btnUp) {
-    btnUp.remove();
-  }
-
   // window.addEventListener('scroll', debounce(activeHeader, 250));
 
   // function activeHeader() {
