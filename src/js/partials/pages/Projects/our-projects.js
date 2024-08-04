@@ -2,39 +2,45 @@ export function projects() {
   const dataPojects = [
     {
       type: 'house',
-      imageMob: 'assets/img/main/our-projects/mobile/img-1.png',
-      imageTab: 'assets/img/main/our-projects/tablet/img-1.png',
-      imageDesc: 'project1.jpg',
+      title: 'Eyewear store interior',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-1.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-1.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-1.webp',
     },
     {
       type: 'house',
-      imageMob: 'assets/img/main/our-projects/mobile/img-2.png',
-      imageTab: 'assets/img/main/our-projects/tablet/img-2.png',
-      imageDesc: 'project1.jpg',
+      title: 'Minimalist style home',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-2.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-2.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-2.webp',
     },
     {
       type: 'house',
-      imageMob: 'assets/img/main/our-projects/mobile/img-3.png',
-      imageTab: 'assets/img/main/our-projects/tablet/img-3.png',
-      imageDesc: 'project1.jpg',
+      title: 'Minimalist style home',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-3.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-3.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-3.webp',
     },
     {
       type: 'house',
-      imageMob: 'assets/img/main/our-projects/mobile/img-4.png',
-      imageTab: 'assets/img/main/our-projects/tablet/img-4.png',
-      imageDesc: 'project1.jpg',
+      title: 'Minimalist style home',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-4.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-4.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-4.webp',
     },
     {
       type: 'house',
-      imageMob: 'assets/img/main/our-projects/mobile/img-5.png',
-      imageTab: 'assets/img/main/our-projects/tablet/img-4.png',
-      imageDesc: 'project1.jpg',
+      title: 'Eyewear storeinterior',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-5.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-5.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-5.webp',
     },
     {
-      type: 'apartments',
-      imageMob: 'assets/img/main/our-projects/mobile/img-6.png',
-      imageTab: 'project1.jpg',
-      imageDesc: 'project1.jpg',
+      type: 'house',
+      title: 'House on a Hillside',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-6.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-6.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-6.webp',
     },
   ];
 
@@ -87,9 +93,9 @@ export function projects() {
 
   function createMarkup(uniqueItems) {
     console.log(uniqueItems);
-    return uniqueItems.map(obj => {
+    return uniqueItems.map(({ imageMob, imageTab, imageLepTop, title }) => {
       return `
-     <li class="our-projects__project-item">
+     <li class="our-projects__project-item our-projects__project-item">
         <div class="our-projects__project-overlay project-overlay">
           <ul class="project-overlay__list">
             <li class="project-overlay__list-item">Lodz</li>
@@ -97,15 +103,16 @@ export function projects() {
             <li class="project-overlay__list-item">80 sq.m</li>
           </ul>
 
-          <div class="project-overlay__title-box">
+          <div class="project-overlay__title-box project-overlay__title-box_dynamic">
             <h3 class="project-overlay__title project-overlay__title_mob">
-              Residence by the lighthouse
+              ${title}
             </h3>
 
             <h3 class="project-overlay__title project-overlay__title_desc">
-              Eyewear store interior
+              ${title}
             </h3>
 
+            <p class="discover-more discover-more__light our-projects__project-sub-title">Discover more</p>
           </div>
         </div>
         <a
@@ -113,11 +120,15 @@ export function projects() {
           class="our-projects__project-link">
           <picture class="our-projects__project-picture">
             <source
-              srcset="${obj.imageTab}"
+              srcset="${imageLepTop}"
+              media="(min-width: 1024px)" />
+
+            <source
+              srcset="${imageTab}"
               media="(min-width: 768px)" />
 
             <img
-              src="${obj.imageMob}"
+              src="${imageMob}"
               alt="Project-item"
               class="our-projects__project-img" />
           </picture>

@@ -70,6 +70,10 @@
       color: var(--black-base-color);
     }
 
+    &.invert {
+      color: var(--white-base-color);
+    }
+
     @media (min-width: 1440px) {
       &:hover {
         opacity: 0.6;

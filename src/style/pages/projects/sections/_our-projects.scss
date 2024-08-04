@@ -2,7 +2,7 @@
   color: var(--black-base-color);
   background-color: var(--light-background-color);
   min-height: 100vh;
-  padding-top: 77px;
+  padding-top: 116px;
   padding-bottom: 95px;
 
   &__description {
@@ -75,6 +75,7 @@
     &-item {
       opacity: 0.6;
       transition: all 200ms linear;
+      cursor: pointer;
 
       @media (max-width: 767px) {
         &_active {
@@ -99,10 +100,39 @@
 }
 
 // ------
+
 .project-overlay__list {
   color: var(--white-base-color);
 }
 
 .our-projects__project-item {
   position: relative;
+
+  @media (min-width: 1024px) {
+    &:nth-child(3) {
+      grid-column: 1/3;
+
+      & .project-overlay__title-box_dynamic {
+        width: 100%;
+        @include flex-align-row;
+        justify-content: space-between;
+
+        & > h3 {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &:nth-child(6) {
+      grid-column: 1/3;
+      & .project-overlay__title-box_dynamic {
+        width: 100%;
+        @include flex-align-row;
+        justify-content: space-between;
+
+        & > h3 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }

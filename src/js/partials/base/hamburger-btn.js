@@ -41,9 +41,10 @@ export function hamburgerMenu() {
       menuText = document.querySelector('[data-menu="text-menu"]'),
       menuLines = document.querySelectorAll('[data-line="line"]'),
       leng = document.querySelector('[data-leng="leng"]'),
-      btnSend = document.querySelector('[data-send-btn="send-btn"]');
+      btnSend = document.querySelector('[data-send-btn="send-btn"]'),
+      headerLink = document.querySelectorAll('.header__nav-link');
 
-    const invertedElements = [logo, menuText, ...menuLines, leng, btnSend];
+    const invertedElements = [logo, menuText, ...menuLines, ...headerLink, leng, btnSend];
 
     if (evt.type === 'click' && !header.classList.contains('header_active')) {
       invertedElements.forEach(el => {
