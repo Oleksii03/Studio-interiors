@@ -1,18 +1,18 @@
-<div class="our-projects__bottom-content">
+<div class="our-projects__bottom-content @@extends-class">
   @@include('./section-decoration-title.html', { "title":"Make request",
   "class":"decoration-title_dark", "extends-class":"our-projects__decoration-title"})
 
-  <h2 class="sub-title our-projects__title our-projects__title_light">
+  <h2 class="sub-title our-projects__title our-projects__title_light @@extends-class">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   </h2>
 
   <div class="our-projects__description-box">
-    <p class="our-projects__description our-projects__description_light">
+    <p class="our-projects__description our-projects__description_light @@extends-class">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae
       posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
     </p>
 
-    @@include('./make-request-btn.html', { "extends-class":"our-projects__btn" })
+    @@include('./make-request-btn.html', { "extends-class":"page-our-projects__btn" })
 
     <ul class="photo__list">
       <li>
@@ -85,6 +85,6 @@
           src="@assets/img/components/gallery-photo-box/photo-5.png"
           alt="img-10" />
       </li>
-    </г>
+    </ul>
   </div>
 </div>

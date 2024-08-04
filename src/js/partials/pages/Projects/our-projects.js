@@ -6,6 +6,7 @@ export function projects() {
       imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-1.webp',
       imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-1.webp',
       imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-1.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-1.webp',
     },
     {
       type: 'house',
@@ -13,6 +14,7 @@ export function projects() {
       imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-2.webp',
       imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-2.webp',
       imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-2.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-2.webp',
     },
     {
       type: 'house',
@@ -20,6 +22,7 @@ export function projects() {
       imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-3.webp',
       imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-3.webp',
       imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-3.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-3.webp',
     },
     {
       type: 'house',
@@ -27,6 +30,7 @@ export function projects() {
       imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-4.webp',
       imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-4.webp',
       imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-4.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-4.webp',
     },
     {
       type: 'house',
@@ -34,6 +38,7 @@ export function projects() {
       imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-5.webp',
       imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-5.webp',
       imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-5.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-5.webp',
     },
     {
       type: 'house',
@@ -41,6 +46,7 @@ export function projects() {
       imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-6.webp',
       imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-6.webp',
       imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-6.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-6.webp',
     },
   ];
 
@@ -93,7 +99,7 @@ export function projects() {
 
   function createMarkup(uniqueItems) {
     console.log(uniqueItems);
-    return uniqueItems.map(({ imageMob, imageTab, imageLepTop, title }) => {
+    return uniqueItems.map(({ imageMob, imageTab, imageLepTop, imageDesc, title }) => {
       return `
      <li class="our-projects__project-item our-projects__project-item">
         <div class="our-projects__project-overlay project-overlay">
@@ -104,12 +110,12 @@ export function projects() {
           </ul>
 
           <div class="project-overlay__title-box project-overlay__title-box_dynamic">
-            <h3 class="project-overlay__title project-overlay__title_mob">
+            <h3 class="project-overlay__title project-overlay__title_sm">
               ${title}
             </h3>
 
-            <h3 class="project-overlay__title project-overlay__title_desc">
-              ${title}
+            <h3 class="project-overlay__title project-overlay__title_lg">
+             Residence by the lighthouse
             </h3>
 
             <p class="discover-more discover-more__light our-projects__project-sub-title">Discover more</p>
@@ -119,6 +125,10 @@ export function projects() {
           href="#"
           class="our-projects__project-link">
           <picture class="our-projects__project-picture">
+            <source
+              srcset="${imageDesc}"
+              media="(min-width: 1440px)" />
+
             <source
               srcset="${imageLepTop}"
               media="(min-width: 1024px)" />
