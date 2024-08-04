@@ -15,6 +15,7 @@
   }
 
   &__list {
+    position: relative;
     width: 128px;
     height: 29px;
     font-size: 11px;
@@ -59,6 +60,8 @@
   &__inner-list {
     position: absolute;
     z-index: 2;
+    left: 0;
+    width: 100%;
     padding: 10px;
     border-radius: 15px;
     border: 1px solid #c4c4c4;
@@ -66,6 +69,7 @@
     flex-direction: column;
     row-gap: 10px;
     transition: all 200ms linear;
+    background-color: var(--light-background-color);
 
     @media (max-width: 767px) {
       &_hidden {
