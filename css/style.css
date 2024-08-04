@@ -1161,6 +1161,10 @@ body {
   color: var(--black-base-color);
 }
 
+.header__nav-link.invert {
+  color: var(--white-base-color);
+}
+
 .header__nav-link_active {
   opacity: 0.6;
 }
@@ -2592,7 +2596,7 @@ body {
   color: var(--black-base-color);
   background-color: var(--light-background-color);
   min-height: 100vh;
-  padding-top: 77px;
+  padding-top: 116px;
   padding-bottom: 95px;
 }
 
@@ -2660,6 +2664,7 @@ body {
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
   transition: all 200ms linear;
+  cursor: pointer;
 }
 
 .project-overlay__list {
@@ -3531,10 +3536,6 @@ body {
     margin-bottom: 24px;
   }
 
-  .project-overlay__title {
-    margin-bottom: 0px;
-  }
-
   .project-overlay__title_mob {
     display: none;
   }
@@ -4265,6 +4266,10 @@ body {
        -moz-column-gap: 24px;
             column-gap: 24px;
     font-size: 10px;
+  }
+
+  .project-overlay__title {
+    margin-bottom: 0px;
   }
 
   .project-overlay__title.project-overlay__title_dark {
