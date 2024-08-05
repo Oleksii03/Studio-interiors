@@ -197,20 +197,18 @@ export function projects() {
 
   function createMarkupError() {
     return `
-     <li class="our-projects__project-item our-projects__project-item">
+     <li class="our-projects__project-item our-projects__item-not-found">
         <a
           href="#"
           class="our-projects__project-link">
           <picture class="our-projects__project-picture">
             <img
               loading="lazy"
-              src="assets/img/pagrs/our-projects/placeholder-image.jpg"
+              src="assets/img/pagrs/our-projects/not-found-2.png"
               alt="Project-item"
-              class="our-projects__project-img" />
+              class="our-projects__img-not-found" />
           </picture>
         </a>
-
-      <h3 style="text-align: center;">Photo not found</h3>
       </li>`;
   }
 }
