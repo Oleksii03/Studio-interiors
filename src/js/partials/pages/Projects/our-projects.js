@@ -123,7 +123,7 @@ export function projects() {
     toggleInnerList();
   }
 
-  // ---------------------------------------
+  // ------------filterData---------------------------
 
   const listContent = document.querySelector('.js-list-content');
 
@@ -131,7 +131,6 @@ export function projects() {
     const uniqueItems = dataPojects.filter(obj => obj.type === activeItemText);
 
     if (!uniqueItems.length) {
-      console.log(uniqueItems.length);
       listContent.innerHTML = createMarkupError();
       return;
     }
@@ -140,6 +139,8 @@ export function projects() {
   }
 
   filterData(activeItemText);
+
+  // ----createMarkup-----------
 
   function createMarkup(uniqueItems) {
     console.log(uniqueItems);
@@ -191,6 +192,8 @@ export function projects() {
     });
   }
 
+  // ----createMarkupError-----------
+
   function createMarkupError() {
     return `
      <li class="our-projects__project-item our-projects__project-item">
@@ -208,6 +211,4 @@ export function projects() {
       <h3 style="text-align: center;">Photo not found</h3>
       </li>`;
   }
-
-  // listContent.innerHTML = createMarkup().join('');
 }
