@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta
+    http-equiv="X-UA-Compatible, Content-Security-Policy"
+    content="IE=edge 'unsafe-inline'" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="css/style.min.css?_v=20240805141212" />
+
+  <title>Contacts</title>
+  <svg
+  aria-hidden="true"
+  style="position: absolute; width: 0; height: 0; overflow: hidden"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol
+      id="icon-attach-file"
+      viewBox="0 0 32 32">
+      <path
+        fill="#f7f7f6"
+        style="fill: var(--color1, #f7f7f6)"
+        d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+      <path
+        fill="none"
+        stroke="#3a3e4b"
+        style="stroke: var(--color2, #3a3e4b)"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="0.8205"
+        d="M31.59 16c0 8.61-6.98 15.59-15.59 15.59s-15.59-6.98-15.59-15.59c0-8.61 6.98-15.59 15.59-15.59s15.59 6.98 15.59 15.59z"></path>
+      <path
+        fill="#3a3e4b"
+        style="fill: var(--color2, #3a3e4b)"
+        d="M12.308 15.59h7.385v0.821h-7.385v-0.82z"></path>
+      <path
+        fill="#3a3e4b"
+        style="fill: var(--color2, #3a3e4b)"
+        d="M15.59 12.308h0.821v7.385h-0.82v-7.385z"></path>
+    </symbol>
+    <symbol
+      id="icon-backdrop-cross"
+      viewBox="0 0 32 32">
+      <path
+        fill="#f2f2f2"
+        style="fill: var(--color1, #f2f2f2)"
+        d="M0 30.667l30.666-30.667 1.333 1.333-30.666 30.667-1.333-1.333z"></path>
+      <path
+        fill="#f2f2f2"
+        style="fill: var(--color1, #f2f2f2)"
+        d="M1.334 0.001l30.666 30.667-1.333 1.333-30.666-30.667 1.333-1.333z"></path>
+    </symbol>
+    <symbol
+      id="icon-arrow-right"
+      viewBox="0 0 39 32">
+      <path
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="2.2857"
+        d="M0 16h36.571"></path>
+      <path
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="2.2857"
+        d="M22.857 2.286l13.714 13.714-13.714 13.714"></path>
+    </symbol>
+    <symbol
+      id="icon-arrow-up"
+      viewBox="0 0 32 32">
+      <path d="M16 1l-15 15h9v16h12v-16h9z"></path>
+    </symbol>
+    <symbol
+      id="icon-arrow"
+      viewBox="0 0 48 32">
+      <path
+        fill="none"
+        stroke="#fff"
+        style="stroke: var(--color1, #fff)"
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="7.4667"
+        d="M42.667 5.333l-18.667 18.667-18.667-18.667"></path>
+    </symbol>
+    <symbol
+      id="icon-arrow-next"
+      viewBox="0 0 19 32">
+      <path
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="2.4"
+        d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+    </symbol>
+    <symbol
+      id="icon-arrow-prev"
+      viewBox="0 0 19 32">
+      <path
+        stroke-linejoin="miter"
+        stroke-linecap="butt"
+        stroke-miterlimit="4"
+        stroke-width="2.4"
+        d="M16 28.8l-12.8-12.8 12.8-12.8"></path>
+    </symbol>
+    <symbol
+      id="icon-maps"
+      viewBox="0 0 32 32">
+      <path
+        fill="#fff"
+        style="fill: var(--color1, #fff)"
+        d="M16.002 0c-6.39 0-11.589 5.199-11.589 11.589 0 7.93 10.371 19.573 10.813 20.065 0.415 0.462 1.139 0.461 1.553 0 0.442-0.492 10.813-12.134 10.813-20.065-0-6.39-5.199-11.589-11.589-11.589zM16.002 17.42c-3.215 0-5.831-2.616-5.831-5.831s2.616-5.831 5.831-5.831c3.215 0 5.831 2.616 5.831 5.831s-2.616 5.831-5.831 5.831z"></path>
+    </symbol>
+    <symbol
+      id="icon-clock"
+      viewBox="0 0 32 32">
+      <path
+        d="M20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414zM16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z"></path>
+    </symbol>
+    <symbol
+      id="icon-ctrl"
+      viewBox="0 0 32 32">
+      <path
+        d="M23 14c-0.278 0-0.555-0.116-0.753-0.341l-6.247-7.14-6.247 7.14c-0.364 0.416-0.995 0.458-1.411 0.094s-0.458-0.995-0.094-1.411l7-8c0.19-0.217 0.464-0.341 0.753-0.341s0.563 0.125 0.753 0.341l7 8c0.364 0.416 0.322 1.047-0.094 1.411-0.19 0.166-0.424 0.247-0.658 0.247z"></path>
+    </symbol>
+  </defs>
+</svg>
+
+
+  <style>
+    .preloader__line {
+      font-family: var(--primary-font);
+      color: var(--white-secondary-color);
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  </style>
+</head>
+
+
+  <body>
+    <!-- preloader -->
+    <div
+  id="preloader"
+  class="preloader">
+  <div class="preloader__line">
+    <p class="preloader__text js-preloader-text">HI</p>
+
+    <div class="preloader__percents js-box-percents">
+      <p
+        id="percents"
+        class="percents">
+        0
+      </p>
+      <span>%</span>
+    </div>
+  </div>
+</div>
+
+    <!-- header -->
+    <header class="header js-header">
+  <div class="header__container container">
+    <a
+      data-logo="logo"
+      href="index.html"
+      class="header__logo ">
+      LOGO
+    </a>
+
+    <nav class="header__nav nav-header">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a
+            href="projects.html"
+            class="header__nav-link  ">
+            Projects
+          </a>
+        </li>
+
+        <li class="header__nav-item">
+          <a
+            href="about.html"
+            class="header__nav-link  ">
+            About Us
+          </a>
+        </li>
+
+        <li class="header__nav-item">
+          <a
+            href="#blog"
+            class="header__nav-link  ">
+            Blog
+          </a>
+        </li>
+
+        <li class="header__nav-item">
+          <a
+            href="contacts.html"
+            class="header__nav-link  header__nav-link_active">
+            Contacts
+          </a>
+        </li>
+      </ul>
+
+      <div class="nav-header__menu-box">
+        <button
+          type="button"
+          class="menu-btn"
+          id="hamburger">
+          <span
+            data-line="line"
+            class="menu-btn__line  menu-btn__line_top"></span>
+          <span
+            data-line="line"
+            class="menu-btn__line  menu-btn__line_bottom"></span>
+        </button>
+
+        <p
+          class="nav-header__menu-text "
+          data-menu="text-menu">
+          Menu
+        </p>
+      </div>
+    </nav>
+
+    <div class="header__send-box send-box">
+      <a
+        data-leng="leng"
+        class="send-box__leng "
+        href="#">
+        En
+      </a>
+
+      <button
+        data-send-btn="send-btn"
+        type="submit"
+        class="send-box__btn  js-backdrop-open">
+        Send Request
+      </button>
+    </div>
+  </div>
+</header>
+
+    <!-- mob-menu -->
+    <div class="mob-menu js-menu">
+  <div class="mob-menu__container container">
+    <ul class="mob-menu__list">
+      <li class="mob-menu__list-item">
+        <a
+          class="mob-menu__list-link "
+          href="index.html">
+          Home
+        </a>
+      </li>
+
+      <li class="mob-menu__list-item">
+        <a
+          class="mob-menu__list-link "
+          href="projects.html">
+          Projects
+        </a>
+      </li>
+
+      <li class="mob-menu__list-item">
+        <a
+          class="mob-menu__list-link "
+          href="about.html">
+          About us
+        </a>
+      </li>
+
+      <li class="mob-menu__list-item">
+        <a
+          class="mob-menu__list-link "
+          href="#blog">
+          Blog
+        </a>
+      </li>
+
+      <li class="mob-menu__list-item">
+        <a
+          class="mob-menu__list-link  mob-menu_active "
+          href="contacts.html">
+          Contacts
+        </a>
+      </li>
+    </ul>
+
+    <botton
+      type="submit"
+      class="mob-menu__send-btn js-backdrop-open">
+      Send Request
+    </botton>
+
+    <div class="mob-menu__data-box">
+      <div class="data-box mob-menu__data-box_inner">
+  <ul class="language-box @@extends-class">
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      Fb
+    </a>
+  </li>
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      In
+    </a>
+  </li>
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      Be
+    </a>
+  </li>
+</ul>
+
+  <div class="data-box__location">
+    <svg class="data-box__location-svg">
+      <use xlink:href="#icon-maps"></use>
+    </svg>
+    <select class="data-box__city-list">
+      <option class="data-box__city-name">Berlin</option>
+      <option class="data-box__city-name">London</option>
+      <option class="data-box__city-name">Paris</option>
+      <option class="data-box__city-name">Brussels</option>
+    </select>
+  </div>
+  <div class="data-box__contacts">
+    <div class="data-box__phone">
+      <a
+        class="data-box__phone-link"
+        href="tel:+380983527547">
+        +380983527547
+      </a>
+    </div>
+    <div class="data-box__email">
+      <a
+        class="data-box__email-link"
+        href="mailto:info@gmail.com">
+        E: info@gmail.com
+      </a>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+    <main>
+      <section
+        class="contacts-section"
+        id="speed">
+        <div class="contacts contacts-section__contacts">
+  <div class="contacts__overlay contacts-section__contacts-overlay">
+    <div class="contacts__container container">
+      <div class="contacts__content contacts-section__contacts">
+        <h2 class="sub-title contacts__title contacts__title-mob">Get in touch</h2>
+
+        <h2 class="sub-title contacts__title contacts__title-desctop">Drop us a line</h2>
+
+        <p class="contacts__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris
+          vitae posuere.
+        </p>
+
+        <address class="contacts__address address-contacts">
+          <ul class="address-contacts__list">
+            <li class="address-contacts__list-item">
+              <p class="address-contacts__list-title">Kyiv</p>
+
+              <div class="address-contacts__list-link">
+                <a href="tel:+2095550104">(209) 555-0104</a>
+
+                <a
+                  href="https://www.google.com/maps/@49.2678987,23.3268093,4.38z?entry=ttu"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow">
+                  6391 Elgin St. Celina, Delaware 10299
+                </a>
+              </div>
+            </li>
+            <li class="address-contacts__list-item">
+              <p class="address-contacts__list-title">Lviv</p>
+
+              <div class="address-contacts__list-link">
+                <a href="tel:+2095550104">(209) 555-0104</a>
+
+                <a
+                  href="https://www.google.com/maps/@49.2678987,23.3268093,4.38z?entry=ttu"
+                  target="_blank"
+                  rel="noreferrer noopener nofollow">
+                  6391 Elgin St. Celina, Delaware 10299
+                </a>
+              </div>
+            </li>
+            <li class="address-contacts__list-item">
+              <div>
+                <p class="address-contacts__list-title">Kharkiv</p>
+
+                <div class="address-contacts__list-link">
+                  <a href="tel:+2095550104">(209) 555-0104</a>
+
+                  <a
+                    href="https://www.google.com/maps/@49.2678987,23.3268093,4.38z?entry=ttu"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow">
+                    6391 Elgin St. Celina, Delaware 10299
+                  </a>
+                </div>
+              </div>
+
+              <div class="address-contacts__mail-box">
+                <a
+                  class="address-contacts__mail"
+                  href="mailto:info@gmail.com"
+                  class="button contacts__button button_type_link">
+                  info@gmail.com
+                </a>
+
+                <ul class="language-box address-contacts__language">
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      Fb
+    </a>
+  </li>
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      In
+    </a>
+  </li>
+  <li class="language-box__item">
+    <a
+      class="language-box__link"
+      href="#">
+      Be
+    </a>
+  </li>
+</ul>
+
+              </div>
+            </li>
+          </ul>
+        </address>
+
+        <a
+  class="make-request__btn contacts-section__btn"
+  href="#">
+  Make request
+</a>
+
+      </div>
+
+      <div class="contacts__trademark-box trademark contacts__trademark">
+  <div class="trademark__content trademark__content_top">
+    <p class="contacts__trademark-text @@color-class">© Copyright 2018. All rights reserved</p>
+  </div>
+
+  <div class="trademark__content trademark__content_bottom contacts__trademark-content_bottom">
+    <p class="contacts__trademark-text @@color-class">Made with love in</p>
+
+    <div class="trademark__first-last-box @@color-class">
+      <p class="trademark__first-text">The First</p>
+      <p class="trademark__last-text">The Last.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+      </section>
+    </main>
+    @@include('html-partials/base/pop-up.html)
+    <script
+      src="./js/contacts.min.js"
+      type="module"></script>
+  </body>
+</html>
