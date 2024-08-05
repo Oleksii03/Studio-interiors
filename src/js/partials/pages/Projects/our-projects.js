@@ -182,7 +182,8 @@ export function projects() {
               srcset="${imageTab}"
               media="(min-width: 768px)" />
 
-            <img
+            <img 
+              loading="lazy"
               src="${imageMob}"
               alt="Project-item"
               class="our-projects__project-img" />
@@ -202,6 +203,7 @@ export function projects() {
           class="our-projects__project-link">
           <picture class="our-projects__project-picture">
             <img
+              loading="lazy"
               src="assets/img/pagrs/our-projects/placeholder-image.jpg"
               alt="Project-item"
               class="our-projects__project-img" />

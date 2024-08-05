@@ -2,8 +2,16 @@
   position: relative;
   background-color: var(--light-background-color);
   overflow: hidden;
-  padding-bottom: 96px;
+  padding-top: 37px;
+  padding-bottom: 87px;
 
+  @media (min-width: 768px) {
+    padding-bottom: 109px;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 62px;
+    padding-bottom: 128px;
+  }
   @media (min-width: 1440px) {
     padding-top: 109px;
   }
