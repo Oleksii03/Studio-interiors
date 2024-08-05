@@ -48,6 +48,46 @@ export function projects() {
       imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-6.webp',
       imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-6.webp',
     },
+    {
+      type: 'apartments',
+      title: 'Eyewear storeinterior',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-5.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-5.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-5.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-5.webp',
+    },
+    {
+      type: 'apartments',
+      title: 'Minimalist style home',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-4.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-4.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-4.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-4.webp',
+    },
+    {
+      type: 'commerce',
+      title: 'Minimalist style home',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-2.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-2.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-2.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-2.webp',
+    },
+    {
+      type: 'commerce',
+      title: 'Eyewear store interior',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-1.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-1.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-1.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-1.webp',
+    },
+    {
+      type: 'commerce',
+      title: 'House on a Hillside',
+      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-6.webp',
+      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-6.webp',
+      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-6.webp',
+      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-6.webp',
+    },
   ];
 
   // --------------------------------------
@@ -90,9 +130,13 @@ export function projects() {
   function filterData(activeItemText) {
     const uniqueItems = dataPojects.filter(obj => obj.type === activeItemText);
 
-    let markup = createMarkup(uniqueItems);
+    if (!uniqueItems.length) {
+      console.log(uniqueItems.length);
+      listContent.innerHTML = createMarkupError();
+      return;
+    }
 
-    listContent.innerHTML = markup.join('');
+    listContent.innerHTML = createMarkup(uniqueItems).join('');
   }
 
   filterData(activeItemText);
@@ -145,6 +189,24 @@ export function projects() {
         </a>
       </li>`;
     });
+  }
+
+  function createMarkupError() {
+    return `
+     <li class="our-projects__project-item our-projects__project-item">
+        <a
+          href="#"
+          class="our-projects__project-link">
+          <picture class="our-projects__project-picture">
+            <img
+              src="assets/img/pagrs/our-projects/placeholder-image.jpg"
+              alt="Project-item"
+              class="our-projects__project-img" />
+          </picture>
+        </a>
+
+      <h3 style="text-align: center;">Photo not found</h3>
+      </li>`;
   }
 
   // listContent.innerHTML = createMarkup().join('');

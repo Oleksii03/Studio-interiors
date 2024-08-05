@@ -1,0 +1,19 @@
+.main__lorem {
+  padding-top: 47px;
+  padding-bottom: 95px;
+  background-color: var(--dark-background-color);
+
+  @media (min-width: 768px) {
+    padding-bottom: 124px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 78px;
+    padding-bottom: 142px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-top: 110px;
+    padding-bottom: 180px;
+  }
+}

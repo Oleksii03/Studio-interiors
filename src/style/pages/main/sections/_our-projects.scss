@@ -1,21 +1,21 @@
 .our-projects {
   background-color: var(--dark-background-color);
   padding-top: 80px;
-  padding-bottom: 94px;
+  padding-bottom: 45px;
 
   @media (min-width: 768px) {
     padding-top: 105px;
-    padding-bottom: 124px;
+    padding-bottom: 73px;
   }
 
   @media (min-width: 1024px) {
     padding-top: 124px;
-    padding-bottom: 142px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: 1440px) {
     padding-top: 140px;
-    padding-bottom: 180px;
+    padding-bottom: 70px;
   }
 
   &__container {
@@ -138,20 +138,13 @@
   &__list {
     display: grid;
     gap: 6px;
-    margin-bottom: 96px;
-
-    @media (min-width: 768px) {
-      margin-bottom: 122px;
-    }
 
     @media (min-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
-      margin-bottom: 140px;
     }
 
     @media (min-width: 1440px) {
       gap: 8px;
-      margin-bottom: 181px;
     }
   }
 
