@@ -2700,9 +2700,16 @@ body {
 }
 
 .page-our-projects__gallery {
+  position: relative;
   background-color: var(--light-background-color);
   overflow: hidden;
   padding-bottom: 96px;
+}
+
+.page-our-projects__gallery .page-our-projects__gallery-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .page-our-projects__footer {
@@ -3717,12 +3724,6 @@ body {
     transition: all 250ms linear;
   }
 
-  .make-request__btn:hover {
-    background: transparent;
-    color: var(--white-base-color);
-    outline: 1px solid var(--white-base-color);
-  }
-
   .container {
     max-width: 1342px;
   }
@@ -4542,6 +4543,10 @@ body {
 
   .page-our-projects__gallery {
     padding-top: 109px;
+  }
+
+  .page-our-projects__gallery .page-our-projects__gallery-decoration {
+    display: none;
   }
 }
 
