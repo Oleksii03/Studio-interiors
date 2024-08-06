@@ -1,0 +1,133 @@
+.page-news {
+  color: var(--black-base-color);
+  background-color: var(--light-background-color);
+  min-height: 100vh;
+  padding-top: 116px;
+  padding-bottom: 60px;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding-top: 138px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 162px;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 208px;
+    padding-bottom: 71px;
+  }
+
+  &__text-content {
+    @media (min-width: 768px) {
+      padding: 0 76px;
+      margin-bottom: 82px;
+    }
+    @media (min-width: 1024px) {
+      padding: 0 103px;
+      margin-bottom: 89px;
+    }
+    @media (min-width: 1440px) {
+      padding: 0 132px;
+      margin-bottom: 110px;
+      display: flex;
+      align-items: center;
+      column-gap: 400px;
+    }
+  }
+
+  &__list {
+    position: relative;
+    width: 128px;
+    height: 29px;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.66px;
+    border-radius: 20px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 64px;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      border: none;
+      margin-bottom: 0px;
+    }
+
+    &-item {
+      position: relative;
+      padding: 7px 13px;
+      margin-bottom: 5px;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        right: 12px;
+        width: 10px;
+        height: 5px;
+        transform: translateY(-50%);
+        background-image: url('@assets/img/pagrs/our-projects/arrow.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  &__inner-list {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    transition: all 200ms linear;
+    background-color: var(--light-background-color);
+
+    @media (max-width: 767px) {
+      &_hidden {
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+      }
+    }
+
+    &-item {
+      opacity: 0.6;
+      transition: all 200ms linear;
+      cursor: pointer;
+      flex-shrink: 0;
+
+      @media (max-width: 767px) {
+        &_active {
+          opacity: 1;
+        }
+      }
+
+      @media (min-width: 768px) {
+        &_active {
+          border-bottom: 1px solid var(--black-base-color);
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      border: none;
+      flex-direction: row;
+      padding: 0;
+      column-gap: 29px;
+    }
+    @media (min-width: 1440px) {
+      column-gap: 35px;
+    }
+  }
+}

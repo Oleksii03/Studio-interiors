@@ -33,6 +33,7 @@ export const js = () => {
     about: path.resolve(app.path.srcFolder, 'js/about.js'),
     contacts: path.resolve(app.path.srcFolder, 'js/contacts.js'),
     projects: path.resolve(app.path.srcFolder, 'js/projects.js'),
+    blog: path.resolve(app.path.srcFolder, 'js/blog.js'),
   };
 
   const webpackConfig = {

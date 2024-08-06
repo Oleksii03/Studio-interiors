@@ -115,7 +115,11 @@ export function projects() {
 
     target.classList.add('page-our-projects__inner-list-item_active');
 
-    activeItemList.textContent = target.textContent;
+    let targetText = target.textContent.trim();
+
+    if (targetText.length > 11) targetText = targetText.slice(0, 11) + '...';
+
+    activeItemList.textContent = targetText;
     activeItemText = activeItemList.textContent;
 
     filterData(activeItemText.toLowerCase().trim());
@@ -143,7 +147,6 @@ export function projects() {
   // ----createMarkup-----------
 
   function createMarkup(uniqueItems) {
-    console.log(uniqueItems);
     return uniqueItems.map(({ imageMob, imageTab, imageLepTop, imageDesc, title }) => {
       return `
      <li class="our-projects__project-item our-projects__project-item">
