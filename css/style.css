@@ -2813,10 +2813,91 @@ body {
 }
 
 .blog-form-section {
-  height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../assets/img/pagrs/blog/form-section/bg-mob.webp") lightgray 50%/cover no-repeat;
   background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-mob.webp") lightgray 50%/cover no-repeat;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-mob.webp") lightgray 50%/cover no-repeat;
+}
+
+.blog-form-section__title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 24px;
+}
+
+.blog-form-section__description {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 170%;
+  margin-bottom: 48px;
+}
+
+.blog-form__wrapper {
+  position: relative;
+}
+
+.blog-form__email {
+  width: 100%;
+  height: 35px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.blog-form__email::-webkit-input-placeholder {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 170.66%;
+}
+
+.blog-form__email::-moz-placeholder {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 170.66%;
+}
+
+.blog-form__email:-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 170.66%;
+}
+
+.blog-form__email::-ms-input-placeholder {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 170.66%;
+}
+
+.blog-form__email::placeholder {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 170.66%;
+}
+
+.blog-form__btn {
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  -webkit-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+  transition: all 250ms linear;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.blog-form__btn-icon {
+  width: 16px;
+  height: 12px;
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 375px) {
@@ -3381,6 +3462,12 @@ body {
        -moz-column-gap: 29px;
             column-gap: 29px;
   }
+
+  .blog-form-section {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../assets/img/pagrs/blog/form-section/bg-tab.webp") lightgray 50%/cover no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-tab.webp") lightgray 50%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-tab.webp") lightgray 50%/cover no-repeat;
+  }
 }
 
 @media (min-width: 768px) and (min-width: 1440px) {
@@ -3877,6 +3964,12 @@ body {
   .page-news__text-content {
     padding: 0 103px;
     margin-bottom: 89px;
+  }
+
+  .blog-form-section {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../assets/img/pagrs/blog/form-section/bg-lap-top.webp") lightgray 50%/cover no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-lap-top.webp") lightgray 50%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-lap-top.webp") lightgray 50%/cover no-repeat;
   }
 }
 
@@ -4773,6 +4866,12 @@ body {
     -webkit-column-gap: 35px;
        -moz-column-gap: 35px;
             column-gap: 35px;
+  }
+
+  .blog-form-section {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../assets/img/pagrs/blog/form-section/bg-desc.webp") lightgray 50%/cover no-repeat;
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-desc.webp") lightgray 50%/cover no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-desc.webp") lightgray 50%/cover no-repeat;
   }
 }
 
