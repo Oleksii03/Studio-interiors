@@ -1,7 +1,11 @@
 <section class="page-news">
   <div class="page-news__container container">
     <div class="page-news__text-content">
-      <h2 class="page-news__title sub-title">Our Projects</h2>
+      <h2 class="page-news__title sub-title">
+        Our
+        <span>latest</span>
+        news
+      </h2>
 
       <div class="page-news__text-content-description">
         <ul class="page-news__list">
@@ -18,6 +22,34 @@
 
     <!-- list-content -->
 
-    <ul class="page-news__list-content"></ul>
+    <ul class="page-news__list-content js-news-list"></ul>
+
+    <!--/ list-content -->
+
+    <div class="page-news__pagination-box">
+      <button
+        type="button"
+        class="page-news__pagination-prev">
+        <svg class="page-news__pagination-prev-icon">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </button>
+
+      <ul class="page-news__pagination-list js-pagination-list">
+        <li class="page-news__pagination-item page-news__pagination-item_active">01</li>
+        <li class="page-news__pagination-item">02</li>
+        <li class="page-news__pagination-item">03</li>
+        <li class="page-news__pagination-item">...</li>
+        <li class="page-news__pagination-item">15</li>
+      </ul>
+
+      <botton
+        type="button"
+        class="page-news__pagination-next">
+        <svg class="page-news__pagination-next-icon">
+          <use xlink:href="#icon-arrow-right"></use>
+        </svg>
+      </botton>
+    </div>
   </div>
 </section>

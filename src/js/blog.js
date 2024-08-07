@@ -4,6 +4,9 @@ import { header } from './partials/base/header.js';
 import { preloader } from './partials/base/preloader.js';
 import { popUp } from './partials/base/pop-up.js';
 import { blog } from './partials/pages/blog/blog.js';
+import { dataNews } from './partials/data/data-news.js';
+
+console.log();
 
 document.addEventListener('DOMContentLoaded', () => {
   flsFunctions.isWebp();
@@ -11,5 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
   header();
   preloader();
   popUp();
-  blog();
+  blog(dataNews());
 });

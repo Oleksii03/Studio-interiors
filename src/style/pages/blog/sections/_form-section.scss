@@ -1,6 +1,8 @@
 .blog-form-section {
+  overflow: hidden;
+  position: relative;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 160px;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%),
     url('@assets/img/pagrs/blog/form-section/bg-mob.webp') lightgray 50% / cover no-repeat;
@@ -30,7 +32,14 @@
     font-style: normal;
     font-weight: 300;
     line-height: 170%;
-    margin-bottom: 48px;
+    margin-bottom: 35px;
+  }
+
+  &__footer-wrapper {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    width: calc(100% - 30px);
   }
 }
 

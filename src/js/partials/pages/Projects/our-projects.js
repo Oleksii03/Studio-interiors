@@ -1,101 +1,8 @@
-export function projects() {
-  const dataPojects = [
-    {
-      type: 'house',
-      title: 'Eyewear store interior',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-1.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-1.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-1.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-1.webp',
-    },
-    {
-      type: 'house',
-      title: 'Minimalist style home',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-2.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-2.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-2.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-2.webp',
-    },
-    {
-      type: 'house',
-      title: 'Minimalist style home',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-3.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-3.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-3.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-3.webp',
-    },
-    {
-      type: 'house',
-      title: 'Minimalist style home',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-4.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-4.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-4.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-4.webp',
-    },
-    {
-      type: 'house',
-      title: 'Eyewear storeinterior',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-5.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-5.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-5.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-5.webp',
-    },
-    {
-      type: 'house',
-      title: 'House on a Hillside',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-6.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-6.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-6.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-6.webp',
-    },
-    {
-      type: 'apartments',
-      title: 'Eyewear storeinterior',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-5.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-5.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-5.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-5.webp',
-    },
-    {
-      type: 'apartments',
-      title: 'Minimalist style home',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-4.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-4.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-4.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-4.webp',
-    },
-    {
-      type: 'commerce',
-      title: 'Minimalist style home',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-2.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-2.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-2.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-2.webp',
-    },
-    {
-      type: 'commerce',
-      title: 'Eyewear store interior',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-1.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-1.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-1.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-1.webp',
-    },
-    {
-      type: 'commerce',
-      title: 'House on a Hillside',
-      imageMob: 'assets/img/pagrs/our-projects/list-project/Home/mob/img-6.webp',
-      imageTab: 'assets/img/pagrs/our-projects/list-project/Home/tab/img-6.webp',
-      imageLepTop: 'assets/img/pagrs/our-projects/list-project/Home/lap-top/img-6.webp',
-      imageDesc: 'assets/img/pagrs/our-projects/list-project/Home/desc/img-6.webp',
-    },
-  ];
-
-  // --------------------------------------
-
+export function projects(dataPojects) {
   const activeItemList = document.querySelector('.js-active-item');
   const innerList = document.querySelector('.js-inner-list');
 
-  let activeItemText = activeItemList.textContent.toLowerCase().trim();
+  let activeItemText = activeItemList.textContent;
 
   activeItemList.addEventListener('click', toggleInnerList);
   innerList.addEventListener('click', chooseOption);
@@ -116,13 +23,16 @@ export function projects() {
     target.classList.add('page-our-projects__inner-list-item_active');
 
     let targetText = target.textContent.trim();
+    let targetTextSlice;
 
-    if (targetText.length > 11) targetText = targetText.slice(0, 11) + '...';
+    if (targetText.length > 11) {
+      targetTextSlice = targetText.slice(0, 11) + '...';
+      activeItemList.textContent = targetTextSlice;
+    } else {
+      activeItemList.textContent = targetText;
+    }
 
-    activeItemList.textContent = targetText;
-    activeItemText = activeItemList.textContent;
-
-    filterData(activeItemText.toLowerCase().trim());
+    filterData(targetText);
 
     toggleInnerList();
   }
@@ -132,7 +42,7 @@ export function projects() {
   const listContent = document.querySelector('.js-list-content');
 
   function filterData(activeItemText) {
-    const uniqueItems = dataPojects.filter(obj => obj.type === activeItemText);
+    const uniqueItems = dataPojects.filter(obj => obj.type === activeItemText.toLowerCase().trim());
 
     if (!uniqueItems.length) {
       listContent.innerHTML = createMarkupError();
