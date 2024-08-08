@@ -2824,7 +2824,7 @@ body {
   display: -ms-grid;
   display: grid;
   row-gap: 36px;
-  heignht: 100%;
+  height: 100%;
 }
 
 .page-news__item-title {
