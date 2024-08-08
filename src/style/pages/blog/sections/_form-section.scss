@@ -8,6 +8,9 @@
   @media (min-width: 1024px) {
     padding-top: 124px;
   }
+  @media (min-width: 1440px) {
+    padding-top: 135px;
+  }
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%),
     url('@assets/img/pagrs/blog/form-section/bg-mob.webp') lightgray 50% / cover no-repeat;
@@ -32,6 +35,9 @@
     @media (min-width: 1024px) {
       padding-bottom: 152px;
     }
+    @media (min-width: 1440px) {
+      padding-bottom: 170px;
+    }
   }
 
   &__content {
@@ -39,6 +45,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 139px 1fr;
+    }
+    @media (min-width: 1440px) {
+      column-gap: 160px;
+      row-gap: 43px;
     }
   }
 
@@ -59,6 +69,11 @@
       padding-left: 0;
       margin-left: 99px;
     }
+    @media (min-width: 1440px) {
+      font-size: 36px;
+      line-height: 142%;
+      margin-left: 137px;
+    }
   }
 
   &__description-wrapper {
@@ -72,6 +87,10 @@
       padding-right: 101px;
       margin-bottom: 20px;
     }
+    @media (min-width: 1440px) {
+      margin-left: 50px;
+      padding-right: 132px;
+    }
   }
 
   &__description {
@@ -83,6 +102,9 @@
 
     @media (min-width: 1024px) {
       margin-bottom: 25px;
+    }
+    @media (min-width: 1440px) {
+      margin-bottom: 17px;
     }
   }
 
@@ -107,10 +129,13 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
     &::placeholder {
-      font-size: 20px;
       font-size: 16px;
       font-weight: 300;
       line-height: 170%;
+
+      @media (min-width: 1440px) {
+        font-size: 20px;
+      }
     }
   }
 

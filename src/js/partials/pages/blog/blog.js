@@ -57,7 +57,7 @@ export function blog(arrNews) {
   // ----createMarkup-----------
 
   function createMarkup(uniqueItems) {
-    return uniqueItems.map(({ imageMob, imageTab, imageLepTop, imageDesc, title, description }) => {
+    return uniqueItems.map(({ imageMob, imageTab, imageLapTop, title, description }) => {
       return `
      <li class="page-news__list-contentt-item">
         <div class="page-news__list-content-overlay">
@@ -81,7 +81,9 @@ export function blog(arrNews) {
           href="#"
           class="our-projects__project-link">
           <picture class="our-projects__project-picture">
-
+            <source
+              srcset="${imageLapTop}"
+              media="(min-width: 1024px)" />
             <source
               srcset="${imageTab}"
               media="(min-width: 768px)" />
@@ -113,6 +115,7 @@ export function blog(arrNews) {
               class="our-projects__img-not-found" />
           </picture>
         </a>
+           
       </li>`;
   }
 }
