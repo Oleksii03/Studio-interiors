@@ -2976,6 +2976,7 @@ body {
 
 .page-news__pagination-prev,
 .page-news__pagination-next {
+  cursor: pointer;
   background-color: transparent;
 }
 
@@ -3045,35 +3046,30 @@ body {
 }
 
 .blog-form__email::-webkit-input-placeholder {
-  font-size: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 170%;
 }
 
 .blog-form__email::-moz-placeholder {
-  font-size: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 170%;
 }
 
 .blog-form__email:-ms-input-placeholder {
-  font-size: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 170%;
 }
 
 .blog-form__email::-ms-input-placeholder {
-  font-size: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 170%;
 }
 
 .blog-form__email::placeholder {
-  font-size: 20px;
   font-size: 16px;
   font-weight: 300;
   line-height: 170%;
@@ -3704,10 +3700,6 @@ body {
     padding: 33px;
   }
 
-  .page-news__list-content-overlay {
-    padding: 45px;
-  }
-
   .blog-form-section {
     padding-top: 107px;
   }
@@ -4274,6 +4266,10 @@ body {
     font-size: 20px;
     width: 270px;
     margin-bottom: 40px;
+  }
+
+  .page-news__list-content-overlay {
+    padding: 45px;
   }
 
   .page-news__pagination-box {
@@ -5206,33 +5202,131 @@ body {
 
   .page-news {
     padding-top: 208px;
-    padding-bottom: 71px;
+    padding-bottom: 137px;
   }
 
   .page-news__text-content {
     padding: 0 132px;
-    margin-bottom: 110px;
+    margin-bottom: 98px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-column-gap: 400px;
-       -moz-column-gap: 400px;
-            column-gap: 400px;
+    -webkit-column-gap: 413px;
+       -moz-column-gap: 413px;
+            column-gap: 413px;
   }
 
   .page-news__inner-list {
-    -webkit-column-gap: 35px;
-       -moz-column-gap: 35px;
-            column-gap: 35px;
+    -webkit-column-gap: 33px;
+       -moz-column-gap: 33px;
+            column-gap: 33px;
+  }
+
+  .page-news__list-content {
+    margin-bottom: 96px;
+  }
+
+  .page-news__item-title {
+    font-size: 28px;
+  }
+
+  .page-news__list-contentt-item:nth-child(2) {
+    padding: 57px;
+  }
+
+  .page-news__list-contentt-item:nth-child(2) .page-news__item-title {
+    font-size: 28px;
+    width: 380px;
+    margin-bottom: 19px;
+  }
+
+  .page-news__list-contentt-item:nth-child(2) .page-news__content-item-description {
+    width: 430px;
+    margin-bottom: 60px;
+  }
+
+  .page-news__list-contentt-item:nth-child(6) {
+    padding: 54px;
+  }
+
+  .page-news__list-contentt-item:nth-child(6) .page-news__item-title {
+    font-size: 28px;
+    width: 380px;
+    margin-bottom: 19px;
+  }
+
+  .page-news__list-contentt-item:nth-child(6) .page-news__content-item-description {
+    display: block;
+    width: 430px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 170%;
+    opacity: 0.7;
+    margin-bottom: 60px;
+  }
+
+  .page-news__list-content-overlay {
+    padding: 55px;
+  }
+
+  .blog-form-section {
+    padding-top: 135px;
   }
 
   .blog-form-section {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.64)), to(rgba(0, 0, 0, 0.64))), url("../assets/img/pagrs/blog/form-section/bg-desc.webp") lightgray 50%/cover no-repeat;
     background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-desc.webp") lightgray 50%/cover no-repeat;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%), url("../assets/img/pagrs/blog/form-section/bg-desc.webp") lightgray 50%/cover no-repeat;
+  }
+
+  .blog-form-section__container {
+    padding-bottom: 170px;
+  }
+
+  .blog-form-section__content {
+    -webkit-column-gap: 160px;
+       -moz-column-gap: 160px;
+            column-gap: 160px;
+    row-gap: 43px;
+  }
+
+  .blog-form-section__title {
+    font-size: 36px;
+    line-height: 142%;
+    margin-left: 137px;
+  }
+
+  .blog-form-section__description-wrapper {
+    margin-left: 50px;
+    padding-right: 132px;
+  }
+
+  .blog-form-section__description {
+    margin-bottom: 17px;
+  }
+
+  .blog-form__email::-webkit-input-placeholder {
+    font-size: 20px;
+  }
+
+  .blog-form__email::-moz-placeholder {
+    font-size: 20px;
+  }
+
+  .blog-form__email:-ms-input-placeholder {
+    font-size: 20px;
+  }
+
+  .blog-form__email::-ms-input-placeholder {
+    font-size: 20px;
+  }
+
+  .blog-form__email::placeholder {
+    font-size: 20px;
   }
 }
 
