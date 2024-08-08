@@ -1,8 +1,10 @@
 .blog-form-section {
   overflow: hidden;
-  position: relative;
   padding-top: 80px;
-  padding-bottom: 160px;
+
+  @media (min-height: 768px) {
+    padding-top: 107px;
+  }
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.64) 0%, rgba(0, 0, 0, 0.64) 100%),
     url('@assets/img/pagrs/blog/form-section/bg-mob.webp') lightgray 50% / cover no-repeat;
@@ -20,11 +22,29 @@
       url('@assets/img/pagrs/blog/form-section/bg-desc.webp') lightgray 50% / cover no-repeat;
   }
 
+  &__container {
+    position: relative;
+    padding-bottom: 155px;
+  }
+
   &__title {
     font-size: 26px;
     font-weight: 700;
     line-height: 31px;
     margin-bottom: 24px;
+
+    @media (min-height: 768px) {
+      font-size: 32px;
+      padding: 0 77px;
+      line-height: 39px;
+      margin-bottom: 17px;
+    }
+  }
+
+  &__description-wrapper {
+    @media (min-height: 768px) {
+      padding: 0 77px;
+    }
   }
 
   &__description {
@@ -39,7 +59,7 @@
     position: absolute;
     bottom: 24px;
     left: 24px;
-    width: calc(100% - 30px);
+    width: 100%;
   }
 }
 
@@ -57,7 +77,7 @@
 
     &::placeholder {
       font-size: 20px;
-
+      font-size: 16px;
       font-weight: 300;
       line-height: 170.66%;
     }
