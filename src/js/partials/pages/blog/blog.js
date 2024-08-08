@@ -71,7 +71,7 @@ export function blog(arrNews) {
              ${description}
            </p>
 
-            <p class="discover-more   discover-more__dark      page-news__sub-title">Discover more
+            <p class="discover-more   discover-more__dark page-news__sub-title">Discover more
            </p>
           </div>
         </div>
