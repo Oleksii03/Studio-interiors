@@ -2831,7 +2831,7 @@ body {
   color: var(--white-base-color);
 }
 
-.page-news__sub-title {
+.page-news__sub-title-link {
   display: none;
 }
 
@@ -2876,7 +2876,7 @@ body {
   color: var(--black-base-color);
 }
 
-.page-news__list-contentt-item:nth-child(2) .page-news__sub-title {
+.page-news__list-contentt-item:nth-child(2) .page-news__sub-title-link {
   margin-top: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2910,7 +2910,7 @@ body {
   color: var(--black-base-color);
 }
 
-.page-news__list-contentt-item:nth-child(6) .page-news__sub-title {
+.page-news__list-contentt-item:nth-child(6) .page-news__sub-title-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
