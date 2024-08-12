@@ -71,8 +71,10 @@ export function blog(arrNews) {
              ${description}
            </p>
 
-            <p class="discover-more   discover-more__dark page-news__sub-title">Discover more
-           </p>
+            <a href="../../../one-news.html" target="_blank">
+              <p class="discover-more   discover-more__dark  page-news__sub-title">Discover more
+              </p>
+            </a>
           </div>
         </div>
         

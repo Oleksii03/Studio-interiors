@@ -34,6 +34,7 @@ export const js = () => {
     contacts: path.resolve(app.path.srcFolder, 'js/contacts.js'),
     projects: path.resolve(app.path.srcFolder, 'js/projects.js'),
     blog: path.resolve(app.path.srcFolder, 'js/blog.js'),
+    oneNews: path.resolve(app.path.srcFolder, 'js/one-news.js'),
   };
 
   const webpackConfig = {

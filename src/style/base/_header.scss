@@ -8,9 +8,8 @@
   transition: all 250ms linear;
 
   &_active {
-    transition: all 350ms linear;
     background-color: #000000bb;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
   }
 
   @media (min-width: 768px) {

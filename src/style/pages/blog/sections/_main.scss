@@ -202,15 +202,12 @@
     align-content: end;
 
     @media (max-width: 767px) {
-      &:not(:last-child) {
-        margin-bottom: 6px;
-      }
+      margin-bottom: 6px;
     }
 
-    &:nth-child(1) {
-      margin-bottom: 0;
-    }
-    &:nth-child(5) {
+    &:nth-child(1),
+    &:nth-child(5),
+    &:last-child {
       margin-bottom: 0;
     }
 
@@ -401,6 +398,10 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+
+    @media (min-width: 1024px) {
+      cursor: pointer;
+    }
   }
 
   &__pagination-prev,
