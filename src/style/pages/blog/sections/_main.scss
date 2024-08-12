@@ -192,7 +192,7 @@
     }
   }
 
-  &__sub-title {
+  &__sub-title-link {
     display: none;
   }
 
@@ -255,7 +255,7 @@
         }
       }
 
-      & .page-news__sub-title {
+      & .page-news__sub-title-link {
         margin-top: auto;
         display: flex;
         flex-shrink: 0;
@@ -325,7 +325,7 @@
         }
       }
 
-      & .page-news__sub-title {
+      & .page-news__sub-title-link {
         display: flex;
       }
 
