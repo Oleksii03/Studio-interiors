@@ -12,8 +12,12 @@
     @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
     "Blog" })
 
-    <main>@@include('./html-partials/pages/one-news/main.html')</main>
-
+    <main>
+      @@include('./html-partials/pages/one-news/main.html')
+      @@include('html-partials/pages/one-news/latest-news.html')
+    </main>
+    <!-- footer -->
+    @@include('html-partials/pages/one-news/footer.html')
     <!-- pop-up -->
     @@include('html-partials/base/pop-up.html')
     <!-- ---btn-up--- -->

@@ -1,0 +1,12 @@
+.one-news-footer {
+  background-color: var(--light-background-color);
+  padding: 24px 0;
+
+  &__color {
+    color: #828282;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 152%;
+  }
+}
