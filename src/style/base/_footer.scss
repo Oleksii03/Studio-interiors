@@ -1,5 +1,10 @@
 .footer {
   overflow: hidden;
+
+  &__container {
+    position: relative;
+    width: 100%;
+  }
   &__contacts {
     min-height: 745px;
 
