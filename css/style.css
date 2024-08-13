@@ -1404,6 +1404,11 @@ body {
   overflow: hidden;
 }
 
+.footer__container {
+  position: relative;
+  width: 100%;
+}
+
 .footer__contacts {
   min-height: 745px;
 }
@@ -3344,10 +3349,10 @@ body {
 
 .one-news-footer__color {
   color: #828282;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 152%;
+}
+
+.one-news-footer__trademark {
+  width: 100%;
 }
 
 @media (min-width: 375px) {
@@ -3574,7 +3579,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
+    width: calc(100% - 30px);
   }
 
   .backdrop {
@@ -4056,6 +4061,12 @@ body {
   .latest-news__list-img-wrapper {
     width: 366px;
     height: 450px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .trademark {
+    width: calc(100% - 27px);
   }
 }
 
