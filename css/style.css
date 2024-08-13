@@ -3095,6 +3095,7 @@ body {
 
 .one-news-main {
   overflow-x: hidden;
+  background-color: var(--light-background-color);
   color: var(--black-base-color);
   padding-top: 116px;
   padding-bottom: 40px;
@@ -3229,6 +3230,22 @@ body {
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
+}
+
+.latest-news {
+  background-color: var(--light-background-color);
+  padding-top: 40px;
+}
+
+.latest-news__container {
+  max-width: 1440px;
+  margin-left: auto;
+  padding-left: 15px;
+}
+
+.latest-news__title {
+  color: #000;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 375px) {
