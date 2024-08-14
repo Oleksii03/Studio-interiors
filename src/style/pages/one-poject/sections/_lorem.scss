@@ -1,0 +1,27 @@
+.one-project-lorem {
+  overflow-y: hidden;
+  background-color: var(--dark-background-color);
+  padding-top: 96px;
+  padding-bottom: 96px;
+
+  @media (min-width: 768px) {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 142px;
+    padding-bottom: 142px;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 180px;
+  }
+
+  &__decoration-title {
+    display: none;
+    @media (min-width: 768px) and (max-width: 1439px) {
+      display: flex;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

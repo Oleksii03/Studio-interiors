@@ -3,25 +3,28 @@
   @@include('./html-partials/base/head.html',{ "title":"One news" })
 
   <body>
-    <!-- preloader -->
-    @@include('html-partials/base/preloader.html')
-    <!-- ---header--- -->
-    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
-    "color-class": "header_dark", "title": "Blog" })
-    <!-- mob-menu -->
-    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
-    "Blog" })
+    <div class="wrapper">
+      <!-- preloader -->
+      @@include('html-partials/base/preloader.html')
+      <!-- ---header--- -->
+      @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+      "color-class": "header_dark", "title": "Blog" })
+      <!-- mob-menu -->
+      @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
+      "Blog" })
 
-    <main>
-      @@include('./html-partials/pages/one-news/main.html')
-      @@include('html-partials/pages/one-news/latest-news.html')
-    </main>
-    <!-- footer -->
-    @@include('html-partials/pages/one-news/footer.html')
-    <!-- pop-up -->
-    @@include('html-partials/base/pop-up.html')
-    <!-- ---btn-up--- -->
-    @@include('html-partials/base/btn-up.html')
+      <main>
+        @@include('./html-partials/pages/one-news/main.html')
+        @@include('html-partials/pages/one-news/latest-news.html')
+      </main>
+      <!-- footer -->
+      @@include('html-partials/pages/one-news/footer.html')
+      <!-- pop-up -->
+      @@include('html-partials/base/pop-up.html')
+      <!-- ---btn-up--- -->
+      @@include('html-partials/base/btn-up.html')
+    </div>
+
     <script
       src="./js/oneNews.min.js"
       type="module"></script>
