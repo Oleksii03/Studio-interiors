@@ -68,6 +68,8 @@ export function projects(dataPojects) {
           </ul>
 
           <div class="project-overlay__title-box project-overlay__title-box_dynamic">
+
+           <a href="one-project.html" target="_blank">
             <h3 class="project-overlay__title project-overlay__title_sm">
               ${title}
             </h3>
@@ -75,6 +77,7 @@ export function projects(dataPojects) {
             <h3 class="project-overlay__title project-overlay__title_lg">
              Residence by the lighthouse
             </h3>
+           </a>
 
             <p class="discover-more discover-more__light our-projects__project-sub-title">Discover more</p>
           </div>
