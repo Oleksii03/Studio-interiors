@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css" />
+    href="css/style.min.css?_v=20240815174200" />
 
   <title>Contacts</title>
   <svg
@@ -657,7 +657,267 @@
 
       </section>
     </main>
-    @@include('html-partials/base/pop-up.html)
+    <div class="backdrop backdrop--hidden js-backdrop">
+  <button
+    class="backdrop__btn js-backdrop-btn"
+    type="button">
+    <svg class="backdrop__btn-icon">
+      <use xlink:href="#icon-backdrop-cross"></use>
+    </svg>
+  </button>
+  <div class="modal">
+    <!-- BACKDROP-FORM -->
+    <form class="modal__form">
+      <div class="form__wrap">
+        <p class="modal__title modal__title_mob">Make request</p>
+        <p class="modal__title modal__title_desc">Calculate the cost of work</p>
+
+        <ul class="form__list">
+          <li class="form__lis-item">
+            <div class="modal__label">
+              <input
+                placeholder="Name"
+                class="modal__input input--person"
+                type="text"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+                name="username" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Last name"
+                class="modal__input input--person"
+                type="text"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+                name="username" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Phone"
+                class="modal__input input--phone"
+                type="tel"
+                name="userphone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                required />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Email"
+                class="modal__input input--email"
+                type="email"
+                name="useremail"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <input
+                placeholder="Your city"
+                class="modal__input input--city"
+                type="text"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇʼҐґєЄ]+"
+                name="username" />
+            </div>
+          </li>
+
+          <li class="form__list-item">
+            <label class="modal__label">
+              <p class="modal__subtitle">Property type</p>
+              <select
+                type="text"
+                name="select-type"
+                class="modal__input">
+                <option
+                  class="modal__select-option"
+                  value=""></option>
+                <option
+                  class="modal__select-option"
+                  value="Dark">
+                  Dark
+                </option>
+                <option
+                  class="modal__select-option"
+                  value="White">
+                  White
+                </option>
+              </select>
+            </label>
+          </li>
+
+          <li class="form__list-item">
+            <div class="modal__label">
+              <textarea
+                placeholder="Your comment"
+                class="modal__input modal__input-textarea"
+                name="comment"
+                id=""></textarea>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Area -->
+
+      <div class="form__radio-btns radio-btns">
+        <p class="radio-btns__title">Area (m2)</p>
+
+        <ul class="radio-btns__list">
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="50" />
+
+              <p class="radio-btns__label-text">to 50</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="50-150" />
+
+              <p class="radio-btns__label-text">50-150</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="150-250" />
+
+              <p class="radio-btns__label-text">150-250</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="250-400" />
+
+              <p class="radio-btns__label-text">250-400</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="400-600" />
+
+              <p class="radio-btns__label-text">400-600</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="600-800" />
+
+              <p class="radio-btns__label-text">600-800</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="800-1000" />
+
+              <p class="radio-btns__label-text">800-1000</p>
+            </label>
+          </li>
+
+          <li class="radio-btns__list-item">
+            <label class="radio-btns__label">
+              <input
+                class="radio-btns__input"
+                type="radio"
+                name="area"
+                value="1000+" />
+
+              <p class="radio-btns__label-text">1000+</p>
+            </label>
+          </li>
+        </ul>
+
+        <div class="radio-btns__btn-submit-box">
+          <div class="radio-btns__btn-file-box">
+            <label class="radio-btns__btn-file-label file-label">
+              <div class="file-label__input-wrapper">
+                <input
+                  class="file-label__input"
+                  type="file"
+                  name="file"
+                  class="radio-btns__btn-file" />
+              </div>
+
+              <div class="file-label__title-box">
+                <p class="file-label__title_top">Attach your file</p>
+                <p class="file-label__title_bottom">File size not more than 10 MB</p>
+              </div>
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            class="radio-btns__btn-submit">
+            Send Request
+          </button>
+        </div>
+
+        <div class="radio-btns__policy">
+          <p class="radio-btns__policy-text">
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page
+            <a
+              class="radio-btns__policy-text-link"
+              href="#"
+              target="_blank">
+              when looking
+            </a>
+            at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content here', making it
+            look like readable English.
+          </p>
+        </div>
+      </div>
+    </form>
+    <!--/ BACKDROP-FORM -->
+  </div>
+</div>
+
     <script
       src="./js/contacts.min.js"
       type="module"></script>
