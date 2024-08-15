@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./html-partials/base/head.html',{ "title":"404" })
+
+  <body>
+    <!-- preloader -->
+    @@include('html-partials/base/preloader.html')
+    <!-- header -->
+    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+    "color-class": "", "title": "" })
+    <!-- mob-menu -->
+    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title": "" })
+
+    <main>
+      <section class="not-found">
+        <div class="not-found__overlay">
+          <div class="not-found__container container">
+            <div class="not-found__content">
+              <div class="not-found__decoration-title">
+                @@include('./html-partials/base/section-decoration-title.html',{ "title":"404",
+                "class":"decoration-title_dark", "extends-class":"" })
+              </div>
+
+              <h2 class="not-found__title">Page not found</h2>
+              <p class="not-found__text">Something went wrong. Page not found</p>
+              <a
+                href="/"
+                class="not-found__link">
+                go to main
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- @@include('html-partials/base/pop-up.html) -->
+    <footer class="not-found__footer">
+      <div class="not-found__container container">
+        @@include('./html-partials/base/trademark.html')
+      </div>
+    </footer>
+    <script
+      src="./js/contacts.min.js"
+      type="module"></script>
+  </body>
+</html>

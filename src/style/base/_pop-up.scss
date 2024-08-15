@@ -4,7 +4,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0);
+  background-color: #000000da;
+  backdrop-filter: blur(1px);
   transition-property: opacity, transform, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -146,6 +147,7 @@
   border: none;
   border-bottom: 1px solid rgba(214, 214, 214, 0.3);
   outline: none;
+  background-color: transparent;
 
   &::placeholder {
     color: #3a3e4b;
