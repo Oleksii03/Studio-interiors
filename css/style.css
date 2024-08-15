@@ -420,7 +420,6 @@ body {
        -o-transition-delay: 150ms;
           transition-delay: 150ms;
   z-index: 100;
-  display: none;
 }
 
 .preloader_hidden {
