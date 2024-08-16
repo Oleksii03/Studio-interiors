@@ -3,28 +3,26 @@
   @@include('html-partials/base/head.html',{ "title":"Studio of interiors" })
 
   <body>
-    <div class="wrapper">
-      @@include('html-partials/base/preloader.html')
-      <!-- ------ -->
-      @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
-      "color-class": "header_light", "title": "Home" })
-      <!-- mob-menu -->
-      @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
-      "Home" })
+    @@include('html-partials/base/preloader.html')
+    <!-- ------ -->
+    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+    "color-class": "header_light", "title": "Home" })
+    <!-- mob-menu -->
+    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
+    "Home" })
 
-      <main>
-        @@include('html-partials/pages/main/hero.html')
-        @@include('html-partials/pages/main/company.html')
-        @@include('./html-partials/pages/main/our-projects.html')
-        @@include('./html-partials/pages/main/lorem.html')
-        @@include('./html-partials/base/lorem-ipsum.html', { "perent-class": "lorem-ipsum" })
-      </main>
+    <main>
+      @@include('html-partials/pages/main/hero.html')
+      @@include('html-partials/pages/main/company.html')
+      @@include('./html-partials/pages/main/our-projects.html')
+      @@include('./html-partials/pages/main/lorem.html')
+      @@include('./html-partials/base/lorem-ipsum.html', { "perent-class": "lorem-ipsum" })
+    </main>
 
-      @@include('html-partials/base/footer.html') @@include('html-partials/base/btn-up.html')
+    @@include('html-partials/base/footer.html') @@include('html-partials/base/btn-up.html')
 
-      <!-- ---pop-up--- -->
-      @@include('html-partials/base/pop-up.html')
-    </div>
+    <!-- ---pop-up--- -->
+    @@include('html-partials/base/pop-up.html')
 
     <script
       src="js/app.min.js"

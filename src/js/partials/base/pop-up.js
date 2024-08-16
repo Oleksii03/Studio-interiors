@@ -9,6 +9,10 @@ export function popUp() {
 
   closeModalBtn.addEventListener('click', toggleModal);
 
+  backdrop.addEventListener('click', e => {
+    if (e.target === e.currentTarget) toggleModal();
+  });
+
   function toggleModal() {
     backdrop.classList.toggle('backdrop--hidden');
     document.body.classList.toggle('no-scroll');

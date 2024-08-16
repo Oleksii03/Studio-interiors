@@ -5,6 +5,31 @@
     </div>
 
     <div class="hero__container container">
+      <div class="slider__btn-box @@btn-class">
+        <button
+          type="button"
+          class="slider__btn slider__btn_prev js-slider-btn-prev">
+          <svg class="slider__btn-svg">
+            <use xlink:href="#icon-arrow-prev"></use>
+          </svg>
+          <span class="slider__btn_prev-num js-span-prev">01</span>
+        </button>
+
+        <div class="slider__pagination-box js-pagination-box">
+          <div class="slider__pagination-line js-pagination-line"></div>
+        </div>
+
+        <button
+          type="button"
+          class="slider__btn slider__btn_next js-slider-btn-next">
+          <span class="slider__btn_next-num js-span-next">04</span>
+
+          <svg class="slider__btn-svg">
+            <use xlink:href="#icon-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+
       <h1 class="hero__title">Thoughtful making of space</h1>
 
       @@include('../../base/discover-more.html',{ "color-class":"discover-more__light",

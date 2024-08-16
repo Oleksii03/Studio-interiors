@@ -49,6 +49,9 @@
   }
 
   &__container {
+    @media (min-width: 1024px) {
+      position: relative;
+    }
     @media (min-width: 1440px) {
       width: 100%;
       padding: 0;
@@ -135,6 +138,26 @@
     }
   }
 
+  &__philosophy-btn-box_wrapp {
+    position: absolute;
+
+    top: clamp(78.438rem, 55.094rem + 99.07vw, 98.438rem);
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    @media (min-width: 700px) {
+      top: clamp(79rem, 58.896rem + 91.67vw, 117.188rem);
+    }
+    @media (min-width: 1024px) {
+      top: 77%;
+    }
+    @media (min-width: 1440px) {
+      top: 82%;
+      left: clamp(8rem, -27.768rem + 34.96vw, 32.375rem);
+    }
+  }
+
   &__philosophy-btn-box {
     width: 100%;
     top: calc(100% - 30px);
@@ -155,7 +178,7 @@
 
     @media (min-width: 768px) {
       padding: 30px;
-      top: calc(100% - 74px);
+      // top: calc(100% - 74px);
     }
 
     @media (min-width: 1024px) {
@@ -167,8 +190,8 @@
       padding: 5px;
     }
     @media (min-width: 1440px) {
-      top: 82%;
-      left: 412px;
+      // top: 82%;
+      // left: 412px;
       width: 308px;
     }
   }

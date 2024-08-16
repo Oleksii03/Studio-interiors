@@ -3,26 +3,24 @@
   @@include('html-partials/base/head.html',{ "title":"Our Projects" })
 
   <body>
-    <div class="wrapper">
-      <!-- preloader -->
-      @@include('html-partials/base/preloader.html')
-      <!-- ---header--- -->
-      @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
-      "color-class": "header_dark", "title": "Projects" })
-      <!-- mob-menu -->
-      @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
-      "Projects" })
+    <!-- preloader -->
+    @@include('html-partials/base/preloader.html')
+    <!-- ---header--- -->
+    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+    "color-class": "header_dark", "title": "Projects" })
+    <!-- mob-menu -->
+    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
+    "Projects" })
 
-      <main>
-        @@include('html-partials/pages/projects/our-projects.html')
-        @@include('./html-partials/pages/projects/lorem-ipsum.html')
-      </main>
-      @@include('./html-partials/pages/projects/footer.html')
-      <!-- ---pop-up--- -->
-      @@include('html-partials/base/pop-up.html')
-      <!-- ---btn-up--- -->
-      @@include('html-partials/base/btn-up.html')
-    </div>
+    <main>
+      @@include('html-partials/pages/projects/our-projects.html')
+      @@include('./html-partials/pages/projects/lorem-ipsum.html')
+    </main>
+    @@include('./html-partials/pages/projects/footer.html')
+    <!-- ---pop-up--- -->
+    @@include('html-partials/base/pop-up.html')
+    <!-- ---btn-up--- -->
+    @@include('html-partials/base/btn-up.html')
 
     <script
       src="js/projects.min.js"

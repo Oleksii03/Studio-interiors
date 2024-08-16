@@ -3,27 +3,25 @@
   @@include('./html-partials/base/head.html',{ "title":"About Us" })
 
   <body>
-    <div class="wrapper">
-      <!-- preloader -->
-      @@include('html-partials/base/preloader.html')
-      <!-- header -->
-      @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
-      "color-class": "", "title": "About us" })
-      <!-- mob-menu -->
-      @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
-      "About us" })
+    <!-- preloader -->
+    @@include('html-partials/base/preloader.html')
+    <!-- header -->
+    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+    "color-class": "", "title": "About us" })
+    <!-- mob-menu -->
+    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
+    "About us" })
 
-      <main>
-        @@include('./html-partials/pages/about/hero.html')
-        @@include('./html-partials/pages/about/company.html')
-        @@include('./html-partials/base/lorem-ipsum.html', { "color-class": "lorem-ipsum--dark" })
-      </main>
-      @@include('./html-partials/pages/about/footer.html')
-      <!-- btn-up -->
-      @@include('html-partials/base/btn-up.html')
-      <!-- ---pop-up--- -->
-      @@include('html-partials/base/pop-up.html')
-    </div>
+    <main>
+      @@include('./html-partials/pages/about/hero.html')
+      @@include('./html-partials/pages/about/company.html')
+      @@include('./html-partials/base/lorem-ipsum.html', { "color-class": "lorem-ipsum--dark" })
+    </main>
+    @@include('./html-partials/pages/about/footer.html')
+    <!-- btn-up -->
+    @@include('html-partials/base/btn-up.html')
+    <!-- ---pop-up--- -->
+    @@include('html-partials/base/pop-up.html')
 
     <script
       src="./js/about.min.js"

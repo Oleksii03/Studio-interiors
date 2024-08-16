@@ -3,31 +3,29 @@
   @@include('html-partials/base/head.html',{ "title":"One Projects" })
 
   <body>
-    <div class="wrapper">
-      @@include('html-partials/base/preloader.html')
-      <!-- --header--- -->
-      @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
-      "color-class": "header_light", "title": "Projects" })
-      <!-- mob-menu -->
-      @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
-      "Projects" })
+    @@include('html-partials/base/preloader.html')
+    <!-- --header--- -->
+    @@include('html-partials/base/header.html',{ "active-class": "header__nav-link_active",
+    "color-class": "header_light", "title": "Projects" })
+    <!-- mob-menu -->
+    @@include('html-partials/base/mob-menu.html',{ "active-class": "mob-menu_active", "title":
+    "Projects" })
 
-      <main>
-        <!-- hero -->
-        @@include('html-partials/pages/one-project/hero.html')
-        <!-- main -->
-        @@include('html-partials/pages/one-project/main.html')
-        <!-- lorem -->
-        @@include('html-partials/pages/one-project/lorem.html')
-        <!-- next-project -->
-        @@include('html-partials/pages/one-project/next-project.html')
-      </main>
+    <main>
+      <!-- hero -->
+      @@include('html-partials/pages/one-project/hero.html')
+      <!-- main -->
+      @@include('html-partials/pages/one-project/main.html')
+      <!-- lorem -->
+      @@include('html-partials/pages/one-project/lorem.html')
+      <!-- next-project -->
+      @@include('html-partials/pages/one-project/next-project.html')
+    </main>
 
-      <!-- btn-up -->
-      @@include('html-partials/base/btn-up.html')
-      <!-- ---pop-up--- -->
-      @@include('html-partials/base/pop-up.html')
-    </div>
+    <!-- btn-up -->
+    @@include('html-partials/base/btn-up.html')
+    <!-- ---pop-up--- -->
+    @@include('html-partials/base/pop-up.html')
 
     <script
       src="js/oneProject.min.js"

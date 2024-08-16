@@ -7,7 +7,7 @@
   background-color: #000000da;
   backdrop-filter: blur(1px);
   transition-property: opacity, transform, visibility;
-  transition-duration: 250ms;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   display: flex;
@@ -49,7 +49,6 @@
 }
 
 .backdrop--hidden {
-  transform: scale(0.5);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
