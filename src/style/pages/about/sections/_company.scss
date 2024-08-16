@@ -147,13 +147,16 @@
     z-index: 1;
 
     @media (min-width: 700px) {
-      top: clamp(79rem, 58.896rem + 91.67vw, 117.188rem);
+      top: clamp(87rem, 58.896rem + 98.67vw, 133.188rem);
+    }
+    @media (min-width: 768px) {
+      top: clamp(87rem, 58.896rem + 85.67vw, 140.188rem);
     }
     @media (min-width: 1024px) {
       top: 77%;
     }
     @media (min-width: 1440px) {
-      top: 82%;
+      top: 370px;
       left: clamp(8rem, -27.768rem + 34.96vw, 32.375rem);
     }
   }
