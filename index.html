@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240816172203" />
+    href="css/style.min.css?_v=20240816210636" />
 
   <title>Studio of interiors</title>
   <svg
@@ -315,8 +315,7 @@
 
 
   <body>
-    <div class="wrapper">
-      <div
+    <div
   id="preloader"
   class="preloader">
   <div class="preloader__line">
@@ -333,8 +332,8 @@
   </div>
 </div>
 
-      <!-- ------ -->
-      <header class="header js-header">
+    <!-- ------ -->
+    <header class="header js-header">
   <div class="header__container container">
     <a
       data-logo="logo"
@@ -417,8 +416,8 @@
   </div>
 </header>
 
-      <!-- mob-menu -->
-      <div class="mob-menu js-menu">
+    <!-- mob-menu -->
+    <div class="mob-menu js-menu">
   <div class="mob-menu__container container">
     <ul class="mob-menu__list">
       <li class="mob-menu__list-item">
@@ -528,8 +527,8 @@
 </div>
 
 
-      <main>
-        <section class="hero">
+    <main>
+      <section class="hero">
   <div class="hero__wrapper">
     <div class="hero__slider">
       <div class="slider @@extends-class">
@@ -615,33 +614,37 @@
         </picture>
       </li>
     </ul>
-
-    <div class="slider__btn-box @@btn-class">
-      <button
-        type="button"
-        class="slider__btn slider__btn_prev js-slider-btn-prev">
-        <svg class="slider__btn-svg">
-          <use xlink:href="#icon-arrow-prev"></use>
-        </svg>
-        <span class="slider__btn_prev-num js-span-prev">01</span>
-      </button>
-
-      <button
-        type="button"
-        class="slider__btn slider__btn_next js-slider-btn-next">
-        <span class="slider__btn_next-num js-span-next">04</span>
-
-        <svg class="slider__btn-svg">
-          <use xlink:href="#icon-arrow-next"></use>
-        </svg>
-      </button>
-    </div>
   </div>
 </div>
 
     </div>
 
     <div class="hero__container container">
+      <div class="slider__btn-box @@btn-class">
+        <button
+          type="button"
+          class="slider__btn slider__btn_prev js-slider-btn-prev">
+          <svg class="slider__btn-svg">
+            <use xlink:href="#icon-arrow-prev"></use>
+          </svg>
+          <span class="slider__btn_prev-num js-span-prev">01</span>
+        </button>
+
+        <div class="slider__pagination-box js-pagination-box">
+          <div class="slider__pagination-line js-pagination-line"></div>
+        </div>
+
+        <button
+          type="button"
+          class="slider__btn slider__btn_next js-slider-btn-next">
+          <span class="slider__btn_next-num js-span-next">04</span>
+
+          <svg class="slider__btn-svg">
+            <use xlink:href="#icon-arrow-next"></use>
+          </svg>
+        </button>
+      </div>
+
       <h1 class="hero__title">Thoughtful making of space</h1>
 
       <p class="discover-more discover-more__light hero__sub-title">Discover more</p>
@@ -719,7 +722,7 @@
   </div>
 </section>
 
-        <section class="company">
+      <section class="company">
   <div class="company__container container">
     <div class="decoration-title__box decoration-title_light">
   <p class="decoration-title decoration-title_light company__decoration-title">About</p>
@@ -783,7 +786,7 @@
   </div>
 </section>
 
-        <section class="our-projects">
+      <section class="our-projects">
   <div class="our-projects__container container">
     <div class="decoration-title__box decoration-title_dark">
   <p class="decoration-title decoration-title_dark our-projects__decoration-title">Projects</p>
@@ -987,7 +990,7 @@
   </div>
 </section>
 
-        <section class="main__lorem">
+      <section class="main__lorem">
   <div class="container">
     <div class="decoration-title__box decoration-title_dark">
   <p class="decoration-title decoration-title_dark our-projects__decoration-title">Make request</p>
@@ -1090,7 +1093,7 @@
   </div>
 </section>
 
-        <section class="lorem-ipsum @@color-class">
+      <section class="lorem-ipsum @@color-class">
   <div class="lorem-ipsum__container container">
     <div class="lorem-ipsum__content @@color-class">
       <h2 class="lorem-ipsum__title lorem-ipsum__title_small">
@@ -1117,9 +1120,9 @@
   </div>
 </section>
 
-      </main>
+    </main>
 
-      <footer class="footer">
+    <footer class="footer">
   <div class="footer__container container">
     <div class="decoration-title__box decoration-title_dark">
   <p class="decoration-title decoration-title_dark footer__decoration-title">Contacts</p>
@@ -1262,8 +1265,8 @@
 </div>
 
 
-      <!-- ---pop-up--- -->
-      <div class="backdrop backdrop--hidden js-backdrop">
+    <!-- ---pop-up--- -->
+    <div class="backdrop backdrop--hidden js-backdrop">
   <button
     class="backdrop__btn js-backdrop-btn"
     type="button">
@@ -1524,7 +1527,6 @@
   </div>
 </div>
 
-    </div>
 
     <script
       src="js/app.min.js"

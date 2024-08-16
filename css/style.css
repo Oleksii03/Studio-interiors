@@ -420,6 +420,7 @@ body {
        -o-transition-delay: 150ms;
           transition-delay: 150ms;
   z-index: 100;
+  display: none;
 }
 
 .preloader_hidden {
@@ -695,18 +696,18 @@ body {
   z-index: 1;
 }
 
-.slider__btn-box::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 88px;
-  height: 1px;
-  background-color: #fff;
-  overflow-x: hidden;
+.slider__pagination-box {
+  background-color: rgba(181, 181, 181, 0.4078431373);
+  width: 100%;
+  height: 2px;
+}
+
+.slider__pagination-line {
+  background-color: #ffffff;
+  height: 2px;
+  -webkit-transition: width 250ms linear;
+  -o-transition: width 250ms linear;
+  transition: width 250ms linear;
 }
 
 .slider__btn {
@@ -1542,9 +1543,9 @@ body {
   -o-transition-property: opacity, transform, visibility;
   transition-property: opacity, transform, visibility;
   transition-property: opacity, transform, visibility, -webkit-transform;
-  -webkit-transition-duration: 250ms;
-       -o-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: 350ms;
+       -o-transition-duration: 350ms;
+          transition-duration: 350ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
        -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1574,9 +1575,6 @@ body {
 }
 
 .backdrop--hidden {
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -2268,6 +2266,14 @@ body {
   width: 100%;
   height: 100%;
   padding-right: 5px;
+}
+
+.about-company__philosophy-btn-box_wrapp {
+  position: absolute;
+  top: clamp(78.438rem, 55.094rem + 99.07vw, 98.438rem);
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .about-company__philosophy-btn-box {
@@ -3681,6 +3687,12 @@ body {
   }
 }
 
+@media (min-width: 700px) {
+  .about-company__philosophy-btn-box_wrapp {
+    top: clamp(79rem, 58.896rem + 91.67vw, 117.188rem);
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 702px;
@@ -3694,10 +3706,6 @@ body {
     top: 561px;
     right: 33%;
     width: 259px;
-  }
-
-  .slider__btn-box::before {
-    width: 150px;
   }
 
   .language-box {
@@ -4098,7 +4106,6 @@ body {
 
   .about-company__philosophy-btn-box {
     padding: 30px;
-    top: calc(100% - 74px);
   }
 
   .statistics {
@@ -4871,6 +4878,10 @@ body {
     margin-bottom: 120px;
   }
 
+  .about-company__container {
+    position: relative;
+  }
+
   .about-company__text-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4891,6 +4902,10 @@ body {
   .about-company__philosophy-slider {
     position: static;
     aspect-ratio: 0;
+  }
+
+  .about-company__philosophy-btn-box_wrapp {
+    top: 77%;
   }
 
   .about-company__philosophy-btn-box {
@@ -5260,10 +5275,6 @@ body {
     top: 443px;
     right: 308px;
     width: 297px;
-  }
-
-  .slider__btn-box::before {
-    width: 185px;
   }
 
   .language-box {
@@ -5953,9 +5964,12 @@ body {
     padding-right: 12px;
   }
 
-  .about-company__philosophy-btn-box {
+  .about-company__philosophy-btn-box_wrapp {
     top: 82%;
-    left: 412px;
+    left: clamp(8rem, -27.768rem + 34.96vw, 32.375rem);
+  }
+
+  .about-company__philosophy-btn-box {
     width: 308px;
   }
 
