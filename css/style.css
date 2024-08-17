@@ -5980,6 +5980,10 @@ body {
     padding-right: 12px;
   }
 
+  .about-company__philosophy-btn-box {
+    width: 330px;
+  }
+
   .statistics {
     -ms-grid-columns: 516px 382px;
     grid-template-columns: 516px 382px;
