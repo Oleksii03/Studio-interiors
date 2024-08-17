@@ -2283,10 +2283,6 @@ body {
   z-index: 1;
 }
 
-.about-company__philosophy-btn-box_wrapp-desc {
-  display: none;
-}
-
 .about-company__philosophy-btn-box {
   width: 100%;
   top: calc(100% - 30px);
@@ -2304,6 +2300,10 @@ body {
 .about-company__philosophy-btn-box button span {
   stroke: var(--gray-base-color);
   color: var(--gray-base-color);
+}
+
+.about-company__philosophy-btn-box_desc {
+  display: none;
 }
 
 .statistics {
@@ -4918,10 +4918,6 @@ body {
     display: none;
   }
 
-  .about-company__philosophy-btn-box_wrapp-desc {
-    display: block;
-  }
-
   .about-company__philosophy-btn-box {
     bottom: -100px;
     left: 40%;
@@ -4931,6 +4927,12 @@ body {
     border-radius: 10px;
     padding: 5px;
     padding: 10px;
+  }
+
+  .about-company__philosophy-btn-box_desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .statistics {
