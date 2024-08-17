@@ -190,10 +190,9 @@
       padding: 5px;
       padding: 10px;
     }
-    // @media (min-width: 1440px) {
-    //   width: 308px;
-    //   top: 232px;
-    // }
+    @media (min-width: 1440px) {
+      width: 330px;
+    }
   }
 
   &__philosophy-btn-box_desc {
