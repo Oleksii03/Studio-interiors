@@ -176,10 +176,12 @@
 
     @media (min-width: 768px) {
       padding: 30px;
+      width: 100%;
+      top: -25px;
     }
 
     @media (min-width: 1024px) {
-      bottom: -100px;
+      top: 232px;
       left: 40%;
       width: 308px;
       height: 40px;
