@@ -156,14 +156,6 @@
     }
   }
 
-  &__philosophy-btn-box_wrapp-desc {
-    display: none;
-
-    @media (min-width: 1024px) {
-      display: block;
-    }
-  }
-
   &__philosophy-btn-box {
     width: 100%;
     top: calc(100% - 30px);
@@ -198,6 +190,14 @@
     }
     @media (min-width: 1440px) {
       width: 308px;
+    }
+  }
+
+  &__philosophy-btn-box_desc {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: flex;
     }
   }
 }
