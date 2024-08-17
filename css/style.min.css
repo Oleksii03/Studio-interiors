@@ -3376,7 +3376,7 @@ body {
 }
 @media (min-width: 700px) {
   .about-company__philosophy-btn-box_wrapp {
-    top: clamp(79rem, 58.896rem + 91.67vw, 117.188rem);
+    top: clamp(79rem, 58.896rem + 84.67vw, 110.188rem);
   }
 }
 @media (min-width: 1024px) {
@@ -3386,7 +3386,7 @@ body {
 }
 @media (min-width: 1440px) {
   .about-company__philosophy-btn-box_wrapp {
-    top: 60px;
+    top: 82%;
     left: clamp(8rem, -27.768rem + 34.96vw, 32.375rem);
   }
 }
