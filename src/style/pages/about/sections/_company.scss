@@ -49,9 +49,6 @@
   }
 
   &__container {
-    @media (min-width: 1024px) {
-      position: relative;
-    }
     @media (min-width: 1440px) {
       width: 100%;
       padding: 0;
@@ -60,6 +57,7 @@
 
   &__text-box {
     @media (min-width: 1024px) {
+      position: relative;
       display: flex;
       flex-direction: column;
       width: 383px;
@@ -95,21 +93,20 @@
       line-height: 170.66%;
       margin-bottom: 16px;
 
-      @media (min-width: 1440px) {
-        margin-bottom: 0px;
+      @media (min-width: 1024px) {
+        margin-bottom: 50px;
       }
     }
   }
 
   &__philosophy-slider {
-    position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     padding: 0;
-    aspect-ratio: 1/1.025;
+    aspect-ratio: 1/0.9;
     padding-right: 30px;
 
     @media (min-width: 768px) {
-      aspect-ratio: 1/1.072;
+      aspect-ratio: 1/0.85;
     }
     @media (min-width: 1024px) {
       position: static;
@@ -138,23 +135,32 @@
     }
   }
 
-  &__philosophy-btn-box_wrapp {
-    position: absolute;
+  &__philosophy-slider-wrapp {
+    position: relative;
 
-    top: clamp(78.438rem, 55.094rem + 99.07vw, 98.438rem);
+    @media (min-width: 1024px) {
+      overflow: hidden;
+    }
+  }
+
+  &__philosophy-btn-box_wrapp-mob {
+    display: block;
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
     z-index: 1;
 
-    @media (min-width: 700px) {
-      top: clamp(79rem, 58.896rem + 84.67vw, 110.188rem);
-    }
     @media (min-width: 1024px) {
-      top: 77%;
+      display: none;
     }
-    @media (min-width: 1440px) {
-      top: 82%;
-      left: clamp(8rem, -27.768rem + 34.96vw, 32.375rem);
+  }
+
+  &__philosophy-btn-box_wrapp-desc {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: block;
     }
   }
 
@@ -178,20 +184,19 @@
 
     @media (min-width: 768px) {
       padding: 30px;
-      // top: calc(100% - 74px);
     }
 
     @media (min-width: 1024px) {
-      top: 70%;
-      left: 20%;
+      bottom: -100px;
+      left: 40%;
       width: 308px;
+      height: 40px;
       background-color: transparent;
       border-radius: 10px;
       padding: 5px;
+      padding: 10px;
     }
     @media (min-width: 1440px) {
-      // top: 82%;
-      // left: 412px;
       width: 308px;
     }
   }
