@@ -4111,6 +4111,8 @@ body {
 
   .about-company__philosophy-btn-box {
     padding: 30px;
+    width: 100%;
+    top: -25px;
   }
 
   .statistics {
@@ -4919,7 +4921,7 @@ body {
   }
 
   .about-company__philosophy-btn-box {
-    bottom: -100px;
+    top: 232px;
     left: 40%;
     width: 308px;
     height: 40px;
