@@ -181,7 +181,7 @@
     }
 
     @media (min-width: 1024px) {
-      top: 232px;
+      top: 232px !important;
       left: 40%;
       width: 308px;
       height: 40px;
@@ -190,9 +190,10 @@
       padding: 5px;
       padding: 10px;
     }
-    @media (min-width: 1440px) {
-      width: 308px;
-    }
+    // @media (min-width: 1440px) {
+    //   width: 308px;
+    //   top: 232px;
+    // }
   }
 
   &__philosophy-btn-box_desc {
