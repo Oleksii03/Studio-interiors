@@ -5981,7 +5981,7 @@ body {
   }
 
   .about-company__philosophy-btn-box {
-    width: 330px;
+    width: 330px !important;
   }
 
   .statistics {
