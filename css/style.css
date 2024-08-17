@@ -4921,7 +4921,7 @@ body {
   }
 
   .about-company__philosophy-btn-box {
-    top: 232px;
+    top: 232px !important;
     left: 40%;
     width: 308px;
     height: 40px;
@@ -5978,11 +5978,6 @@ body {
     width: 515px;
     height: 444px;
     padding-right: 12px;
-  }
-
-  .about-company__philosophy-btn-box {
-    width: 308px;
-    top: 232px;
   }
 
   .statistics {
