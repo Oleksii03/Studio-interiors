@@ -10,7 +10,7 @@
     content="width=device-width, initial-scale=1.0" />
   <link
     rel="stylesheet"
-    href="css/style.min.css?_v=20240820142250" />
+    href="css/style.min.css?_v=20240820191310" />
 
   <title>404</title>
   <svg
@@ -599,7 +599,7 @@
                 class="modal__input input--phone"
                 type="tel"
                 name="userphone"
-                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                pattern="\+380\d{9}"
                 required />
             </div>
           </li>
@@ -630,14 +630,19 @@
 
           <li class="form__list-item">
             <label class="modal__label">
-              <p class="modal__subtitle">Property type</p>
+              <p class="modal__subtitle js-modal-subtitle">Property type</p>
               <select
                 type="text"
                 name="select-type"
-                class="modal__input">
+                class="modal__input js-modal-select">
                 <option
                   class="modal__select-option"
                   value=""></option>
+                <option
+                  class="modal__select-option"
+                  value="default">
+                  Property type
+                </option>
                 <option
                   class="modal__select-option"
                   value="Dark">
