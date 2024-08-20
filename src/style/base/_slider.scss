@@ -5,7 +5,7 @@
     height: 542px;
     object-fit: cover;
     object-position: 50% 50%;
-    filter: brightness(0.6);
+    // filter: brightness(0.6);
 
     @media (max-width: 767px) {
       min-height: 100vh;
@@ -52,8 +52,8 @@
 
     @media (min-width: 768px) {
       top: 561px;
-      right: 33%;
-      width: 259px;
+      right: 31%;
+      width: 256px;
     }
     @media (min-width: 1024px) {
       top: 418px;
@@ -62,8 +62,8 @@
     }
     @media (min-width: 1440px) {
       top: 443px;
-      right: 308px;
-      width: 297px;
+      right: 258px;
+      width: 294px;
     }
   }
 

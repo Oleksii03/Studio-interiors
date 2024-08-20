@@ -20,6 +20,15 @@
 
     @media (min-width: 1440px) {
       margin-right: 73px;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0px 1.153px 1.225px 0px rgba(0, 0, 0, 0.2),
+        0px -0.288px 0.072px 0px rgba(255, 255, 255, 0.23);
+      backdrop-filter: blur(1px);
+      transition: all 250ms linear;
+      &:hover {
+        background: transparent;
+        backdrop-filter: blur(0px);
+      }
     }
 
     &-svg {
@@ -66,6 +75,13 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+    transition: opacity 200ms linear;
+
+    @media (min-width: 1440px) {
+      &:hover {
+        opacity: 0.6;
+      }
+    }
   }
 
   @media (max-width: 767px) {

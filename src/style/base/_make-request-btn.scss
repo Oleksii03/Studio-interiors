@@ -14,10 +14,8 @@
     padding: 17px 47px;
     transition: all 250ms linear;
 
-    // &:hover {
-    //   background: transparent;
-    //   color: var(--white-base-color);
-    //   outline: 1px solid var(--white-base-color);
-    // }
+    &:hover {
+      box-shadow: inset 0px 0px 6px 2px rgba(0, 0, 0, 0.49);
+    }
   }
 }

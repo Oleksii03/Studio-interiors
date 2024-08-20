@@ -6,8 +6,6 @@ export function createSlider() {
   const spanPrev = document.querySelector('.js-span-prev');
   let paginationLine = document.querySelectorAll('.js-pagination-line');
 
-  console.log(paginationLine);
-
   let offsetStep = 100 / (images.length - 1);
   let offsetWidth = 100 / (images.length - 1);
   let count = 0;

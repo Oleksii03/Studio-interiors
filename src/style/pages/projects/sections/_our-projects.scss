@@ -35,12 +35,20 @@
     }
   }
 
+  &__title {
+    margin-bottom: 15px;
+
+    &_light {
+      margin-bottom: 0;
+    }
+  }
+
   &__description {
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: 170%;
-    margin-bottom: 24px;
+    margin-bottom: 27px;
 
     @media (min-width: 768px) {
       margin-bottom: 35px;

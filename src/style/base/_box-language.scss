@@ -12,6 +12,13 @@
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.66px;
+      transition: opacity 200ms linear;
+
+      @media (min-width: 1440px) {
+        &:hover {
+          opacity: 0.6;
+        }
+      }
     }
   }
 

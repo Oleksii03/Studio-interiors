@@ -148,6 +148,7 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.66px;
+    transition: opacity 200ms linear;
 
     &.header_dark {
       transition: all 250ms ease-in-out;
@@ -164,6 +165,12 @@
 
     @media (max-width: 340px) {
       margin-right: 50px;
+    }
+
+    @media (min-width: 1440px) {
+      &:hover {
+        opacity: 0.6;
+      }
     }
   }
 
