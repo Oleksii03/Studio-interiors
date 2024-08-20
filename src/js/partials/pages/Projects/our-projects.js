@@ -90,8 +90,8 @@ export function projects(dataPojects) {
             <source
               srcset="${imageDesc}"
               media="(min-width: 1440px)" 
-              sizes="(min-width: 1440px) 656px"
-              width="656" />
+              sizes="(min-width: 1440px) 653px"
+              width="653" />
 
             <source
               srcset="${imageLepTop}"
@@ -102,8 +102,8 @@ export function projects(dataPojects) {
             <source
               srcset="${imageTab}"
               media="(min-width: 768px)" 
-              sizes="(min-width: 768px) 333px"
-              width="333" />
+              sizes="(min-width: 768px) 672px"
+              width="672" />
 
             <img 
               src="${imageMob}"
