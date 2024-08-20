@@ -85,25 +85,34 @@ export function projects(dataPojects) {
         <a
           href="#"
           class="our-projects__project-link">
+           
           <picture class="our-projects__project-picture">
             <source
               srcset="${imageDesc}"
-              media="(min-width: 1440px)" />
+              media="(min-width: 1440px)" 
+              sizes="(min-width: 1440px) 656px"
+              width="656" />
 
             <source
               srcset="${imageLepTop}"
-              media="(min-width: 1024px)" />
+              media="(min-width: 1024px)" 
+              sizes="(min-width: 1024px) 453px"
+              width="453" />
 
             <source
               srcset="${imageTab}"
-              media="(min-width: 768px)" />
+              media="(min-width: 768px)" 
+              sizes="(min-width: 768px) 333px"
+              width="333" />
 
             <img 
-              loading="lazy"
               src="${imageMob}"
               alt="Project-item"
+              width="327"
+              loading="lazy"
               class="our-projects__project-img" />
           </picture>
+
         </a>
       </li>`;
     });

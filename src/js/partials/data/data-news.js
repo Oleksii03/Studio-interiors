@@ -41,15 +41,15 @@ export function dataNews() {
     {
       type: 'blog',
       title: 'Interior design, </br> LCD Rybalsky',
-      imageMob: 'assets/img/pagrs/blog/our-news/cards-mob/img-4.png',
-      imageTab: 'assets/img/pagrs/blog/our-news/cards-tab/img-4.png',
+      imageMob: 'assets/img/pagrs/blog/our-news/cards-mob/img-4.webp',
+      imageTab: 'assets/img/pagrs/blog/our-news/cards-tab/img-4.webp',
       imageLapTop: 'assets/img/pagrs/blog/our-news/cards-lap-top/img-4.webp',
     },
     {
       type: 'all',
       title: 'Interior design, </br> LCD Rybalsky',
-      imageMob: 'assets/img/pagrs/blog/our-news/cards-mob/img-4.png',
-      imageTab: 'assets/img/pagrs/blog/our-news/cards-tab/img-4.png',
+      imageMob: 'assets/img/pagrs/blog/our-news/cards-mob/img-4.webp',
+      imageTab: 'assets/img/pagrs/blog/our-news/cards-tab/img-4.webp',
       imageLapTop: 'assets/img/pagrs/blog/our-news/cards-lap-top/img-4.webp',
     },
     {
