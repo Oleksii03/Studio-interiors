@@ -2321,6 +2321,12 @@ body {
   display: none;
 }
 
+.about-company__big-img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
 .statistics {
   display: -ms-grid;
   display: grid;
