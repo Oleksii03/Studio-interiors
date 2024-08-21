@@ -104,9 +104,7 @@ export function projects(dataPojects) {
               src="${imageMob}"
               alt="Project-item"
               width="1000"
-              height="1000"
-              loading="lazy"
-              class="our-projects__project-img" />
+              height="1000"              class="our-projects__project-img" />
           </picture>
 
         </a>
