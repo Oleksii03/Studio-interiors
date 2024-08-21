@@ -81,7 +81,8 @@ export function blog(arrNews) {
         </div>
         <a
           href="#"
-          class="our-projects__project-link">
+          class="our-projects__project-link"
+          aria-label="View project details">
           <picture class="our-projects__project-picture">
             <source
               srcset="${imageLapTop}"
