@@ -3559,6 +3559,11 @@ body {
   margin-bottom: 48px;
 }
 
+.one-project-main__list-img {
+  width: 100%;
+  height: auto;
+}
+
 .one-project-lorem {
   overflow-y: hidden;
   background-color: var(--dark-background-color);
