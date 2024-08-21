@@ -79,6 +79,7 @@ export function blog(arrNews) {
         </div>
         
         </div>
+        <link rel="preload" as="image" href="${imageMob}">
         <a
           href="#"
           class="our-projects__project-link"
@@ -94,7 +95,6 @@ export function blog(arrNews) {
             <img
               width="1000"
               height="700" 
-              loading="lazy"
               src="${imageMob}"
               alt="Project-item"
               class="page-news__list-content-img" />

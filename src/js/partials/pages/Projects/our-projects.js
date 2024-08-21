@@ -82,6 +82,7 @@ export function projects(dataPojects) {
             <p class="discover-more discover-more__light our-projects__project-sub-title">Discover more</p>
           </div>
         </div>
+        <link rel="preload" as="image" href="${imageMob}">
         <a
           href="#"
           class="our-projects__project-link">
