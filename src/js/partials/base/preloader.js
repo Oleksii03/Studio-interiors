@@ -67,7 +67,7 @@ export function preloader() {
   const image = new Image();
   const startTime = new Date().getTime();
   const imageUrl =
-    'https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png';
+    'https://res.cloudinary.com/cloudinary-marketing/images/w_1540,h_847/f_auto,q_auto/v1649720128/Web_Assets/blog/WebP_2000x1100_v1a/WebP_2000x1100_v1a-jpg?_i=AA';
   const imageSize = 30827;
 
   image.onload = function () {

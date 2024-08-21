@@ -90,7 +90,9 @@ export function blog(arrNews) {
               srcset="${imageTab}"
               media="(min-width: 768px)" />
 
-            <img 
+            <img
+              width="1000"
+              height="700" 
               loading="lazy"
               src="${imageMob}"
               alt="Project-item"
